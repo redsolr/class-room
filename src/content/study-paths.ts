@@ -448,4 +448,197 @@ export const STUDY_PATH_CATALOG: PathContent[] = [
       },
     ],
   },
+  {
+    slug: "english-foundation",
+    name: "English from zero",
+    language: "English",
+    description:
+      "English for the working day, in the order it gets used: the verbs under every sentence, then the first minute of a conversation, then the office, email, the café and the way home — each book learned, drilled in sentences, and said to a person.",
+    steps: [
+      {
+        kind: "pack",
+        title: "Learn the verbs you use every hour",
+        detail:
+          "Everyday English verbs is the fastest honest start: get, make, take, give, go — half of every sentence you will ever hear. Eight of them is one sitting.",
+        packSlug: "everyday-english-verbs",
+        target: 8,
+      },
+      {
+        kind: "sentences",
+        title: "Put those verbs in sentences",
+        detail:
+          "Recognising 'send' is not knowing it. Cloze cards ask whether you can still supply it when the sentence needs it — which is the thing that transfers to speaking.",
+        packSlug: "everyday-english-verbs",
+        target: 6,
+      },
+      {
+        kind: "chat",
+        title: "Say something, badly",
+        detail:
+          "Five messages to the tutor, in English, mistakes included. The point is to break the habit of waiting until you are ready — which for most people means never.",
+        target: 5,
+      },
+      {
+        kind: "pack",
+        title: "Finish the verbs",
+        detail:
+          "All twenty-four, including the ones you keep skipping because they look easy. A verb you half-know is the one that fails you mid-sentence.",
+        packSlug: "everyday-english-verbs",
+        target: 24,
+      },
+      {
+        kind: "sentences",
+        title: "The same verbs, under pressure",
+        detail:
+          "A second pass over the same words in sentences you have not seen. Nothing new is taught; what is tested is whether the first pass survived the week.",
+        packSlug: "everyday-english-verbs",
+        target: 12,
+      },
+      {
+        kind: "pack",
+        title: "The first minute of any conversation",
+        detail:
+          "Small talk is where a colleague decides you are easy to talk to. Eight phrases cover the greeting, the weekend and the weather — which is most of it.",
+        packSlug: "small-talk-english",
+        target: 8,
+      },
+      {
+        kind: "chat",
+        title: "Keep going past the first reply",
+        detail:
+          "Ask the tutor to make small talk with you and not to let it end. Fifteen messages is roughly where a conversation stops being a script you prepared.",
+        target: 15,
+      },
+      {
+        kind: "sentences",
+        title: "Small talk in sentences",
+        detail:
+          "The phrases you can produce on demand are the ones that will come out when someone actually asks about your weekend.",
+        packSlug: "small-talk-english",
+        target: 8,
+      },
+      {
+        kind: "pack",
+        title: "Finish small talk",
+        detail:
+          "All eighteen. The goodbye phrases matter as much as the greetings: a conversation you cannot end is one you will avoid starting.",
+        packSlug: "small-talk-english",
+        target: 18,
+      },
+      {
+        kind: "lesson",
+        title: "Say it to a person",
+        detail:
+          "Book a lesson and have the same small talk with a human being. The gap between the tutor and a person is the thing you are actually training away.",
+        target: 1,
+      },
+      {
+        kind: "pack",
+        title: "Learn the words of your workday",
+        detail:
+          "Meeting, deadline, schedule, follow up — the ten words you already hear every day and answer in Thai. Learn them in English and the room gets quieter.",
+        packSlug: "office-english",
+        target: 10,
+      },
+      {
+        kind: "sentences",
+        title: "Office words in office sentences",
+        detail:
+          "'Can we postpone the meeting?' is a sentence you will need on a Tuesday afternoon with no warning. Eight cloze cards make sure it is there.",
+        packSlug: "office-english",
+        target: 8,
+      },
+      {
+        kind: "chat",
+        title: "Talk about your actual work",
+        detail:
+          "Tell the tutor what you did today, in English, every day for a while. Thirty messages is about two weeks of that, and by then it stops being practice.",
+        target: 30,
+      },
+      {
+        kind: "pack",
+        title: "Finish the office book",
+        detail:
+          "All twenty-four, down to 'double-check' and 'let me know'. These are the words that make you sound like you belong in the meeting rather than just attending it.",
+        packSlug: "office-english",
+        target: 24,
+      },
+      {
+        kind: "pack",
+        title: "Write an email that sounds right",
+        detail:
+          "Eight phrases write most work emails. The opening, the request, the attachment and the sign-off are the same in almost every message you will ever send.",
+        packSlug: "email-english",
+        target: 8,
+      },
+      {
+        kind: "sentences",
+        title: "Email phrases in real emails",
+        detail:
+          "Cloze cards on the phrases you will type, not read. 'Please find ___' has one right answer and it should come without thinking.",
+        packSlug: "email-english",
+        target: 8,
+      },
+      {
+        kind: "lesson",
+        title: "Three lessons in",
+        detail:
+          "By the third lesson a tutor knows which sounds you avoid and which words you reach for in Thai. That is worth more than any book on this path.",
+        target: 3,
+      },
+      {
+        kind: "pack",
+        title: "Order lunch in English",
+        detail:
+          "Ten phrases between the door and the bill. Small, concrete, and immediately usable on the next work trip — which is what makes them stick.",
+        packSlug: "cafe-english",
+        target: 10,
+      },
+      {
+        kind: "chat",
+        title: "Fifty messages",
+        detail:
+          "Tell the tutor to be the waiter, the colleague, the client — and to refuse to switch to Thai. Fifty messages of this is worth several hours of review.",
+        target: 50,
+      },
+      {
+        kind: "pack",
+        title: "Finish the café book",
+        detail:
+          "Every word, including 'allergic' and 'receipt' — the ones you only need once, which is exactly when you cannot look them up.",
+        packSlug: "cafe-english",
+        target: 18,
+      },
+      {
+        kind: "sentences",
+        title: "Café phrases under pressure",
+        detail:
+          "The second pass over the café book. The waiter will not wait while you remember; the cards make sure you do not have to.",
+        packSlug: "cafe-english",
+        target: 10,
+      },
+      {
+        kind: "pack",
+        title: "Find your way, and the way back",
+        detail:
+          "Directions, tickets, the airport. The whole book: being lost is the one situation where half a vocabulary is no vocabulary at all.",
+        packSlug: "getting-around-english",
+        target: 18,
+      },
+      {
+        kind: "chat",
+        title: "Eighty messages",
+        detail:
+          "Not a target so much as a description of someone who now uses the tutor the way people use a language — to say something, rather than to practise saying something.",
+        target: 80,
+      },
+      {
+        kind: "lesson",
+        title: "Six lessons",
+        detail:
+          "Six lessons is a habit. Nothing on this path matters as much as the fact that you were still here for the sixth one.",
+        target: 6,
+      },
+    ],
+  },
 ];

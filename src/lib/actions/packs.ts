@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidateDeck, revalidateWord } from "@/lib/study-revalidate";
-import { and, asc, eq, sql } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { z } from "zod";
 import {
   db,
@@ -12,26 +12,18 @@ import {
   studyDecks,
 } from "@/db";
 import { requireLearner } from "@/lib/auth";
+import {
+  importPackForLearner,
+  type PackImportResult,
+} from "@/lib/pack-import";
 import { nextDeckPosition } from "@/lib/study-decks";
 import { requireOwnDeck } from "@/lib/study-guards";
 
 /**
  * Official books — copying our shipped content into a learner's own
- * vocabulary, one word or a whole pack at a time.
+ * vocabulary, one word or a whole pack at a time. The whole-pack copy
+ * lives in `lib/pack-import.ts`, shared with the first-run fast-forward.
  */
-
-/** The learner's saved terms in a language, lowercased for dedup. It
- * lived in the old `study.ts` next to the extraction helpers; importing
- * a pack is its only caller, and a helper's home is where it's used. */
-async function savedTermsFor(learnerId: string, language: string) {
-  const rows = await db
-    .select({ term: studyVocab.term })
-    .from(studyVocab)
-    .where(
-      and(eq(studyVocab.learnerId, learnerId), eq(studyVocab.language, language)),
-    );
-  return new Set(rows.map((r) => r.term.toLowerCase()));
-}
 
 // ---------------------------------------------------------------------------
 // Curated packs — read-only shipped content; these actions COPY pack
@@ -147,100 +139,27 @@ export async function addStudyPackItem(
 
 /**
  * Copy the WHOLE pack: every not-yet-saved item joins the learner's
- * vocabulary, and a personal list named after the pack is created (or
- * refreshed) carrying the pack's curated order. The learner's list is
+ * vocabulary, and a personal deck named after the pack is created (or
+ * refreshed) carrying the pack's curated order. The learner's deck is
  * theirs afterwards — reorder, prune, extend freely.
+ *
+ * The copy itself lives in `lib/pack-import.ts`, shared with the
+ * first-run fast-forward, which imports a book the same way and then
+ * schedules the words the learner claimed.
  */
-export async function importStudyPack(packId: string): Promise<{
-  added: number;
-  list: string;
-  deckId: string;
-  /** Lowercased term → the learner's own vocab row id, so the pack page
-   * can refresh its saved-state without a reload. */
-  vocabIdsByTerm: Record<string, string>;
-}> {
+export async function importStudyPack(
+  packId: string,
+): Promise<PackImportResult> {
   const learner = await requireLearner();
   const id = z.string().uuid().parse(packId);
 
-  const pack = await db.query.studyPacks.findFirst({
-    where: eq(studyPacks.id, id),
-  });
-  if (!pack) throw new Error("Pack not found");
-  const items = await db
-    .select()
-    .from(studyPackItems)
-    .where(eq(studyPackItems.packId, pack.id))
-    .orderBy(asc(studyPackItems.position));
-
-  const saved = await savedTermsFor(learner.id, pack.language);
-  const fresh = items.filter((i) => !saved.has(i.term.toLowerCase()));
-  if (fresh.length > 0) {
-    await db.insert(studyVocab).values(
-      fresh.map((item) => ({
-        learnerId: learner.id,
-        language: pack.language,
-        term: item.term,
-        reading: item.reading,
-        meaning: item.meaning,
-        example: item.example,
-        category: item.category,
-      })),
-    );
-  }
-
-  // The learner's copy of the pack as a list, in pack order.
-  const vocabRows = await db
-    .select({ id: studyVocab.id, term: studyVocab.term })
-    .from(studyVocab)
-    .where(
-      and(
-        eq(studyVocab.learnerId, learner.id),
-        eq(studyVocab.language, pack.language),
-      ),
-    );
-  const byTerm = new Map(vocabRows.map((r) => [r.term.toLowerCase(), r.id]));
-  const orderedIds = items
-    .map((i) => byTerm.get(i.term.toLowerCase()))
-    .filter((v): v is string => !!v);
-
-  let list = await db.query.studyDecks.findFirst({
-    where: and(
-      eq(studyDecks.learnerId, learner.id),
-      eq(studyDecks.name, pack.name),
-    ),
-  });
-  if (!list) {
-    [list] = await db
-      .insert(studyDecks)
-      .values({ learnerId: learner.id, name: pack.name })
-      .returning();
-  } else {
-    await db
-      .delete(studyDeckItems)
-      .where(eq(studyDeckItems.deckId, list.id));
-  }
-  await db.insert(studyDeckItems).values(
-    orderedIds.map((vocabId, position) => ({
-      deckId: list.id,
-      vocabId,
-      position,
-    })),
-  );
+  const result = await importPackForLearner(learner.id, id);
 
   // An import makes a DECK and fills it with words — both moved.
-  revalidateDeck(list.id);
+  revalidateDeck(result.deckId);
   revalidateWord();
   // The pack page keeps its saved-state in React state, so hand back the
   // ids it needs to reflect the import without a reload (a reload would
   // also throw away the confirmation banner it just earned).
-  return {
-    added: fresh.length,
-    list: pack.name,
-    deckId: list.id,
-    vocabIdsByTerm: Object.fromEntries(
-      items
-        .map((i) => [i.term.toLowerCase(), byTerm.get(i.term.toLowerCase())])
-        .filter((pair): pair is [string, string] => !!pair[1]),
-    ),
-  };
+  return result;
 }

@@ -71,6 +71,10 @@ const PROTECTED_ROUTES = [
   // other, which is the most private thing in the app — more so than the
   // lesson records, which are written to be read by the student anyway.
   "/messages",
+  // The 2026-09-09 surface. The fast-forward reads the catalog, which
+  // is public content, but it writes decks and schedules into a
+  // learner's own rows and must never resolve an anonymous caller.
+  "/fast-forward",
 ];
 
 function sql() {

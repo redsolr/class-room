@@ -26,15 +26,21 @@ export type PackItemContent = {
  * theme from a string is the kind of signal that looks right across
  * today's nine books and is quietly wrong on the twentieth.
  */
-export type PackTheme = "anime" | "games" | "everyday";
+export type PackTheme = "anime" | "games" | "everyday" | "work";
 
 /** Fixed display order for the themed shelves. */
-export const PACK_THEME_ORDER: PackTheme[] = ["anime", "games", "everyday"];
+export const PACK_THEME_ORDER: PackTheme[] = [
+  "anime",
+  "games",
+  "everyday",
+  "work",
+];
 
 export const PACK_THEME_LABEL: Record<PackTheme, string> = {
   anime: "From anime & manga",
   games: "From games",
   everyday: "Out in the world",
+  work: "At work",
 };
 
 export type PackContent = {
@@ -293,6 +299,195 @@ export const STUDY_PACK_CATALOG: PackContent[] = [
       { term: "la monnaie", meaning: "change (money)", category: "Noun" },
       { term: "un pourboire", meaning: "a tip", category: "Noun" },
       { term: "Je vous dois combien ?", meaning: "How much do I owe you?", category: "Expression" },
+    ],
+  },
+
+  // ── ENGLISH ──────────────────────────────────────────────────────────
+  // Written for the first real learner outside the founder's own study:
+  // a Thai-speaking colleague learning English for work (2026-09-09).
+  // Meanings are a plain-English definition FIRST, then a Thai gloss
+  // after " · " — the definition is what the tutor and the sentence
+  // cards build on, the gloss is what makes a beginner's first week
+  // possible. `reading` is a plain respelling with the stressed syllable
+  // in CAPITALS (no IPA: a beginner cannot read it and it is one more
+  // thing to learn before the word). The Thai glosses have NOT had a
+  // native review yet — fix in place, this file is the source of truth.
+  {
+    slug: "everyday-english-verbs",
+    name: "Everyday English verbs",
+    language: "English",
+    theme: "everyday",
+    description:
+      "The two dozen verbs that carry most English sentences. Learn these and half of every conversation is already yours.",
+    items: [
+      { term: "get", reading: "GET", meaning: "to receive, obtain, or become · ได้รับ / ไปเอา", category: "Verb", example: "Can you get me a coffee?" },
+      { term: "make", reading: "MAYK", meaning: "to create or produce something · ทำ / สร้าง", category: "Verb", example: "I'll make a list before the meeting." },
+      { term: "take", reading: "TAYK", meaning: "to carry something with you, or to accept · เอาไป / รับ", category: "Verb", example: "Take an umbrella, it might rain." },
+      { term: "give", reading: "GIV", meaning: "to hand something to someone · ให้", category: "Verb", example: "Give me a minute, please." },
+      { term: "go", reading: "GOH", meaning: "to move to another place · ไป", category: "Verb", example: "Let's go to lunch." },
+      { term: "come", reading: "KUM", meaning: "to move towards the speaker · มา", category: "Verb", example: "Come to my desk when you're free." },
+      { term: "see", reading: "SEE", meaning: "to notice with your eyes; to understand · เห็น / เข้าใจ", category: "Verb", example: "I see what you mean." },
+      { term: "know", reading: "NOH", meaning: "to have information or be familiar with · รู้ / รู้จัก", category: "Verb", example: "Do you know his phone number?" },
+      { term: "think", reading: "THINGK", meaning: "to have an opinion; to use your mind · คิด", category: "Verb", example: "I think we should start early." },
+      { term: "want", reading: "WONT", meaning: "to wish for something · ต้องการ / อยาก", category: "Verb", example: "I want to improve my English." },
+      { term: "need", reading: "NEED", meaning: "to require something · จำเป็นต้อง / ต้องการ", category: "Verb", example: "We need more time." },
+      { term: "use", reading: "YOOZ", meaning: "to do something with a tool or object · ใช้", category: "Verb", example: "Use this template for the report." },
+      { term: "find", reading: "FYND", meaning: "to discover something you were looking for · หา (เจอ) / พบ", category: "Verb", example: "I can't find the file." },
+      { term: "tell", reading: "TEL", meaning: "to say something to a person · บอก", category: "Verb", example: "Tell me if you have any questions." },
+      { term: "ask", reading: "AHSK", meaning: "to put a question to someone; to request · ถาม / ขอ", category: "Verb", example: "Ask the manager before you send it." },
+      { term: "work", reading: "WURK", meaning: "to do a job; (of a machine) to function · ทำงาน / ใช้งานได้", category: "Verb", example: "The printer doesn't work." },
+      { term: "try", reading: "TRY", meaning: "to attempt something · ลอง / พยายาม", category: "Verb", example: "Try restarting the computer." },
+      { term: "leave", reading: "LEEV", meaning: "to go away from a place; to put something somewhere · ออกจาก / ทิ้งไว้", category: "Verb", example: "I leave the office at six." },
+      { term: "call", reading: "KAWL", meaning: "to telephone someone; to name · โทร / เรียก", category: "Verb", example: "Call me when you arrive." },
+      { term: "help", reading: "HELP", meaning: "to make something easier for someone · ช่วย", category: "Verb", example: "Can you help me with this?" },
+      { term: "start", reading: "STAHRT", meaning: "to begin · เริ่ม", category: "Verb", example: "The meeting starts at ten." },
+      { term: "finish", reading: "FIN-ish", meaning: "to complete; to end · เสร็จ / ทำให้เสร็จ", category: "Verb", example: "I'll finish the report today." },
+      { term: "wait", reading: "WAYT", meaning: "to stay until something happens · รอ", category: "Verb", example: "Please wait here." },
+      { term: "send", reading: "SEND", meaning: "to make something go to another place or person · ส่ง", category: "Verb", example: "Send me the link." },
+    ],
+  },
+  {
+    slug: "small-talk-english",
+    name: "Small talk in English",
+    language: "English",
+    theme: "everyday",
+    description:
+      "The first minute of every conversation — greetings, weekends, weather, and how to keep it going without a plan.",
+    items: [
+      { term: "How's it going?", reading: "howz it GOH-ing", meaning: "a casual 'how are you' · เป็นยังไงบ้าง", category: "Expression", example: "Hey! How's it going?" },
+      { term: "Not bad, thanks", reading: "not BAD thanks", meaning: "a relaxed 'I'm fine' · ก็ดีนะ ขอบคุณ", category: "Expression", example: "Not bad, thanks. And you?" },
+      { term: "And you?", reading: "and YOO", meaning: "returning the question · แล้วคุณล่ะ", category: "Expression" },
+      { term: "Nice to meet you", reading: "NYS to MEET yoo", meaning: "said when meeting someone for the first time · ยินดีที่ได้รู้จัก", category: "Expression" },
+      { term: "weekend", reading: "WEEK-end", meaning: "Saturday and Sunday · วันหยุดสุดสัปดาห์", category: "Noun", example: "How was your weekend?" },
+      { term: "busy", reading: "BIZ-ee", meaning: "having a lot to do · ยุ่ง", category: "Adjective", example: "It's been a busy week." },
+      { term: "tired", reading: "TY-erd", meaning: "needing rest · เหนื่อย", category: "Adjective", example: "I'm a bit tired today." },
+      { term: "weather", reading: "WEH-thur", meaning: "sun, rain, heat, cold · สภาพอากาศ", category: "Noun", example: "The weather is terrible today." },
+      { term: "hot", reading: "HOT", meaning: "high temperature · ร้อน", category: "Adjective", example: "It's so hot outside." },
+      { term: "rainy season", reading: "RAY-nee SEE-zun", meaning: "the months when it rains most · ฤดูฝน", category: "Noun" },
+      { term: "hobby", reading: "HOB-ee", meaning: "something you do for fun in your free time · งานอดิเรก", category: "Noun", example: "Do you have any hobbies?" },
+      { term: "What do you do?", reading: "wot doo yoo DOO", meaning: "asking about someone's job · คุณทำงานอะไร", category: "Expression" },
+      { term: "I work in", reading: "eye WURK in", meaning: "naming your field or company · ฉันทำงานด้าน...", category: "Phrase", example: "I work in accounting." },
+      { term: "Where are you from?", reading: "wair ar yoo FRUM", meaning: "asking someone's hometown or country · คุณมาจากไหน", category: "Expression" },
+      { term: "Really?", reading: "REE-lee", meaning: "showing interest or surprise · จริงเหรอ", category: "Expression", example: "Really? I didn't know that." },
+      { term: "Sounds good", reading: "sowndz GOOD", meaning: "agreeing to a plan · ฟังดูดี / ตกลง", category: "Expression" },
+      { term: "See you later", reading: "see yoo LAY-tur", meaning: "a casual goodbye · แล้วเจอกัน", category: "Expression" },
+      { term: "Have a good one", reading: "hav a GOOD wun", meaning: "a friendly goodbye ('have a good day') · ขอให้เป็นวันที่ดี", category: "Expression" },
+    ],
+  },
+  {
+    slug: "cafe-english",
+    name: "Café & restaurant English",
+    language: "English",
+    theme: "everyday",
+    description:
+      "Order, ask, pay, and understand the reply — every phrase between the door and the bill.",
+    items: [
+      { term: "Can I get", reading: "kan eye GET", meaning: "the everyday way to order · ขอ... (สั่งอาหาร)", category: "Phrase", example: "Can I get a latte, please?" },
+      { term: "I'd like", reading: "eyed LYK", meaning: "a polite way to order or request · ฉันอยากได้ / ขอ", category: "Phrase", example: "I'd like the chicken salad." },
+      { term: "menu", reading: "MEN-yoo", meaning: "the list of food and drinks · เมนู", category: "Noun", example: "Could we see the menu?" },
+      { term: "order", reading: "OR-dur", meaning: "to ask for food or drink · สั่ง", category: "Verb", example: "Are you ready to order?" },
+      { term: "takeaway", reading: "TAYK-a-way", meaning: "food you take with you (US: to go) · ซื้อกลับบ้าน", category: "Noun", example: "Is that for here or takeaway?" },
+      { term: "for here", reading: "for HEER", meaning: "eating in the café · ทานที่นี่", category: "Phrase" },
+      { term: "the bill", reading: "the BIL", meaning: "the paper showing what you must pay (US: the check) · บิล / เช็คบิล", category: "Noun", example: "Could we have the bill, please?" },
+      { term: "tip", reading: "TIP", meaning: "extra money you leave for the staff · ทิป", category: "Noun" },
+      { term: "receipt", reading: "ri-SEET", meaning: "the printed proof that you paid · ใบเสร็จ", category: "Noun", example: "Can I have a receipt?" },
+      { term: "by card", reading: "by KAHRD", meaning: "paying with a bank card · จ่ายด้วยบัตร", category: "Phrase", example: "Can I pay by card?" },
+      { term: "spicy", reading: "SPY-see", meaning: "hot from chilli · เผ็ด", category: "Adjective", example: "Is this dish spicy?" },
+      { term: "vegetarian", reading: "vej-e-TAIR-ee-an", meaning: "without meat · มังสวิรัติ", category: "Adjective" },
+      { term: "allergic", reading: "a-LUR-jik", meaning: "made ill by a certain food · แพ้ (อาหาร)", category: "Adjective", example: "I'm allergic to peanuts." },
+      { term: "table for two", reading: "TAY-bul for TOO", meaning: "asking for seats for two people · โต๊ะสำหรับสองคน", category: "Phrase" },
+      { term: "Excuse me", reading: "ek-SKYOOZ mee", meaning: "getting someone's attention politely · ขอโทษครับ/ค่ะ (เรียก)", category: "Expression" },
+      { term: "Could you", reading: "kood yoo", meaning: "a polite request · ช่วย...หน่อยได้ไหม", category: "Phrase", example: "Could you bring some water?" },
+      { term: "That's all", reading: "thats AWL", meaning: "nothing more to order · แค่นี้ครับ/ค่ะ", category: "Expression" },
+      { term: "Keep the change", reading: "keep the CHAYNJ", meaning: "letting the staff keep the extra money · ไม่ต้องทอน", category: "Expression" },
+    ],
+  },
+  {
+    slug: "office-english",
+    name: "English at the office",
+    language: "English",
+    theme: "work",
+    description:
+      "Meetings, deadlines, and the words a workday is made of — for the colleague who understands the work but not yet the room.",
+    items: [
+      { term: "meeting", reading: "MEE-ting", meaning: "a planned time when people talk about work · การประชุม", category: "Noun", example: "We have a meeting at two." },
+      { term: "deadline", reading: "DED-lyn", meaning: "the latest time something must be done · กำหนดส่ง / เส้นตาย", category: "Noun", example: "The deadline is Friday." },
+      { term: "schedule", reading: "SKED-yool", meaning: "a plan of when things happen · ตารางเวลา / กำหนดการ", category: "Noun", example: "Let me check my schedule." },
+      { term: "colleague", reading: "KOL-eeg", meaning: "a person you work with · เพื่อนร่วมงาน", category: "Noun" },
+      { term: "manager", reading: "MAN-a-jur", meaning: "the person in charge of a team · ผู้จัดการ / หัวหน้า", category: "Noun" },
+      { term: "agenda", reading: "a-JEN-da", meaning: "the list of things to discuss in a meeting · วาระการประชุม", category: "Noun", example: "Is that on the agenda?" },
+      { term: "update", reading: "UP-dayt", meaning: "the newest information about something · ข้อมูลล่าสุด / อัปเดต", category: "Noun", example: "Can you give me an update on the project?" },
+      { term: "follow up", reading: "FOL-oh UP", meaning: "to check on something again later · ติดตามผล", category: "Phrase", example: "I'll follow up with the client tomorrow." },
+      { term: "in charge of", reading: "in CHAHRJ ov", meaning: "responsible for · รับผิดชอบ / ดูแล", category: "Phrase", example: "She's in charge of the budget." },
+      { term: "task", reading: "TAHSK", meaning: "one piece of work to do · งาน (ชิ้นหนึ่ง)", category: "Noun" },
+      { term: "report", reading: "ri-PORT", meaning: "a written account of work or results · รายงาน", category: "Noun", example: "The monthly report is ready." },
+      { term: "budget", reading: "BUJ-it", meaning: "the money available for something · งบประมาณ", category: "Noun" },
+      { term: "approve", reading: "a-PROOV", meaning: "to officially say yes to something · อนุมัติ", category: "Verb", example: "The manager approved the plan." },
+      { term: "postpone", reading: "pohst-POHN", meaning: "to move something to a later time · เลื่อนออกไป", category: "Verb", example: "Can we postpone the meeting?" },
+      { term: "on time", reading: "on TYM", meaning: "not late · ตรงเวลา", category: "Phrase" },
+      { term: "as soon as possible", reading: "az SOON az POS-i-bul", meaning: "quickly, at the first chance (ASAP) · โดยเร็วที่สุด", category: "Phrase" },
+      { term: "day off", reading: "DAY OF", meaning: "a day when you do not work · วันหยุด", category: "Noun", example: "I'm taking a day off on Monday." },
+      { term: "overtime", reading: "OH-vur-tym", meaning: "extra hours worked beyond the normal day · ทำงานล่วงเวลา (โอที)", category: "Noun" },
+      { term: "break", reading: "BRAYK", meaning: "a short rest from work · พัก", category: "Noun", example: "Let's take a ten-minute break." },
+      { term: "client", reading: "KLY-ent", meaning: "a person or company you do work for · ลูกค้า", category: "Noun" },
+      { term: "issue", reading: "ISH-oo", meaning: "a problem to deal with · ปัญหา / ประเด็น", category: "Noun", example: "There's an issue with the invoice." },
+      { term: "solve", reading: "SOLV", meaning: "to find the answer to a problem · แก้ปัญหา", category: "Verb" },
+      { term: "double-check", reading: "DUB-ul CHEK", meaning: "to check something a second time · ตรวจสอบอีกครั้ง", category: "Verb", example: "Please double-check the numbers." },
+      { term: "Let me know", reading: "let mee NOH", meaning: "tell me (when you have the answer) · แจ้งให้ฉันทราบด้วย", category: "Expression", example: "Let me know if anything changes." },
+    ],
+  },
+  {
+    slug: "email-english",
+    name: "Email English",
+    language: "English",
+    theme: "work",
+    description:
+      "Sixteen phrases that write most work emails — openings, requests, attachments, and the polite way to say no.",
+    items: [
+      { term: "I hope this email finds you well", reading: "eye HOHP this EE-mayl fyndz yoo WEL", meaning: "a polite opening line · หวังว่าคุณสบายดี (เปิดอีเมล)", category: "Expression" },
+      { term: "I'm writing to", reading: "eyem RY-ting too", meaning: "stating why you are emailing · ฉันเขียนมาเพื่อ...", category: "Phrase", example: "I'm writing to confirm our meeting." },
+      { term: "Please find attached", reading: "pleez fynd a-TACHT", meaning: "pointing at a file in the email · แนบไฟล์มาด้วย", category: "Expression", example: "Please find attached the invoice." },
+      { term: "attachment", reading: "a-TACH-ment", meaning: "a file sent with an email · ไฟล์แนบ", category: "Noun" },
+      { term: "Could you please", reading: "kood yoo PLEEZ", meaning: "a polite request · รบกวนช่วย...", category: "Phrase", example: "Could you please send the figures by Friday?" },
+      { term: "Would it be possible to", reading: "wood it bee POS-i-bul too", meaning: "a very polite request · จะเป็นไปได้ไหมที่จะ...", category: "Phrase" },
+      { term: "as discussed", reading: "az dis-KUST", meaning: "referring to an earlier conversation · ตามที่ได้คุยกันไว้", category: "Phrase", example: "As discussed, here is the updated plan." },
+      { term: "Just a quick reminder", reading: "just a KWIK ri-MYN-dur", meaning: "a gentle way to remind someone · ขอเตือนสั้น ๆ", category: "Expression" },
+      { term: "Thank you for your patience", reading: "THANGK yoo for yor PAY-shens", meaning: "said when something took a while · ขอบคุณที่รอ", category: "Expression" },
+      { term: "I apologise for the delay", reading: "eye a-POL-o-jyz for the di-LAY", meaning: "saying sorry for being late · ขออภัยที่ล่าช้า", category: "Expression" },
+      { term: "Unfortunately", reading: "un-FOR-chu-nat-lee", meaning: "the polite start of bad news · น่าเสียดายที่...", category: "Adverb", example: "Unfortunately, we can't make that date." },
+      { term: "Looking forward to", reading: "LOOK-ing FOR-wurd too", meaning: "saying you are happy about a future thing · ตั้งตารอ", category: "Phrase", example: "Looking forward to hearing from you." },
+      { term: "Please let me know", reading: "pleez let mee NOH", meaning: "asking for a reply · กรุณาแจ้งให้ทราบ", category: "Expression" },
+      { term: "at your earliest convenience", reading: "at yor UR-lee-est kon-VEEN-yens", meaning: "as soon as it suits you (polite ASAP) · เมื่อสะดวกโดยเร็วที่สุด", category: "Phrase" },
+      { term: "Kind regards", reading: "kynd ri-GAHRDZ", meaning: "a polite sign-off · ด้วยความนับถือ", category: "Expression" },
+      { term: "Best", reading: "BEST", meaning: "a short friendly sign-off ('Best wishes') · (ลงท้ายอีเมลแบบเป็นกันเอง)", category: "Expression" },
+    ],
+  },
+  {
+    slug: "getting-around-english",
+    name: "Getting around in English",
+    language: "English",
+    theme: "everyday",
+    description:
+      "Trains, taxis, directions, and the airport — enough to arrive somewhere new and ask the way back.",
+    items: [
+      { term: "How do I get to", reading: "how doo eye GET too", meaning: "asking for directions · ไป...ยังไง", category: "Phrase", example: "How do I get to the station?" },
+      { term: "turn left", reading: "turn LEFT", meaning: "go to the left · เลี้ยวซ้าย", category: "Phrase" },
+      { term: "turn right", reading: "turn RYT", meaning: "go to the right · เลี้ยวขวา", category: "Phrase" },
+      { term: "straight ahead", reading: "strayt a-HED", meaning: "continue in the same direction · ตรงไป", category: "Phrase", example: "Go straight ahead for two blocks." },
+      { term: "across from", reading: "a-KROS frum", meaning: "on the other side of the street from · ตรงข้ามกับ", category: "Phrase" },
+      { term: "next to", reading: "NEKST too", meaning: "beside · ข้าง ๆ", category: "Phrase", example: "The bank is next to the pharmacy." },
+      { term: "ticket", reading: "TIK-it", meaning: "the paper or card that lets you travel · ตั๋ว", category: "Noun" },
+      { term: "platform", reading: "PLAT-form", meaning: "where you wait for a train · ชานชาลา", category: "Noun", example: "The train leaves from platform four." },
+      { term: "return ticket", reading: "ri-TURN TIK-it", meaning: "a ticket there and back (US: round trip) · ตั๋วไป-กลับ", category: "Noun" },
+      { term: "delayed", reading: "di-LAYD", meaning: "later than planned · ล่าช้า", category: "Adjective", example: "My flight is delayed by an hour." },
+      { term: "gate", reading: "GAYT", meaning: "the door at the airport where you board · ประตูขึ้นเครื่อง", category: "Noun" },
+      { term: "boarding pass", reading: "BOR-ding pahs", meaning: "the document that lets you onto the plane · บัตรขึ้นเครื่อง", category: "Noun" },
+      { term: "luggage", reading: "LUG-ij", meaning: "the bags you travel with · กระเป๋าเดินทาง", category: "Noun" },
+      { term: "taxi rank", reading: "TAK-see rangk", meaning: "where taxis wait for passengers (US: taxi stand) · จุดจอดแท็กซี่", category: "Noun" },
+      { term: "How much is the fare?", reading: "how MUCH iz the FAIR", meaning: "asking the price of a journey · ค่าโดยสารเท่าไหร่", category: "Expression" },
+      { term: "Drop me off here", reading: "DROP mee OF heer", meaning: "asking the driver to stop here · ส่งฉันตรงนี้", category: "Expression" },
+      { term: "I'm lost", reading: "eyem LOST", meaning: "I don't know where I am · ฉันหลงทาง", category: "Expression" },
+      { term: "Is it far?", reading: "iz it FAHR", meaning: "asking whether a place is a long way away · ไกลไหม", category: "Expression" },
     ],
   },
 ];

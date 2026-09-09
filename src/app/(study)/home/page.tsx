@@ -310,6 +310,16 @@ export default async function StudyHomePage() {
   const path = await suggestedPath(learner.id);
 
   const firstRun = words.length === 0 && sentenceRows.length === 0;
+  /**
+   * Nothing drilled and nothing claimed yet — no card of either kind has
+   * ever been scheduled. That is the window in which "skip what you
+   * know" is worth offering: the moment a learner has graded or claimed
+   * a single card, the honest way to skip a word is inside the drill,
+   * and a standing tile would be a second front door to the same room.
+   */
+  const neverScheduled =
+    words.every((w) => w.srsDueAt === null) &&
+    sentenceRows.every((s) => s.srsDueAt === null);
 
   const themedShelves = shelvesByTheme(
     officialRows,
@@ -652,6 +662,33 @@ export default async function StudyHomePage() {
                 name={lang.name}
                 detail={`${lang.books} book${lang.books === 1 ? "" : "s"} · ${lang.words} words`}
                 cover={<CollectionCover art="book" name={lang.name} />}
+              />
+            ))}
+          </Shelf>
+        )}
+
+        {/* SKIP WHAT YOU KNOW — until the first card is scheduled.
+            The language row serves the true beginner. This serves the
+            person who arrives with three hundred words and would
+            otherwise be told to drill "get" from scratch, which is the
+            week-one churn. It is a fast-forward, not a placement test:
+            no level, no verdict, and nothing counts until the claimed
+            words come back and are still known (`lib/fast-forward.ts`).
+            It vanishes the moment anything is scheduled — by then the
+            drill itself is the place to skip a word. */}
+        {neverScheduled && languages.length > 0 && (
+          <Shelf
+            title="Already know some of it?"
+            subtitle="Sort the words you already have so the path starts where you are. A few minutes, and nothing counts until it comes back and you still know it."
+            className="home-fast-forward"
+          >
+            {languages.map((lang) => (
+              <ShelfCard
+                key={`ff-${lang.name}`}
+                href={`/fast-forward?language=${encodeURIComponent(lang.name)}`}
+                name={`Skip what you know · ${lang.name}`}
+                detail={`${lang.words} words to sort`}
+                cover={<CollectionCover art="sentences" name={lang.name} />}
               />
             ))}
           </Shelf>

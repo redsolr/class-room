@@ -262,6 +262,8 @@ export default async function StudyReviewPage({
           })
           .from(studyPacks)
           .leftJoin(studyPackItems, eq(studyPackItems.packId, studyPacks.id))
+          // Editorial books only — level units live on the level paths.
+          .where(isNull(studyPacks.source))
           .groupBy(studyPacks.id)
           .orderBy(asc(studyPacks.name)),
       ]);

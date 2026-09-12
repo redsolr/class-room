@@ -8,7 +8,7 @@
     "predev:mock": "node scripts/ensure-dev-port.mjs",
     "dev:mock": "cross-env MOCK_AUTH=true NODE_OPTIONS=--max-http-header-size=65536 next dev --turbopack -p 3020",
     "build": "next build",
-    "vercel-build": "node scripts/migrate-deploy.mjs && npx tsx scripts/seed-packs.ts && npx tsx scripts/seed-paths.ts && next build",
+    "vercel-build": "node scripts/migrate-deploy.mjs && npx tsx scripts/seed-packs.ts && npx tsx scripts/seed-paths.ts && npx tsx scripts/content/ingest.ts && next build",
     "start": "next start -p 3020",
     "lint": "eslint src --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content",
     "lint:fix": "eslint src --fix --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content",
@@ -27,6 +27,8 @@
     "test:e2e:real-auth": "cross-env E2E_MODE=real-auth playwright test",
     "e2e:user": "tsx --env-file=.env.local scripts/e2e-workos-user.ts",
     "db:seed:paths": "tsx --env-file=.env.local scripts/seed-paths.ts",
+    "content:ingest": "tsx --env-file=.env.local scripts/content/ingest.ts",
+    "content:gloss-en": "tsx --env-file=.env.local scripts/content/gloss-en.ts",
     "db:seed:tutors": "tsx --env-file=.env.local scripts/seed-tutors.ts",
     "db:seed:call": "tsx --env-file=.env.local scripts/seed-call.ts",
     "test:e2e:live-call": "cross-env E2E_MODE=live-call playwright test"

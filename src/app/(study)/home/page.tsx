@@ -7,6 +7,7 @@ import {
   studyMessages,
   studyPackItems,
   studyPacks,
+  studyPaths,
   studySentences,
   studyThreads,
   studyVocab,
@@ -126,6 +127,8 @@ export default async function StudyHomePage() {
           name: studyPacks.name,
           language: studyPacks.language,
           theme: studyPacks.theme,
+          source: studyPacks.source,
+          level: studyPacks.level,
           itemCount: sql<number>`count(${studyPackItems.id})::int`,
         })
         .from(studyPacks)
@@ -217,7 +220,15 @@ export default async function StudyHomePage() {
   // from real signal — no model involved, and it can say WHY.
   const studiedLanguages = [...new Set(words.map((w) => w.language))];
   const ownedNames = new Set(listRows.map((l) => l.name.toLowerCase()));
-  const recommended = officialRows
+  /**
+   * The browse rows show EDITORIAL books only. The generated level units
+   * (`source = 'content'`, 2026-09-12) are fifty-six near-identical
+   * tiles; their home is the level path, and the "Climb a level" row
+   * below points at it. The language counts above still include them —
+   * "Japanese · 1,522 words" is the true size of what we ship.
+   */
+  const editorialRows = officialRows.filter((pack) => !pack.source);
+  const recommended = editorialRows
     .filter(
       (pack) =>
         studiedLanguages.includes(pack.language) &&
@@ -322,11 +333,41 @@ export default async function StudyHomePage() {
     sentenceRows.every((s) => s.srsDueAt === null);
 
   const themedShelves = shelvesByTheme(
-    officialRows,
+    editorialRows,
     PACK_THEME_ORDER,
     PACK_THEME_LABEL,
   );
   const languages = languagesInCatalog(officialRows);
+
+  /**
+   * CLIMB A LEVEL — the generated level paths (JLPT N5…, CEFR A1…), for
+   * the languages the learner studies, or all of them on a fresh
+   * account. One tile per level, sized in its own units.
+   */
+  const levelPaths = await db
+    .select({
+      slug: studyPaths.slug,
+      name: studyPaths.name,
+      language: studyPaths.language,
+      level: studyPaths.level,
+    })
+    .from(studyPaths)
+    .where(eq(studyPaths.source, "content"))
+    .orderBy(asc(studyPaths.position));
+  const studied = new Set(words.map((w) => w.language));
+  const climbable = levelPaths
+    .filter((lp) => studied.size === 0 || studied.has(lp.language))
+    .map((lp) => {
+      const units = officialRows.filter(
+        (p) => p.level === lp.level && p.language === lp.language,
+      );
+      return {
+        ...lp,
+        units: units.length,
+        words: units.reduce((n, p) => n + p.itemCount, 0),
+      };
+    })
+    .filter((lp) => lp.units > 0);
 
   // The covers the spotlight fans out: the decks that actually have
   // something due, in the order the picks already ranked them. Real
@@ -667,6 +708,28 @@ export default async function StudyHomePage() {
           </Shelf>
         )}
 
+        {/* CLIMB A LEVEL — the level ladders (2026-09-12). Every word of
+            JLPT N5 in frequency order is not a book you browse, it is a
+            path you follow, so the tile opens the path, not a shelf of
+            twenty-nine near-identical covers. */}
+        {climbable.length > 0 && (
+          <Shelf
+            title="Climb a level"
+            subtitle="Every word of a level in the order you'll meet it — learned, drilled in sentences, and said to someone."
+            className="home-levels"
+          >
+            {climbable.map((lp) => (
+              <ShelfCard
+                key={lp.slug}
+                href={`/path/${lp.slug}`}
+                name={lp.name}
+                detail={`${lp.units} unit${lp.units === 1 ? "" : "s"} · ${lp.words} words`}
+                cover={<CollectionCover art="book" name={lp.name} />}
+              />
+            ))}
+          </Shelf>
+        )}
+
         {/* SKIP WHAT YOU KNOW — until the first card is scheduled.
             The language row serves the true beginner. This serves the
             person who arrives with three hundred words and would
@@ -732,7 +795,7 @@ export default async function StudyHomePage() {
             Inside the same stack as the rest: it used to sit outside and
             carry its own spacing, which is how it ended up the one row
             with a different width. */}
-        <OfficialShelf items={officialRows} />
+        <OfficialShelf items={editorialRows} />
       </div>
     </PageShell>
   );

@@ -43,6 +43,12 @@ export function SearchBar({
     <form
       key={value}
       role="search"
+      // Native fallback: before hydration (or if it ever fails) a plain
+      // GET to /search?q= lands where the handler would have pushed.
+      // Without it, Enter submitted to the CURRENT page as ?q= — seen
+      // once in e2e on a cold Turbopack compile of Home (2026-09-12).
+      action="/search"
+      method="get"
       onSubmit={(event) => {
         event.preventDefault();
         const q = String(

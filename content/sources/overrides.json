@@ -1,0 +1,6325 @@
+{
+  "vocab": {
+    "English|'m": {
+      "meaning": "short form of am · เป็น"
+    },
+    "English|'re": {
+      "meaning": "short form of are · เป็น"
+    },
+    "English|'s": {
+      "meaning": "short form of is · เป็น"
+    },
+    "English|April": {
+      "meaning": "the fourth month of the year · เมษายน"
+    },
+    "English|August": {
+      "meaning": "the eighth month of the year · สิงหาคม"
+    },
+    "English|CD": {
+      "meaning": "a small round disk for music · ซีดี"
+    },
+    "English|CD player": {
+      "meaning": "a machine that plays music disks · เครื่องเล่นซีดี"
+    },
+    "English|DVD": {
+      "meaning": "a disk for films or videos · ดีวีดี"
+    },
+    "English|December": {
+      "meaning": "the twelfth month of the year · ธันวาคม"
+    },
+    "English|February": {
+      "meaning": "the second month of the year · กุมภาพันธ์"
+    },
+    "English|Friday": {
+      "meaning": "the day after Thursday · วันศุกร์"
+    },
+    "English|I": {
+      "meaning": "the person speaking · ฉัน"
+    },
+    "English|Internet": {
+      "meaning": "a world computer system for information · อินเทอร์เน็ต"
+    },
+    "English|January": {
+      "meaning": "the first month of the year · มกราคม"
+    },
+    "English|July": {
+      "meaning": "the seventh month of the year · กรกฎาคม"
+    },
+    "English|June": {
+      "meaning": "the sixth month of the year · มิถุนายน"
+    },
+    "English|March": {
+      "meaning": "the third month of the year · มีนาคม"
+    },
+    "English|May": {
+      "meaning": "the fifth month of the year · พฤษภาคม"
+    },
+    "English|Miss": {
+      "meaning": "a title for an unmarried woman · นางสาว"
+    },
+    "English|Monday": {
+      "meaning": "the day after Sunday · วันจันทร์"
+    },
+    "English|Mr.": {
+      "meaning": "a title for a man · นาย"
+    },
+    "English|Mrs.": {
+      "meaning": "a title for a married woman · นาง"
+    },
+    "English|November": {
+      "meaning": "the eleventh month of the year · พฤศจิกายน"
+    },
+    "English|OK": {
+      "meaning": "good enough; all right · โอเค"
+    },
+    "English|October": {
+      "meaning": "the tenth month of the year · ตุลาคม"
+    },
+    "English|Olympics": {
+      "meaning": "big international sports games · กีฬาโอลิมปิก"
+    },
+    "English|Saturday": {
+      "meaning": "the day after Friday · วันเสาร์"
+    },
+    "English|September": {
+      "meaning": "the ninth month of the year · กันยายน"
+    },
+    "English|Sunday": {
+      "meaning": "the day after Saturday · วันอาทิตย์"
+    },
+    "English|T-shirt": {
+      "meaning": "a casual shirt with short sleeves · เสื้อยืด"
+    },
+    "English|TV": {
+      "meaning": "a machine for watching shows · โทรทัศน์"
+    },
+    "English|Thursday": {
+      "meaning": "the day after Wednesday · วันพฤหัสบดี"
+    },
+    "English|Tuesday": {
+      "meaning": "the day after Monday · วันอังคาร"
+    },
+    "English|Wednesday": {
+      "meaning": "the day after Tuesday · วันพุธ"
+    },
+    "English|a": {
+      "meaning": "used before one thing or person · หนึ่ง"
+    },
+    "English|a.m.": {
+      "meaning": "in the morning, before noon · ตอนเช้า"
+    },
+    "English|about": {
+      "meaning": "almost; not exactly · ประมาณ"
+    },
+    "English|above": {
+      "meaning": "in a higher place · ข้างบน"
+    },
+    "English|action": {
+      "meaning": "something that someone does · การกระทำ"
+    },
+    "English|activity": {
+      "meaning": "something you do for fun or work · กิจกรรม"
+    },
+    "English|as": {
+      "meaning": "used to say what someone or something is · เป็น"
+    },
+    "English|ask": {
+      "meaning": "say you want information or help · ถาม"
+    },
+    "English|at": {
+      "meaning": "used for a place or time · ที่"
+    },
+    "English|aunt": {
+      "meaning": "the sister of your mother or father · ป้า น้า อา"
+    },
+    "English|autumn": {
+      "meaning": "the season after summer · ฤดูใบไม้ร่วง"
+    },
+    "English|awake": {
+      "meaning": "not sleeping · ตื่นอยู่"
+    },
+    "English|away": {
+      "meaning": "to or in another place · ไกลออกไป"
+    },
+    "English|baby": {
+      "meaning": "a very young child · ทารก"
+    },
+    "English|back": {
+      "meaning": "to the place you were before · กลับ"
+    },
+    "English|bad": {
+      "meaning": "not good · แย่"
+    },
+    "English|bag": {
+      "meaning": "a thing used to carry things · กระเป๋า"
+    },
+    "English|ball": {
+      "meaning": "a round thing used in games · ลูกบอล"
+    },
+    "English|banana": {
+      "meaning": "a long yellow fruit · กล้วย"
+    },
+    "English|band": {
+      "meaning": "a group that plays music · วงดนตรี"
+    },
+    "English|bank": {
+      "meaning": "a place where you keep money · ธนาคาร"
+    },
+    "English|bar": {
+      "meaning": "a place where people buy drinks · บาร์"
+    },
+    "English|baseball": {
+      "meaning": "a game played with a bat and ball · เบสบอล"
+    },
+    "English|basketball": {
+      "meaning": "a game with a ball and hoop · บาสเกตบอล"
+    },
+    "English|bat": {
+      "meaning": "a stick used to hit a ball · ไม้ตี"
+    },
+    "English|bath": {
+      "meaning": "washing your body in water · อาบน้ำ"
+    },
+    "English|bathroom": {
+      "meaning": "a room with a toilet or shower · ห้องน้ำ"
+    },
+    "English|be": {
+      "meaning": "used to say what something is · เป็น อยู่ คือ"
+    },
+    "English|beach": {
+      "meaning": "sand beside the sea · ชายหาด"
+    },
+    "English|bean": {
+      "meaning": "a small seed used as food · ถั่ว"
+    },
+    "English|bear": {
+      "meaning": "a large wild animal with thick fur · หมี"
+    },
+    "English|beautiful": {
+      "meaning": "very pretty · สวย"
+    },
+    "English|because": {
+      "meaning": "for the reason that · เพราะ"
+    },
+    "English|become": {
+      "meaning": "start to be something different · กลายเป็น"
+    },
+    "English|bed": {
+      "meaning": "furniture for sleeping on · เตียง"
+    },
+    "English|bedroom": {
+      "meaning": "a room for sleeping · ห้องนอน"
+    },
+    "English|bee": {
+      "meaning": "a small insect that makes honey · ผึ้ง"
+    },
+    "English|beef": {
+      "meaning": "meat from a cow · เนื้อวัว"
+    },
+    "English|before": {
+      "meaning": "earlier than now or another time · ก่อน"
+    },
+    "English|begin": {
+      "meaning": "start to do something · เริ่ม"
+    },
+    "English|behind": {
+      "meaning": "at the back of something · ข้างหลัง"
+    },
+    "English|believe": {
+      "meaning": "think that something is true · เชื่อ"
+    },
+    "English|bell": {
+      "meaning": "a thing that makes a ringing sound · กระดิ่ง"
+    },
+    "English|below": {
+      "meaning": "in a lower place · ข้างล่าง"
+    },
+    "English|beside": {
+      "meaning": "next to something · ข้างๆ"
+    },
+    "English|best": {
+      "meaning": "better than all others · ดีที่สุด"
+    },
+    "English|better": {
+      "meaning": "of higher quality · ดีกว่า"
+    },
+    "English|between": {
+      "meaning": "in the middle of two things · ระหว่าง"
+    },
+    "English|bicycle": {
+      "meaning": "a two-wheeled vehicle you ride · จักรยาน"
+    },
+    "English|big": {
+      "meaning": "large in size · ใหญ่"
+    },
+    "English|bike": {
+      "meaning": "a two-wheeled vehicle you ride · จักรยาน"
+    },
+    "English|bird": {
+      "meaning": "an animal with wings and feathers · นก"
+    },
+    "English|birth": {
+      "meaning": "the time a baby comes out · การเกิด"
+    },
+    "English|birthday": {
+      "meaning": "the day each year you were born · วันเกิด"
+    },
+    "English|biscuit": {
+      "meaning": "a small sweet baked food · บิสกิต"
+    },
+    "English|black": {
+      "meaning": "the darkest color · สีดำ"
+    },
+    "English|blank": {
+      "meaning": "empty, with no writing or pictures · ว่างเปล่า"
+    },
+    "English|block": {
+      "meaning": "a solid piece of material · ก้อน"
+    },
+    "English|blow": {
+      "meaning": "to move air from your mouth · เป่า"
+    },
+    "English|blue": {
+      "meaning": "the color of the sky · สีฟ้า"
+    },
+    "English|board": {
+      "meaning": "a flat piece of wood · แผ่นไม้"
+    },
+    "English|boat": {
+      "meaning": "a small vehicle that travels on water · เรือ"
+    },
+    "English|body": {
+      "meaning": "all the physical parts of a person · ร่างกาย"
+    },
+    "English|bone": {
+      "meaning": "a hard part inside your body · กระดูก"
+    },
+    "English|book": {
+      "meaning": "pages joined together for reading · หนังสือ"
+    },
+    "English|bookstore": {
+      "meaning": "a shop that sells books · ร้านหนังสือ"
+    },
+    "English|boring": {
+      "meaning": "not interesting · น่าเบื่อ"
+    },
+    "English|borrow": {
+      "meaning": "to use something and give it back later · ยืม"
+    },
+    "English|both": {
+      "meaning": "the two together · ทั้งคู่"
+    },
+    "English|bottle": {
+      "meaning": "a container for drinks or other liquids · ขวด"
+    },
+    "English|bottom": {
+      "meaning": "the lowest part of something · ด้านล่าง"
+    },
+    "English|bowl": {
+      "meaning": "a round container for food · ชาม"
+    },
+    "English|box": {
+      "meaning": "a container with sides and a lid · กล่อง"
+    },
+    "English|boy": {
+      "meaning": "a male child · เด็กชาย"
+    },
+    "English|boyfriend": {
+      "meaning": "a male person you are dating · แฟนหนุ่ม"
+    },
+    "English|brain": {
+      "meaning": "the organ in your head that thinks · สมอง"
+    },
+    "English|bread": {
+      "meaning": "baked food made from flour · ขนมปัง"
+    },
+    "English|break": {
+      "meaning": "to make something separate into pieces · ทำแตก"
+    },
+    "English|breakfast": {
+      "meaning": "the first meal of the day · อาหารเช้า"
+    },
+    "English|breathe": {
+      "meaning": "to take air into and out of your body · หายใจ"
+    },
+    "English|bridge": {
+      "meaning": "a structure over a river or road · สะพาน"
+    },
+    "English|bright": {
+      "meaning": "full of light · สว่าง"
+    },
+    "English|bring": {
+      "meaning": "to take something with you to a place · นำมา"
+    },
+    "English|broken": {
+      "meaning": "damaged and not working · แตก"
+    },
+    "English|brother": {
+      "meaning": "a male sibling · พี่ชายหรือน้องชาย"
+    },
+    "English|brown": {
+      "meaning": "a dark color like chocolate · สีน้ำตาล"
+    },
+    "English|cop": {
+      "meaning": "a police officer · ตำรวจ"
+    },
+    "English|copy": {
+      "meaning": "a thing made to look like another · สำเนา"
+    },
+    "English|corn": {
+      "meaning": "a yellow vegetable with many small seeds · ข้าวโพด"
+    },
+    "English|corner": {
+      "meaning": "the place where two sides meet · มุม"
+    },
+    "English|correct": {
+      "meaning": "right; with no mistakes · ถูกต้อง"
+    },
+    "English|couch": {
+      "meaning": "a long soft seat for sitting · โซฟา"
+    },
+    "English|could": {
+      "meaning": "used to say something is possible · สามารถ"
+    },
+    "English|course": {
+      "meaning": "a series of lessons about one subject · หลักสูตร"
+    },
+    "English|cousin": {
+      "meaning": "the child of your aunt or uncle · ลูกพี่ลูกน้อง"
+    },
+    "English|cover": {
+      "meaning": "a thing put over something to protect it · ที่คลุม"
+    },
+    "English|cow": {
+      "meaning": "a large farm animal that gives milk · วัว"
+    },
+    "English|cream": {
+      "meaning": "the thick white part of milk · ครีม"
+    },
+    "English|credit card": {
+      "meaning": "a card used to buy things now and pay later · บัตรเครดิต"
+    },
+    "English|cry": {
+      "meaning": "tears coming from your eyes when sad · ร้องไห้"
+    },
+    "English|culture": {
+      "meaning": "the ideas and way of life of a group · วัฒนธรรม"
+    },
+    "English|cup": {
+      "meaning": "a small container for drinking · ถ้วย"
+    },
+    "English|cut": {
+      "meaning": "to make something shorter with a knife · ตัด"
+    },
+    "English|cute": {
+      "meaning": "pretty and nice in a sweet way · น่ารัก"
+    },
+    "English|dad": {
+      "meaning": "your male parent · พ่อ"
+    },
+    "English|daddy": {
+      "meaning": "a child's word for father · พ่อ"
+    },
+    "English|dance": {
+      "meaning": "moving your body to music · การเต้นรำ"
+    },
+    "English|dancing": {
+      "meaning": "moving your body to music · การเต้นรำ"
+    },
+    "English|dark": {
+      "meaning": "with little or no light · มืด"
+    },
+    "English|date": {
+      "meaning": "a day of a month or year · วันที่"
+    },
+    "English|daughter": {
+      "meaning": "your female child · ลูกสาว"
+    },
+    "English|day": {
+      "meaning": "a time of 24 hours · วัน"
+    },
+    "English|dear": {
+      "meaning": "loved very much · ที่รัก"
+    },
+    "English|delicious": {
+      "meaning": "having a very good taste · อร่อย"
+    },
+    "English|describe": {
+      "meaning": "to say what someone or something is like · บรรยาย"
+    },
+    "English|design": {
+      "meaning": "a plan for how something will look · แบบ"
+    },
+    "English|desk": {
+      "meaning": "a table for working or studying · โต๊ะทำงาน"
+    },
+    "English|dictionary": {
+      "meaning": "a book that explains words · พจนานุกรม"
+    },
+    "English|did": {
+      "meaning": "made or performed something in the past · ทำ"
+    },
+    "English|difference": {
+      "meaning": "a way that two things are not the same · ความแตกต่าง"
+    },
+    "English|different": {
+      "meaning": "not the same · แตกต่าง"
+    },
+    "English|difficult": {
+      "meaning": "hard to do or understand · ยาก"
+    },
+    "English|dig": {
+      "meaning": "a hole in the ground · หลุม"
+    },
+    "English|dining room": {
+      "meaning": "a room where people eat meals · ห้องอาหาร"
+    },
+    "English|dinner": {
+      "meaning": "the main meal in the evening · อาหารเย็น"
+    },
+    "English|dirty": {
+      "meaning": "not clean · สกปรก"
+    },
+    "English|discuss": {
+      "meaning": "talk about something with someone · พูดคุย"
+    },
+    "English|dish": {
+      "meaning": "a plate or bowl for food · จาน"
+    },
+    "English|do": {
+      "meaning": "perform an action or task · ทำ"
+    },
+    "English|doctor": {
+      "meaning": "a person who helps sick people · หมอ"
+    },
+    "English|does": {
+      "meaning": "performs an action or task · ทำ"
+    },
+    "English|dog": {
+      "meaning": "an animal often kept as a pet · สุนัข"
+    },
+    "English|doing": {
+      "meaning": "performing an action or task · กำลังทำ"
+    },
+    "English|doll": {
+      "meaning": "a toy that looks like a person · ตุ๊กตา"
+    },
+    "English|dollar": {
+      "meaning": "a unit of money in the US · ดอลลาร์"
+    },
+    "English|door": {
+      "meaning": "a part of a wall that opens · ประตู"
+    },
+    "English|down": {
+      "meaning": "toward a lower place · ลง"
+    },
+    "English|drama": {
+      "meaning": "a story for television or theatre · ละคร"
+    },
+    "English|draw": {
+      "meaning": "make a picture with a pen or pencil · วาด"
+    },
+    "English|dream": {
+      "meaning": "images and stories seen during sleep · ความฝัน"
+    },
+    "English|dress": {
+      "meaning": "clothes worn by women or girls · ชุดเดรส"
+    },
+    "English|drink": {
+      "meaning": "a liquid that people can have · เครื่องดื่ม"
+    },
+    "English|drive": {
+      "meaning": "a trip in a car · การขับรถ"
+    },
+    "English|driver": {
+      "meaning": "a person who controls a car · คนขับรถ"
+    },
+    "English|drop": {
+      "meaning": "let something fall · ทำตก"
+    },
+    "English|drum": {
+      "meaning": "a musical instrument you hit · กลอง"
+    },
+    "English|dry": {
+      "meaning": "not wet · แห้ง"
+    },
+    "English|due": {
+      "meaning": "expected or needed at a certain time · กำหนดส่ง"
+    },
+    "English|each": {
+      "meaning": "every one in a group · แต่ละ"
+    },
+    "English|each other": {
+      "meaning": "one another · กันและกัน"
+    },
+    "English|ear": {
+      "meaning": "a body part used for hearing · หู"
+    },
+    "English|early": {
+      "meaning": "before the usual time · เร็ว"
+    },
+    "English|easy": {
+      "meaning": "not difficult · ง่าย"
+    },
+    "English|eat": {
+      "meaning": "put food in your mouth and swallow it · กิน"
+    },
+    "English|egg": {
+      "meaning": "a round food from a chicken · ไข่"
+    },
+    "English|eight": {
+      "meaning": "the number 8 · แปด"
+    },
+    "English|eighteen": {
+      "meaning": "the number 18 · สิบแปด"
+    },
+    "English|eighty": {
+      "meaning": "the number 80 · แปดสิบ"
+    },
+    "English|either": {
+      "meaning": "also, after a negative statement · ก็เหมือนกัน"
+    },
+    "English|elementary": {
+      "meaning": "basic; for beginners · เบื้องต้น"
+    },
+    "English|eleven": {
+      "meaning": "the number 11 · สิบเอ็ด"
+    },
+    "English|else": {
+      "meaning": "in addition; another · อื่น"
+    },
+    "English|email": {
+      "meaning": "a message sent using the internet · อีเมล"
+    },
+    "English|end": {
+      "meaning": "the final part of something · ตอนจบ"
+    },
+    "English|engineer": {
+      "meaning": "a person who designs or builds things · วิศวกร"
+    },
+    "English|enjoy": {
+      "meaning": "like something and have fun · สนุกกับ"
+    },
+    "English|evening": {
+      "meaning": "The time between afternoon and night · ตอนเย็น"
+    },
+    "English|event": {
+      "meaning": "Something planned that happens · เหตุการณ์"
+    },
+    "English|every": {
+      "meaning": "Each one in a group · ทุก"
+    },
+    "English|everybody": {
+      "meaning": "All people · ทุกคน"
+    },
+    "English|everyday": {
+      "meaning": "Happening or used each day · ทุกวัน"
+    },
+    "English|everyone": {
+      "meaning": "All people · ทุกคน"
+    },
+    "English|everything": {
+      "meaning": "All things · ทุกอย่าง"
+    },
+    "English|everywhere": {
+      "meaning": "In all places · ทุกที่"
+    },
+    "English|example": {
+      "meaning": "A thing that shows what something is like · ตัวอย่าง"
+    },
+    "English|excellent": {
+      "meaning": "Very good · ยอดเยี่ยม"
+    },
+    "English|excited": {
+      "meaning": "Happy about something coming · ตื่นเต้น"
+    },
+    "English|exciting": {
+      "meaning": "Making you feel happy and interested · น่าตื่นเต้น"
+    },
+    "English|excuse": {
+      "meaning": "A reason you give for being late · ข้ออ้าง"
+    },
+    "English|exercise": {
+      "meaning": "Move your body to stay healthy · ออกกำลังกาย"
+    },
+    "English|expensive": {
+      "meaning": "Costing a lot of money · แพง"
+    },
+    "English|eye": {
+      "meaning": "A body part used for seeing · ตา"
+    },
+    "English|face": {
+      "meaning": "The front part of your head · หน้า"
+    },
+    "English|factory": {
+      "meaning": "A building where things are made · โรงงาน"
+    },
+    "English|fair": {
+      "meaning": "Treating people equally and rightly · ยุติธรรม"
+    },
+    "English|fairy": {
+      "meaning": "A small magical person in stories · นางฟ้า"
+    },
+    "English|false": {
+      "meaning": "Not true · เท็จ"
+    },
+    "English|family": {
+      "meaning": "Parents, children, and close relatives · ครอบครัว"
+    },
+    "English|famous": {
+      "meaning": "Known by many people · มีชื่อเสียง"
+    },
+    "English|fan": {
+      "meaning": "A person who likes a team or singer · แฟนคลับ"
+    },
+    "English|farm": {
+      "meaning": "Land where animals or food are raised · ฟาร์ม"
+    },
+    "English|farmer": {
+      "meaning": "A person who works on a farm · ชาวนา"
+    },
+    "English|fast": {
+      "meaning": "Moving or happening quickly · เร็ว"
+    },
+    "English|fat": {
+      "meaning": "Having too much body weight · อ้วน"
+    },
+    "English|father": {
+      "meaning": "A male parent · พ่อ"
+    },
+    "English|favorite": {
+      "meaning": "Liked more than all others · ที่ชอบที่สุด"
+    },
+    "English|feed": {
+      "meaning": "Food given to an animal · อาหารสัตว์"
+    },
+    "English|feel": {
+      "meaning": "Have an emotion or body sensation · รู้สึก"
+    },
+    "English|feeling": {
+      "meaning": "An emotion, such as happiness or sadness · ความรู้สึก"
+    },
+    "English|festival": {
+      "meaning": "A special time with food and activities · เทศกาล"
+    },
+    "English|fever": {
+      "meaning": "High body temperature when you are ill · ไข้"
+    },
+    "English|field": {
+      "meaning": "A large open area of land · ทุ่ง"
+    },
+    "English|fifteen": {
+      "meaning": "The number after fourteen · สิบห้า"
+    },
+    "English|fifty": {
+      "meaning": "The number after forty-nine · ห้าสิบ"
+    },
+    "English|fight": {
+      "meaning": "An angry time when people hit each other · การต่อสู้"
+    },
+    "English|file": {
+      "meaning": "A group of papers kept together · แฟ้มเอกสาร"
+    },
+    "English|fill": {
+      "meaning": "make something become full · เติม"
+    },
+    "English|find": {
+      "meaning": "see or get something after looking · พบ"
+    },
+    "English|fine": {
+      "meaning": "good; okay · ดี"
+    },
+    "English|finish": {
+      "meaning": "the end of something · ตอนจบ"
+    },
+    "English|fire": {
+      "meaning": "hot light that burns things · ไฟ"
+    },
+    "English|first": {
+      "meaning": "number one in order · แรก"
+    },
+    "English|fish": {
+      "meaning": "an animal that lives in water · ปลา"
+    },
+    "English|fishing": {
+      "meaning": "the activity of catching fish · การตกปลา"
+    },
+    "English|five": {
+      "meaning": "the number after four · ห้า"
+    },
+    "English|flag": {
+      "meaning": "a piece of cloth showing a country · ธง"
+    },
+    "English|flat": {
+      "meaning": "a home with rooms in a large building · อพาร์ตเมนต์"
+    },
+    "English|floor": {
+      "meaning": "the part of a room you walk on · พื้น"
+    },
+    "English|flower": {
+      "meaning": "the colorful part of a plant · ดอกไม้"
+    },
+    "English|fly": {
+      "meaning": "an insect with two wings · แมลงวัน"
+    },
+    "English|focus": {
+      "meaning": "give all your attention to something · จดจ่อ"
+    },
+    "English|foggy": {
+      "meaning": "with thick cloud near the ground · มีหมอก"
+    },
+    "English|following": {
+      "meaning": "coming next · ถัดไป"
+    },
+    "English|food": {
+      "meaning": "things people eat · อาหาร"
+    },
+    "English|football": {
+      "meaning": "a game played by kicking a ball · ฟุตบอล"
+    },
+    "English|for": {
+      "meaning": "used to say who gets something · สำหรับ"
+    },
+    "English|foreign": {
+      "meaning": "from another country · ต่างประเทศ"
+    },
+    "English|foreigner": {
+      "meaning": "a person from another country · ชาวต่างชาติ"
+    },
+    "English|forget": {
+      "meaning": "not remember something · ลืม"
+    },
+    "English|form": {
+      "meaning": "a paper with spaces for information · แบบฟอร์ม"
+    },
+    "English|forty": {
+      "meaning": "the number 40 · สี่สิบ"
+    },
+    "English|four": {
+      "meaning": "the number after three · สี่"
+    },
+    "English|fourteen": {
+      "meaning": "the number 14 · สิบสี่"
+    },
+    "English|free": {
+      "meaning": "costing no money · ฟรี"
+    },
+    "English|friend": {
+      "meaning": "a person you like and know well · เพื่อน"
+    },
+    "English|frog": {
+      "meaning": "a small green animal that jumps · กบ"
+    },
+    "English|from": {
+      "meaning": "starting at a place or time · จาก"
+    },
+    "English|front": {
+      "meaning": "at the forward part · ด้านหน้า"
+    },
+    "English|fruit": {
+      "meaning": "sweet food that grows on trees or plants · ผลไม้"
+    },
+    "English|full": {
+      "meaning": "having no empty space · เต็ม"
+    },
+    "English|fun": {
+      "meaning": "enjoyable and making you happy · สนุก"
+    },
+    "English|funny": {
+      "meaning": "making you laugh · ตลก"
+    },
+    "English|future": {
+      "meaning": "the time after now · อนาคต"
+    },
+    "English|game": {
+      "meaning": "an activity with rules for fun · เกม"
+    },
+    "English|garbage": {
+      "meaning": "things you throw away · ขยะ"
+    },
+    "English|garden": {
+      "meaning": "an area where plants and flowers grow · สวน"
+    },
+    "English|get": {
+      "meaning": "receive or obtain something · ได้รับ"
+    },
+    "English|ghost": {
+      "meaning": "a dead person's spirit · ผี"
+    },
+    "English|gift": {
+      "meaning": "something you give someone · ของขวัญ"
+    },
+    "English|girl": {
+      "meaning": "a young female person · เด็กผู้หญิง"
+    },
+    "English|girlfriend": {
+      "meaning": "a female person you date · แฟนผู้หญิง"
+    },
+    "English|give": {
+      "meaning": "put something in someone's hand · ให้"
+    },
+    "English|glad": {
+      "meaning": "happy about something · ดีใจ"
+    },
+    "English|glass": {
+      "meaning": "a cup for drinking · แก้ว"
+    },
+    "English|glasses": {
+      "meaning": "things you wear to see better · แว่นตา"
+    },
+    "English|go": {
+      "meaning": "move to another place · ไป"
+    },
+    "English|goal": {
+      "meaning": "something you want to achieve · เป้าหมาย"
+    },
+    "English|gold": {
+      "meaning": "yellow and valuable · สีทอง"
+    },
+    "English|good": {
+      "meaning": "nice or correct · ดี"
+    },
+    "English|good afternoon": {
+      "meaning": "words used to say hello after noon · สวัสดีตอนบ่าย"
+    },
+    "English|good morning": {
+      "meaning": "words used to say hello early · สวัสดีตอนเช้า"
+    },
+    "English|good night": {
+      "meaning": "words said before sleeping · ราตรีสวัสดิ์"
+    },
+    "English|grade": {
+      "meaning": "a mark for school work · เกรด"
+    },
+    "English|grammar": {
+      "meaning": "rules for using words · ไวยากรณ์"
+    },
+    "English|grandfather": {
+      "meaning": "your father's or mother's father · ปู่หรือ ตา"
+    },
+    "English|grandma": {
+      "meaning": "your father's or mother's mother · ยายหรือ ย่า"
+    },
+    "English|grandmother": {
+      "meaning": "your father's or mother's mother · ยายหรือ ย่า"
+    },
+    "English|grandpa": {
+      "meaning": "your father's or mother's father · ปู่หรือ ตา"
+    },
+    "English|grandparent": {
+      "meaning": "a parent of your parent · ปู่ย่าตายาย"
+    },
+    "English|grape": {
+      "meaning": "a small round fruit · องุ่น"
+    },
+    "English|grass": {
+      "meaning": "small green plants on the ground · หญ้า"
+    },
+    "English|gray": {
+      "meaning": "a color between black and white · สีเทา"
+    },
+    "English|great": {
+      "meaning": "very good · ยอดเยี่ยม"
+    },
+    "English|green": {
+      "meaning": "the color of leaves · สีเขียว"
+    },
+    "English|greet": {
+      "meaning": "say hello to someone · ทักทาย"
+    },
+    "English|ground": {
+      "meaning": "the land under your feet · พื้นดิน"
+    },
+    "English|group": {
+      "meaning": "people or things together · กลุ่ม"
+    },
+    "English|grow": {
+      "meaning": "become bigger · โตขึ้น"
+    },
+    "English|guess": {
+      "meaning": "give an answer without knowing · เดา"
+    },
+    "English|guest": {
+      "meaning": "a person visiting you · แขก"
+    },
+    "English|guitar": {
+      "meaning": "a musical instrument with strings · กีตาร์"
+    },
+    "English|guy": {
+      "meaning": "a man or boy · ผู้ชาย"
+    },
+    "English|habit": {
+      "meaning": "something you do often · นิสัย"
+    },
+    "English|had": {
+      "meaning": "owned or experienced before now · มี"
+    },
+    "English|hair": {
+      "meaning": "threads growing on your head · ผม"
+    },
+    "English|haircut": {
+      "meaning": "a new style after cutting hair · ทรงผม"
+    },
+    "English|half": {
+      "meaning": "one of two equal parts · ครึ่ง"
+    },
+    "English|hall": {
+      "meaning": "a large room for meetings or events · ห้องโถง"
+    },
+    "English|hamburger": {
+      "meaning": "a sandwich with meat inside · แฮมเบอร์เกอร์"
+    },
+    "English|hand": {
+      "meaning": "the part at the end of your arm · มือ"
+    },
+    "English|handsome": {
+      "meaning": "good-looking, usually for a man · หล่อ"
+    },
+    "English|happen": {
+      "meaning": "to take place · เกิดขึ้น"
+    },
+    "English|happy": {
+      "meaning": "feeling good and pleased · มีความสุข"
+    },
+    "English|hard": {
+      "meaning": "not easy to do · ยาก"
+    },
+    "English|has": {
+      "meaning": "owns or holds something · มี"
+    },
+    "English|hat": {
+      "meaning": "a thing you wear on your head · หมวก"
+    },
+    "English|have": {
+      "meaning": "to own or hold something · มี"
+    },
+    "English|have to": {
+      "meaning": "must do something · ต้อง"
+    },
+    "English|he": {
+      "meaning": "a male person or boy · เขา"
+    },
+    "English|head": {
+      "meaning": "the top part of your body · ศีรษะ"
+    },
+    "English|headache": {
+      "meaning": "pain in your head · ปวดหัว"
+    },
+    "English|health": {
+      "meaning": "the condition of your body · สุขภาพ"
+    },
+    "English|healthy": {
+      "meaning": "well and not sick · สุขภาพดี"
+    },
+    "English|hear": {
+      "meaning": "to notice sounds with your ears · ได้ยิน"
+    },
+    "English|heart": {
+      "meaning": "the body part that moves blood · หัวใจ"
+    },
+    "English|heavy": {
+      "meaning": "weighing a lot · หนัก"
+    },
+    "English|hello": {
+      "meaning": "a word used when meeting someone · สวัสดี"
+    },
+    "English|help": {
+      "meaning": "to make something easier for someone · ช่วย"
+    },
+    "English|her": {
+      "meaning": "belonging to a girl or woman · ของเธอ"
+    },
+    "English|here": {
+      "meaning": "in this place · ที่นี่"
+    },
+    "English|hers": {
+      "meaning": "belonging to a girl or woman · ของเธอ"
+    },
+    "English|hi": {
+      "meaning": "a friendly word when meeting someone · หวัดดี"
+    },
+    "English|hide": {
+      "meaning": "to put something where people cannot see it · ซ่อน"
+    },
+    "English|high": {
+      "meaning": "far above the ground · สูง"
+    },
+    "English|hill": {
+      "meaning": "an area of land higher than nearby land · เนินเขา"
+    },
+    "English|him": {
+      "meaning": "a male person or boy · เขา"
+    },
+    "English|his": {
+      "meaning": "belonging to a boy or man · ของเขา"
+    },
+    "English|history": {
+      "meaning": "things that happened in the past · ประวัติศาสตร์"
+    },
+    "English|hobby": {
+      "meaning": "an activity you do for fun · งานอดิเรก"
+    },
+    "English|hold": {
+      "meaning": "the way you hold something · การจับ"
+    },
+    "English|hole": {
+      "meaning": "an empty space in something · รู"
+    },
+    "English|holiday": {
+      "meaning": "a day when you do not work or study · วันหยุด"
+    },
+    "English|home": {
+      "meaning": "the place where you live · บ้าน"
+    },
+    "English|hometown": {
+      "meaning": "the town or city where you grew up · บ้านเกิด"
+    },
+    "English|homework": {
+      "meaning": "school work you do at home · การบ้าน"
+    },
+    "English|hope": {
+      "meaning": "a feeling that something good will happen · ความหวัง"
+    },
+    "English|horse": {
+      "meaning": "a large animal people can ride · ม้า"
+    },
+    "English|hospital": {
+      "meaning": "a place where sick people get help · โรงพยาบาล"
+    },
+    "English|hot": {
+      "meaning": "having a high temperature · ร้อน"
+    },
+    "English|hotel": {
+      "meaning": "a building where travelers sleep · โรงแรม"
+    },
+    "English|hour": {
+      "meaning": "sixty minutes · ชั่วโมง"
+    },
+    "English|house": {
+      "meaning": "a building where people live · บ้าน"
+    },
+    "English|how": {
+      "meaning": "in what way · อย่างไร"
+    },
+    "English|hungry": {
+      "meaning": "needing or wanting food · หิว"
+    },
+    "English|hurry": {
+      "meaning": "a need to do something quickly · ความรีบ"
+    },
+    "English|hurt": {
+      "meaning": "to cause pain or injury · ทำให้เจ็บ"
+    },
+    "English|husband": {
+      "meaning": "a married man · สามี"
+    },
+    "English|ice": {
+      "meaning": "frozen water · น้ำแข็ง"
+    },
+    "English|ice cream": {
+      "meaning": "a sweet frozen food · ไอศกรีม"
+    },
+    "English|idea": {
+      "meaning": "a thought or plan · ความคิด"
+    },
+    "English|ideal": {
+      "meaning": "as good as possible · ดีที่สุด"
+    },
+    "English|if": {
+      "meaning": "used to say something may happen · ถ้า"
+    },
+    "English|imagine": {
+      "meaning": "to make a picture in your mind · จินตนาการ"
+    },
+    "English|important": {
+      "meaning": "needed or having great value · สำคัญ"
+    },
+    "English|in": {
+      "meaning": "at or within a place · ใน"
+    },
+    "English|information": {
+      "meaning": "facts or details about something · ข้อมูล"
+    },
+    "English|inside": {
+      "meaning": "in the inner part of something · ข้างใน"
+    },
+    "English|interested": {
+      "meaning": "wanting to know more about something · สนใจ"
+    },
+    "English|interesting": {
+      "meaning": "making you want to know more · น่าสนใจ"
+    },
+    "English|interview": {
+      "meaning": "a meeting with questions and answers · การสัมภาษณ์"
+    },
+    "English|interviewer": {
+      "meaning": "a person who asks questions in a meeting · ผู้สัมภาษณ์"
+    },
+    "English|into": {
+      "meaning": "to the inside of something · เข้าไปใน"
+    },
+    "English|introduce": {
+      "meaning": "to tell people who someone is · แนะนำ"
+    },
+    "English|is": {
+      "meaning": "a form of be for one thing · เป็น"
+    },
+    "English|island": {
+      "meaning": "land with water all around it · เกาะ"
+    },
+    "English|it": {
+      "meaning": "used for a thing or animal · มัน"
+    },
+    "English|item": {
+      "meaning": "one thing on a list or for sale · รายการ"
+    },
+    "English|its": {
+      "meaning": "belonging to an animal or thing · ของมัน"
+    },
+    "English|jacket": {
+      "meaning": "a short coat worn over clothes · เสื้อแจ็กเก็ต"
+    },
+    "English|jeans": {
+      "meaning": "strong cotton trousers, usually blue · กางเกงยีนส์"
+    },
+    "English|jet": {
+      "meaning": "a fast airplane · เครื่องบินเจ็ต"
+    },
+    "English|jewelry": {
+      "meaning": "things like rings and necklaces · เครื่องประดับ"
+    },
+    "English|job": {
+      "meaning": "work that you do for money · งาน"
+    },
+    "English|join": {
+      "meaning": "to become part of a group · เข้าร่วม"
+    },
+    "English|judge": {
+      "meaning": "to decide who wins · ตัดสิน"
+    },
+    "English|juice": {
+      "meaning": "a drink made from fruit · น้ำผลไม้"
+    },
+    "English|jump": {
+      "meaning": "move up from the ground · กระโดด"
+    },
+    "English|just": {
+      "meaning": "only; not more than that · แค่"
+    },
+    "English|keep": {
+      "meaning": "continue to have something · เก็บไว้"
+    },
+    "English|key": {
+      "meaning": "most important · สำคัญ"
+    },
+    "English|kick": {
+      "meaning": "a hit with the foot · การเตะ"
+    },
+    "English|kid": {
+      "meaning": "a child · เด็ก"
+    },
+    "English|kill": {
+      "meaning": "make a person or animal die · ฆ่า"
+    },
+    "English|kind": {
+      "meaning": "a group of similar things · ชนิด"
+    },
+    "English|king": {
+      "meaning": "a male ruler of a country · กษัตริย์"
+    },
+    "English|kiss": {
+      "meaning": "a touch with the lips · การจูบ"
+    },
+    "English|kitchen": {
+      "meaning": "room where people cook food · ห้องครัว"
+    },
+    "English|kite": {
+      "meaning": "a toy that flies in wind · ว่าว"
+    },
+    "English|knee": {
+      "meaning": "the middle joint of your leg · หัวเข่า"
+    },
+    "English|knife": {
+      "meaning": "a tool for cutting food · มีด"
+    },
+    "English|know": {
+      "meaning": "have information about something · รู้"
+    },
+    "English|lady": {
+      "meaning": "an adult woman · ผู้หญิง"
+    },
+    "English|language": {
+      "meaning": "words people use to speak · ภาษา"
+    },
+    "English|large": {
+      "meaning": "big in size · ใหญ่"
+    },
+    "English|last name": {
+      "meaning": "your family name · นามสกุล"
+    },
+    "English|late": {
+      "meaning": "after the expected time · สาย"
+    },
+    "English|later": {
+      "meaning": "at a time after now · ทีหลัง"
+    },
+    "English|laugh": {
+      "meaning": "make a happy sound with your voice · หัวเราะ"
+    },
+    "English|lazy": {
+      "meaning": "not wanting to work · ขี้เกียจ"
+    },
+    "English|leader": {
+      "meaning": "a person who guides a group · ผู้นำ"
+    },
+    "English|leaf": {
+      "meaning": "a flat green part of a plant · ใบไม้"
+    },
+    "English|learn": {
+      "meaning": "get knowledge or a new skill · เรียนรู้"
+    },
+    "English|leave": {
+      "meaning": "go away from a place · ออกไป"
+    },
+    "English|left": {
+      "meaning": "on the side opposite right · ซ้าย"
+    },
+    "English|leg": {
+      "meaning": "one of the long body parts for walking · ขา"
+    },
+    "English|lesson": {
+      "meaning": "a time when you study something · บทเรียน"
+    },
+    "English|let": {
+      "meaning": "allow someone to do something · อนุญาต"
+    },
+    "English|letter": {
+      "meaning": "a written message sent to someone · จดหมาย"
+    },
+    "English|library": {
+      "meaning": "a place with books to read · ห้องสมุด"
+    },
+    "English|life": {
+      "meaning": "the time a person or animal is alive · ชีวิต"
+    },
+    "English|light": {
+      "meaning": "not heavy · เบา"
+    },
+    "English|like": {
+      "meaning": "similar to · เหมือน"
+    },
+    "English|lily": {
+      "meaning": "a flower with large petals · ดอกลิลลี่"
+    },
+    "English|line": {
+      "meaning": "a long narrow mark · เส้น"
+    },
+    "English|lion": {
+      "meaning": "a large wild cat · สิงโต"
+    },
+    "English|list": {
+      "meaning": "a group of written names or things · รายการ"
+    },
+    "English|listen": {
+      "meaning": "try to hear sounds · ฟัง"
+    },
+    "English|little": {
+      "meaning": "small in size or amount · เล็กน้อย"
+    },
+    "English|live": {
+      "meaning": "have your home in a place · อาศัยอยู่"
+    },
+    "English|living": {
+      "meaning": "alive; not dead · มีชีวิต"
+    },
+    "English|living room": {
+      "meaning": "room for sitting and relaxing at home · ห้องนั่งเล่น"
+    },
+    "English|lonely": {
+      "meaning": "sad because you are alone · เหงา"
+    },
+    "English|long": {
+      "meaning": "having a great length · ยาว"
+    },
+    "English|look": {
+      "meaning": "the way someone or something appears · หน้าตา"
+    },
+    "English|lot": {
+      "meaning": "very much · มาก"
+    },
+    "English|love": {
+      "meaning": "a strong feeling of liking someone · ความรัก"
+    },
+    "English|lovely": {
+      "meaning": "very nice or beautiful · น่ารัก"
+    },
+    "English|luck": {
+      "meaning": "good things happening by chance · โชค"
+    },
+    "English|lucky": {
+      "meaning": "having good things happen by chance · โชคดี"
+    },
+    "English|lunch": {
+      "meaning": "a meal eaten in the middle of the day · อาหารกลางวัน"
+    },
+    "English|machine": {
+      "meaning": "a thing that does work using power · เครื่องจักร"
+    },
+    "English|magazine": {
+      "meaning": "a book with stories and pictures · นิตยสาร"
+    },
+    "English|mail": {
+      "meaning": "letters and packages sent to people · ไปรษณีย์"
+    },
+    "English|make": {
+      "meaning": "create or do something · ทำ"
+    },
+    "English|man": {
+      "meaning": "an adult male person · ผู้ชาย"
+    },
+    "English|many": {
+      "meaning": "a large number of · มาก"
+    },
+    "English|map": {
+      "meaning": "a drawing that shows places · แผนที่"
+    },
+    "English|match": {
+      "meaning": "a game between two teams or players · การแข่งขัน"
+    },
+    "English|math": {
+      "meaning": "the study of numbers and shapes · คณิตศาสตร์"
+    },
+    "English|matter": {
+      "meaning": "a problem or subject to discuss · เรื่อง"
+    },
+    "English|may": {
+      "meaning": "used to say something is possible · อาจจะ"
+    },
+    "English|maybe": {
+      "meaning": "perhaps; possibly · อาจจะ"
+    },
+    "English|me": {
+      "meaning": "the person speaking · ฉัน"
+    },
+    "English|meal": {
+      "meaning": "food eaten at one time · มื้ออาหาร"
+    },
+    "English|mean": {
+      "meaning": "have a particular idea or message · หมายถึง"
+    },
+    "English|meat": {
+      "meaning": "food from animals · เนื้อสัตว์"
+    },
+    "English|medicine": {
+      "meaning": "something that helps sick people get well · ยา"
+    },
+    "English|meet": {
+      "meaning": "come together with someone · พบ"
+    },
+    "English|meeting": {
+      "meaning": "a time when people come together to talk · การประชุม"
+    },
+    "English|memory": {
+      "meaning": "something remembered from the past · ความทรงจำ"
+    },
+    "English|merry": {
+      "meaning": "happy and cheerful · ร่าเริง"
+    },
+    "English|message": {
+      "meaning": "words sent to someone · ข้อความ"
+    },
+    "English|middle": {
+      "meaning": "in the center, not at either end · กลาง"
+    },
+    "English|milk": {
+      "meaning": "a white drink from cows · นม"
+    },
+    "English|mind": {
+      "meaning": "the part that thinks and feels · จิตใจ"
+    },
+    "English|mine": {
+      "meaning": "belonging to me · ของฉัน"
+    },
+    "English|ninety": {
+      "meaning": "the number after eighty-nine · เก้าสิบ"
+    },
+    "English|no": {
+      "meaning": "used to say something is not true · ไม่"
+    },
+    "English|noise": {
+      "meaning": "a loud or unwanted sound · เสียงดัง"
+    },
+    "English|nose": {
+      "meaning": "the part of your face for smelling · จมูก"
+    },
+    "English|not": {
+      "meaning": "used to make something negative · ไม่"
+    },
+    "English|note": {
+      "meaning": "a short written message · บันทึก"
+    },
+    "English|notebook": {
+      "meaning": "a book for writing in · สมุด"
+    },
+    "English|nothing": {
+      "meaning": "not anything · ไม่มีอะไร"
+    },
+    "English|now": {
+      "meaning": "at this time · ตอนนี้"
+    },
+    "English|number": {
+      "meaning": "a sign that shows how many · ตัวเลข"
+    },
+    "English|nurse": {
+      "meaning": "a person who cares for sick people · พยาบาล"
+    },
+    "English|o'clock": {
+      "meaning": "used after a number to tell the time · นาฬิกา"
+    },
+    "English|of": {
+      "meaning": "used to show belonging or part · ของ"
+    },
+    "English|off": {
+      "meaning": "not working or not on · ปิด"
+    },
+    "English|office": {
+      "meaning": "a room where people work · สำนักงาน"
+    },
+    "English|officer": {
+      "meaning": "a police person · เจ้าหน้าที่ตำรวจ"
+    },
+    "English|often": {
+      "meaning": "many times · บ่อย"
+    },
+    "English|old": {
+      "meaning": "having lived or existed a long time · เก่า"
+    },
+    "English|on": {
+      "meaning": "touching the top of something · บน"
+    },
+    "English|once": {
+      "meaning": "one time · หนึ่งครั้ง"
+    },
+    "English|one": {
+      "meaning": "single; not two · หนึ่ง"
+    },
+    "English|only": {
+      "meaning": "with no others · เดียว"
+    },
+    "English|open": {
+      "meaning": "not closed · เปิด"
+    },
+    "English|opera": {
+      "meaning": "a play with singing and music · อุปรากร"
+    },
+    "English|or": {
+      "meaning": "used to give another choice · หรือ"
+    },
+    "English|orange": {
+      "meaning": "having the color of an orange fruit · สีส้ม"
+    },
+    "English|order": {
+      "meaning": "a request for food or things · สั่ง"
+    },
+    "English|other": {
+      "meaning": "different from this one · อื่น"
+    },
+    "English|our": {
+      "meaning": "belonging to us · ของเรา"
+    },
+    "English|ours": {
+      "meaning": "belonging to us · ของเรา"
+    },
+    "English|out": {
+      "meaning": "not inside · ข้างนอก"
+    },
+    "English|outside": {
+      "meaning": "not in a building or room · ข้างนอก"
+    },
+    "English|over": {
+      "meaning": "above something · เหนือ"
+    },
+    "English|own": {
+      "meaning": "belonging to a person · ของตัวเอง"
+    },
+    "English|owner": {
+      "meaning": "a person something belongs to · เจ้าของ"
+    },
+    "English|p.m.": {
+      "meaning": "in the afternoon or evening · หลังเที่ยง"
+    },
+    "English|page": {
+      "meaning": "one side of paper in a book · หน้า"
+    },
+    "English|paint": {
+      "meaning": "colored liquid for walls or pictures · สี"
+    },
+    "English|painting": {
+      "meaning": "a picture made with colors · ภาพวาด"
+    },
+    "English|pair": {
+      "meaning": "two things that go together · คู่"
+    },
+    "English|palace": {
+      "meaning": "a large home for a king or queen · พระราชวัง"
+    },
+    "English|pants": {
+      "meaning": "clothes covering both legs · กางเกง"
+    },
+    "English|paper": {
+      "meaning": "thin material used for writing · กระดาษ"
+    },
+    "English|paragraph": {
+      "meaning": "a group of sentences about one idea · ย่อหน้า"
+    },
+    "English|pardon": {
+      "meaning": "forgiveness for doing something wrong · การให้อภัย"
+    },
+    "English|parent": {
+      "meaning": "a mother or father · พ่อแม่"
+    },
+    "English|park": {
+      "meaning": "a public green area for relaxing · สวนสาธารณะ"
+    },
+    "English|partner": {
+      "meaning": "a person you do something with · คู่"
+    },
+    "English|party": {
+      "meaning": "a social event with food and fun · งานเลี้ยง"
+    },
+    "English|past": {
+      "meaning": "before the present time · ในอดีต"
+    },
+    "English|pay": {
+      "meaning": "money received for work · ค่าจ้าง"
+    },
+    "English|peace": {
+      "meaning": "a time without war or fighting · สันติภาพ"
+    },
+    "English|pen": {
+      "meaning": "a tool for writing with ink · ปากกา"
+    },
+    "English|pencil": {
+      "meaning": "a tool for writing or drawing · ดินสอ"
+    },
+    "English|people": {
+      "meaning": "men, women, and children · ผู้คน"
+    },
+    "English|period": {
+      "meaning": "a length of time · ช่วงเวลา"
+    },
+    "English|person": {
+      "meaning": "one human being · คน"
+    },
+    "English|personal": {
+      "meaning": "about one particular person · ส่วนตัว"
+    },
+    "English|pet": {
+      "meaning": "an animal kept at home · สัตว์เลี้ยง"
+    },
+    "English|phone": {
+      "meaning": "a device for calling people · โทรศัพท์"
+    },
+    "English|photo": {
+      "meaning": "an image made with a camera · รูปถ่าย"
+    },
+    "English|piano": {
+      "meaning": "a large musical instrument with keys · เปียโน"
+    },
+    "English|pick": {
+      "meaning": "to choose one thing · เลือก"
+    },
+    "English|picnic": {
+      "meaning": "a meal eaten outdoors · ปิกนิก"
+    },
+    "English|picture": {
+      "meaning": "an image of someone or something · รูปภาพ"
+    },
+    "English|piece": {
+      "meaning": "one part of something · ชิ้น"
+    },
+    "English|pig": {
+      "meaning": "a farm animal with a round body · หมู"
+    },
+    "English|pink": {
+      "meaning": "a light red color · สีชมพู"
+    },
+    "English|pizza": {
+      "meaning": "flat bread with cheese and toppings · พิซซ่า"
+    },
+    "English|place": {
+      "meaning": "an area or position · สถานที่"
+    },
+    "English|plan": {
+      "meaning": "ideas for what you will do · แผน"
+    },
+    "English|plane": {
+      "meaning": "a vehicle that flies in the sky · เครื่องบิน"
+    },
+    "English|play": {
+      "meaning": "a story acted in a theater · ละคร"
+    },
+    "English|player": {
+      "meaning": "a person who takes part in a game · ผู้เล่น"
+    },
+    "English|please": {
+      "meaning": "used to ask for something politely · กรุณา"
+    },
+    "English|pleasure": {
+      "meaning": "a feeling of being happy · ความสุข"
+    },
+    "English|pocket": {
+      "meaning": "a small bag inside clothes · กระเป๋าเสื้อ"
+    },
+    "English|poem": {
+      "meaning": "a piece of writing with rhythm · บทกวี"
+    },
+    "English|point": {
+      "meaning": "a small dot or mark · จุด"
+    },
+    "English|pollution": {
+      "meaning": "dirty and harmful air, water, or land · มลพิษ"
+    },
+    "English|pool": {
+      "meaning": "a place to swim · สระว่ายน้ำ"
+    },
+    "English|poor": {
+      "meaning": "having little money · ยากจน"
+    },
+    "English|pop": {
+      "meaning": "a short, sharp sound · เสียงป๊อบ"
+    },
+    "English|post": {
+      "meaning": "a message put online · โพสต์"
+    },
+    "English|poster": {
+      "meaning": "a large picture for a wall · โปสเตอร์"
+    },
+    "English|potato": {
+      "meaning": "a round vegetable that grows underground · มันฝรั่ง"
+    },
+    "English|practice": {
+      "meaning": "training to get better at something · การฝึก"
+    },
+    "English|pray": {
+      "meaning": "to speak to God · สวดมนต์"
+    },
+    "English|present": {
+      "meaning": "something you give someone · ของขวัญ"
+    },
+    "English|pretty": {
+      "meaning": "nice to look at · สวย"
+    },
+    "English|price": {
+      "meaning": "the money something costs · ราคา"
+    },
+    "English|prince": {
+      "meaning": "a son of a king or queen · เจ้าชาย"
+    },
+    "English|princess": {
+      "meaning": "a daughter of a king or queen · เจ้าหญิง"
+    },
+    "English|problem": {
+      "meaning": "something difficult that needs an answer · ปัญหา"
+    },
+    "English|program": {
+      "meaning": "a planned set of activities · โปรแกรม"
+    },
+    "English|purple": {
+      "meaning": "having a color like grapes · สีม่วง"
+    },
+    "English|push": {
+      "meaning": "to move something away with your hand · ผลัก"
+    },
+    "English|put": {
+      "meaning": "to place something somewhere · วาง"
+    },
+    "English|quarter": {
+      "meaning": "one of four equal parts · หนึ่งในสี่"
+    },
+    "English|question": {
+      "meaning": "something you ask to get information · คำถาม"
+    },
+    "English|quickly": {
+      "meaning": "fast; in a short time · อย่างรวดเร็ว"
+    },
+    "English|quiet": {
+      "meaning": "making little or no noise · เงียบ"
+    },
+    "English|rabbit": {
+      "meaning": "a small animal with long ears · กระต่าย"
+    },
+    "English|radio": {
+      "meaning": "a device for listening to broadcasts · วิทยุ"
+    },
+    "English|rain": {
+      "meaning": "water that falls from clouds · ฝน"
+    },
+    "English|rainy": {
+      "meaning": "with a lot of rain · มีฝนตก"
+    },
+    "English|rat": {
+      "meaning": "a small animal like a large mouse · หนู"
+    },
+    "English|read": {
+      "meaning": "to look at and understand words · อ่าน"
+    },
+    "English|reader": {
+      "meaning": "a person who reads · ผู้อ่าน"
+    },
+    "English|reading": {
+      "meaning": "the activity of looking at words · การอ่าน"
+    },
+    "English|ready": {
+      "meaning": "prepared to do something · พร้อม"
+    },
+    "English|real": {
+      "meaning": "existing, not imagined · จริง"
+    },
+    "English|really": {
+      "meaning": "very; truly · จริงๆ"
+    },
+    "English|reason": {
+      "meaning": "why something happens · เหตุผล"
+    },
+    "English|red": {
+      "meaning": "having the color of blood · สีแดง"
+    },
+    "English|remember": {
+      "meaning": "to keep something in your mind · จำ"
+    },
+    "English|repeat": {
+      "meaning": "to say or do again · พูดซ้ำ"
+    },
+    "English|reporter": {
+      "meaning": "a person who gives news · ผู้สื่อข่าว"
+    },
+    "English|restaurant": {
+      "meaning": "a place where you buy meals · ร้านอาหาร"
+    },
+    "English|result": {
+      "meaning": "what happens at the end · ผลลัพธ์"
+    },
+    "English|review": {
+      "meaning": "a written opinion about a book, film, or place · รีวิว"
+    },
+    "English|ribbon": {
+      "meaning": "a long, narrow piece of cloth for decoration · ริบบิ้น"
+    },
+    "English|rice": {
+      "meaning": "small white or brown grains eaten as food · ข้าว"
+    },
+    "English|rich": {
+      "meaning": "having a lot of money · รวย"
+    },
+    "English|ride": {
+      "meaning": "a journey in a car, bus, or on a bike · การนั่งรถ"
+    },
+    "English|right": {
+      "meaning": "correct, not wrong · ถูกต้อง"
+    },
+    "English|ring": {
+      "meaning": "to call someone on the phone · โทร"
+    },
+    "English|river": {
+      "meaning": "a large natural stream of water · แม่น้ำ"
+    },
+    "English|role": {
+      "meaning": "the part someone has in a play or job · บทบาท"
+    },
+    "English|room": {
+      "meaning": "a part of a building with walls and a door · ห้อง"
+    },
+    "English|rose": {
+      "meaning": "a flower with a sweet smell and sharp thorns · ดอกกุหลาบ"
+    },
+    "English|row": {
+      "meaning": "a line of things or people · แถว"
+    },
+    "English|rude": {
+      "meaning": "not polite or kind · หยาบคาย"
+    },
+    "English|rule": {
+      "meaning": "an instruction that tells people what they must do · กฎ"
+    },
+    "English|ruler": {
+      "meaning": "a straight tool for measuring or drawing lines · ไม้บรรทัด"
+    },
+    "English|run": {
+      "meaning": "a fast movement using your legs · การวิ่ง"
+    },
+    "English|sad": {
+      "meaning": "unhappy because something bad happened · เศร้า"
+    },
+    "English|sailor": {
+      "meaning": "a person who works on a ship · กะลาสี"
+    },
+    "English|salad": {
+      "meaning": "a cold dish of vegetables, often with sauce · สลัด"
+    },
+    "English|sale": {
+      "meaning": "a time when things cost less money · ลดราคา"
+    },
+    "English|same": {
+      "meaning": "not different · เหมือนกัน"
+    },
+    "English|sandwich": {
+      "meaning": "food with meat, cheese, or vegetables between bread · แซนด์วิช"
+    },
+    "English|save": {
+      "meaning": "to keep money for later · เก็บออม"
+    },
+    "English|saw": {
+      "meaning": "a tool with sharp teeth for cutting wood · เลื่อย"
+    },
+    "English|say": {
+      "meaning": "to speak words · พูด"
+    },
+    "English|school": {
+      "meaning": "a place where children go to learn · โรงเรียน"
+    },
+    "English|science": {
+      "meaning": "the study of the natural world · วิทยาศาสตร์"
+    },
+    "English|scientist": {
+      "meaning": "a person who studies science · นักวิทยาศาสตร์"
+    },
+    "English|sea": {
+      "meaning": "a large area of salt water · ทะเล"
+    },
+    "English|seat": {
+      "meaning": "a place where one person can sit · ที่นั่ง"
+    },
+    "English|second": {
+      "meaning": "number two in order · ที่สอง"
+    },
+    "English|section": {
+      "meaning": "one part of something bigger · ส่วน"
+    },
+    "English|see": {
+      "meaning": "to use your eyes to know something is there · เห็น"
+    },
+    "English|self": {
+      "meaning": "the person that you are · ตัวเอง"
+    },
+    "English|sell": {
+      "meaning": "to give something to someone for money · ขาย"
+    },
+    "English|sentence": {
+      "meaning": "a group of words that gives a complete idea · ประโยค"
+    },
+    "English|set": {
+      "meaning": "to put something in a place · วาง"
+    },
+    "English|seven": {
+      "meaning": "the number after six · เจ็ด"
+    },
+    "English|seventeen": {
+      "meaning": "the number after sixteen · สิบเจ็ด"
+    },
+    "English|seventy": {
+      "meaning": "the number equal to seven tens · เจ็ดสิบ"
+    },
+    "English|strange": {
+      "meaning": "unusual or not familiar · แปลก"
+    },
+    "English|street": {
+      "meaning": "a road in a town or city · ถนน"
+    },
+    "English|strict": {
+      "meaning": "having many rules that people must follow · เข้มงวด"
+    },
+    "English|strong": {
+      "meaning": "having much power in your body · แข็งแรง"
+    },
+    "English|student": {
+      "meaning": "a person who learns at a school · นักเรียน"
+    },
+    "English|study": {
+      "meaning": "to learn about a subject · เรียน"
+    },
+    "English|subject": {
+      "meaning": "an area of learning, like maths · วิชา"
+    },
+    "English|subway": {
+      "meaning": "an underground train in a city · รถไฟใต้ดิน"
+    },
+    "English|successful": {
+      "meaning": "having good results · ประสบความสำเร็จ"
+    },
+    "English|sugar": {
+      "meaning": "a sweet white thing used in food · น้ำตาล"
+    },
+    "English|suggestion": {
+      "meaning": "an idea about what to do · คำแนะนำ"
+    },
+    "English|sum": {
+      "meaning": "the answer when numbers are added · ผลรวม"
+    },
+    "English|summer": {
+      "meaning": "the hottest season of the year · ฤดูร้อน"
+    },
+    "English|sun": {
+      "meaning": "the bright star in the sky · ดวงอาทิตย์"
+    },
+    "English|sunny": {
+      "meaning": "with a lot of bright light · แดดออก"
+    },
+    "English|sunshine": {
+      "meaning": "light and heat from the sun · แสงแดด"
+    },
+    "English|super": {
+      "meaning": "very good · ยอดเยี่ยม"
+    },
+    "English|supermarket": {
+      "meaning": "a large shop that sells food · ซูเปอร์มาร์เก็ต"
+    },
+    "English|sure": {
+      "meaning": "certain that something is true · แน่ใจ"
+    },
+    "English|surf": {
+      "meaning": "the waves at the beach · คลื่น"
+    },
+    "English|surprise": {
+      "meaning": "something unexpected that makes you feel happy · ความประหลาดใจ"
+    },
+    "English|survey": {
+      "meaning": "questions asked to get people's ideas · แบบสำรวจ"
+    },
+    "English|sweet": {
+      "meaning": "having a taste like sugar · หวาน"
+    },
+    "English|swim": {
+      "meaning": "the activity of moving in water · การว่ายน้ำ"
+    },
+    "English|swimming": {
+      "meaning": "the activity of moving in water · การว่ายน้ำ"
+    },
+    "English|swimming pool": {
+      "meaning": "a place to swim · สระว่ายน้ำ"
+    },
+    "English|table": {
+      "meaning": "a piece of furniture with a flat top · โต๊ะ"
+    },
+    "English|take": {
+      "meaning": "to carry something with you · เอา"
+    },
+    "English|talk": {
+      "meaning": "to speak with someone · พูดคุย"
+    },
+    "English|tall": {
+      "meaning": "having more height than usual · สูง"
+    },
+    "English|taxi": {
+      "meaning": "a car you pay to ride in · รถแท็กซี่"
+    },
+    "English|tea": {
+      "meaning": "a hot drink made from leaves · ชา"
+    },
+    "English|teach": {
+      "meaning": "to help someone learn · สอน"
+    },
+    "English|teacher": {
+      "meaning": "a person who helps students learn · ครู"
+    },
+    "English|team": {
+      "meaning": "a group of people who play together · ทีม"
+    },
+    "English|technology": {
+      "meaning": "machines and tools made using science · เทคโนโลยี"
+    },
+    "English|telephone": {
+      "meaning": "a machine used to talk to people far away · โทรศัพท์"
+    },
+    "English|television": {
+      "meaning": "a machine for watching programmes · โทรทัศน์"
+    },
+    "English|tell": {
+      "meaning": "to give information to someone · บอก"
+    },
+    "English|temple": {
+      "meaning": "a place where Buddhists go to pray · วัด"
+    },
+    "English|ten": {
+      "meaning": "number after nine · สิบ"
+    },
+    "English|tennis": {
+      "meaning": "a game with rackets and a ball · เทนนิส"
+    },
+    "English|terrible": {
+      "meaning": "very bad · แย่มาก"
+    },
+    "English|test": {
+      "meaning": "questions that check what you know · แบบทดสอบ"
+    },
+    "English|than": {
+      "meaning": "used when comparing two things · กว่า"
+    },
+    "English|thank": {
+      "meaning": "say you are happy for something · ขอบคุณ"
+    },
+    "English|thanks": {
+      "meaning": "words you say when someone helps · คำขอบคุณ"
+    },
+    "English|that": {
+      "meaning": "used before what someone says or thinks · ว่า"
+    },
+    "English|the": {
+      "meaning": "used before a noun already known · นั้น"
+    },
+    "English|theater": {
+      "meaning": "a building to watch films or plays · โรงภาพยนตร์"
+    },
+    "English|their": {
+      "meaning": "belonging to those people · ของพวกเขา"
+    },
+    "English|them": {
+      "meaning": "those people or things · พวกเขา"
+    },
+    "English|then": {
+      "meaning": "next or at that time · แล้ว"
+    },
+    "English|there": {
+      "meaning": "in or at that place · ที่นั่น"
+    },
+    "English|these": {
+      "meaning": "these things or people near us · เหล่านี้"
+    },
+    "English|they": {
+      "meaning": "those people or things · พวกเขา"
+    },
+    "English|thick": {
+      "meaning": "wide from one side to another · หนา"
+    },
+    "English|thin": {
+      "meaning": "not thick · บาง"
+    },
+    "English|thing": {
+      "meaning": "an object or an idea · สิ่ง"
+    },
+    "English|think": {
+      "meaning": "use your mind to have ideas · คิด"
+    },
+    "English|thirteen": {
+      "meaning": "number after twelve · สิบสาม"
+    },
+    "English|thirty": {
+      "meaning": "number with three tens · สามสิบ"
+    },
+    "English|this": {
+      "meaning": "one thing or person near us · นี้"
+    },
+    "English|those": {
+      "meaning": "things or people far from us · เหล่านั้น"
+    },
+    "English|three": {
+      "meaning": "number after two · สาม"
+    },
+    "English|through": {
+      "meaning": "from one side to the other · ผ่าน"
+    },
+    "English|throw": {
+      "meaning": "an act of sending something through air · การขว้าง"
+    },
+    "English|ticket": {
+      "meaning": "a paper that lets you enter · ตั๋ว"
+    },
+    "English|tiger": {
+      "meaning": "a large wild cat with stripes · เสือ"
+    },
+    "English|tight": {
+      "meaning": "fitting very closely · คับ"
+    },
+    "English|time": {
+      "meaning": "minutes, hours, or a moment · เวลา"
+    },
+    "English|tired": {
+      "meaning": "needing rest or sleep · เหนื่อย"
+    },
+    "English|to": {
+      "meaning": "used before a verb · ที่จะ"
+    },
+    "English|today": {
+      "meaning": "this day · วันนี้"
+    },
+    "English|together": {
+      "meaning": "with each other · ด้วยกัน"
+    },
+    "English|toilet": {
+      "meaning": "a room with a toilet · ห้องน้ำ"
+    },
+    "English|tomato": {
+      "meaning": "a round red fruit used in food · มะเขือเทศ"
+    },
+    "English|tomorrow": {
+      "meaning": "the day after this day · พรุ่งนี้"
+    },
+    "English|tonight": {
+      "meaning": "this evening or night · คืนนี้"
+    },
+    "English|too": {
+      "meaning": "also · ด้วย"
+    },
+    "English|tool": {
+      "meaning": "an object used for doing a job · เครื่องมือ"
+    },
+    "English|tooth": {
+      "meaning": "one of the hard white parts in your mouth · ฟัน"
+    },
+    "English|top": {
+      "meaning": "the highest part of something · ด้านบน"
+    },
+    "English|topic": {
+      "meaning": "the thing people are talking or writing about · หัวข้อ"
+    },
+    "English|touch": {
+      "meaning": "the act of putting your hand on something · การสัมผัส"
+    },
+    "English|towel": {
+      "meaning": "a cloth for drying your body · ผ้าเช็ดตัว"
+    },
+    "English|tower": {
+      "meaning": "a very tall, narrow building · หอคอย"
+    },
+    "English|town": {
+      "meaning": "a place where people live, smaller than a city · เมืองเล็ก"
+    },
+    "English|toy": {
+      "meaning": "something a child plays with · ของเล่น"
+    },
+    "English|train": {
+      "meaning": "a long vehicle that runs on rails · รถไฟ"
+    },
+    "English|travel": {
+      "meaning": "to go to places far from home · เดินทาง"
+    },
+    "English|tree": {
+      "meaning": "a tall plant with a trunk and branches · ต้นไม้"
+    },
+    "English|trip": {
+      "meaning": "a journey to a place and back · การเดินทาง"
+    },
+    "English|trousers": {
+      "meaning": "clothes covering each leg from waist to ankle · กางเกงขายาว"
+    },
+    "English|truck": {
+      "meaning": "a large vehicle for carrying things · รถบรรทุก"
+    },
+    "English|true": {
+      "meaning": "correct and not false · จริง"
+    },
+    "English|try": {
+      "meaning": "an attempt to do something · ความพยายาม"
+    },
+    "English|tube": {
+      "meaning": "a long round container, often for cream · หลอด"
+    },
+    "English|turkey": {
+      "meaning": "a large bird often eaten at special meals · ไก่งวง"
+    },
+    "English|turn": {
+      "meaning": "a time when it is your chance to do something · ตา"
+    },
+    "English|twelve": {
+      "meaning": "the number after eleven · สิบสอง"
+    },
+    "English|twenty": {
+      "meaning": "the number after nineteen · ยี่สิบ"
+    },
+    "English|two": {
+      "meaning": "the number after one · สอง"
+    },
+    "English|type": {
+      "meaning": "a group of things that are alike · ชนิด"
+    },
+    "English|ugly": {
+      "meaning": "not nice to look at · น่าเกลียด"
+    },
+    "English|umbrella": {
+      "meaning": "something you hold over your head in rain · ร่ม"
+    },
+    "English|uncle": {
+      "meaning": "the brother of your mother or father · ลุง"
+    },
+    "English|under": {
+      "meaning": "below something else · ใต้"
+    },
+    "English|underline": {
+      "meaning": "a line under a word · เส้นใต้"
+    },
+    "English|until": {
+      "meaning": "up to a particular time · จนถึง"
+    },
+    "English|up": {
+      "meaning": "toward a higher place · ขึ้น"
+    },
+    "English|us": {
+      "meaning": "the speaker and other people · พวกเรา"
+    },
+    "English|use": {
+      "meaning": "to do something with a thing · ใช้"
+    },
+    "English|usually": {
+      "meaning": "most of the time · โดยปกติ"
+    },
+    "English|vacation": {
+      "meaning": "a time away from work or school · วันหยุด"
+    },
+    "English|vase": {
+      "meaning": "a container for holding flowers · แจกัน"
+    },
+    "English|vegetable": {
+      "meaning": "a plant you eat, such as a carrot · ผัก"
+    },
+    "English|very": {
+      "meaning": "used to make a word stronger · มาก"
+    },
+    "English|video": {
+      "meaning": "a recording with moving pictures and sound · วิดีโอ"
+    },
+    "English|visit": {
+      "meaning": "a time when you go to see someone · การเยี่ยม"
+    },
+    "English|volleyball": {
+      "meaning": "a game where teams hit a ball over a net · วอลเลย์บอล"
+    },
+    "English|vote": {
+      "meaning": "a choice in an election · คะแนนเสียง"
+    },
+    "English|wait": {
+      "meaning": "stay until someone or something comes · รอ"
+    },
+    "English|waiter": {
+      "meaning": "a man who brings food in a restaurant · พนักงานเสิร์ฟชาย"
+    },
+    "English|waitress": {
+      "meaning": "a woman who brings food in a restaurant · พนักงานเสิร์ฟหญิง"
+    },
+    "English|wake": {
+      "meaning": "the time after sleeping ends · การตื่น"
+    },
+    "English|walk": {
+      "meaning": "a trip on foot · การเดิน"
+    },
+    "English|wall": {
+      "meaning": "the side of a room or building · กำแพง"
+    },
+    "English|want": {
+      "meaning": "would like to have or do something · ต้องการ"
+    },
+    "English|war": {
+      "meaning": "fighting between countries or groups · สงคราม"
+    },
+    "English|warm": {
+      "meaning": "a little hot · อบอุ่น"
+    },
+    "English|was": {
+      "meaning": "past form of “am” and “is” · เป็น"
+    },
+    "English|wash": {
+      "meaning": "cleaning with water · การล้าง"
+    },
+    "English|watch": {
+      "meaning": "a small clock worn on your arm · นาฬิกาข้อมือ"
+    },
+    "English|water": {
+      "meaning": "the clear liquid people drink · น้ำ"
+    },
+    "English|way": {
+      "meaning": "a road or direction to a place · ทาง"
+    },
+    "English|we": {
+      "meaning": "you and I, or other people and I · เรา"
+    },
+    "English|wear": {
+      "meaning": "have clothes on your body · สวม"
+    },
+    "English|weather": {
+      "meaning": "sun, rain, wind, and heat outside · อากาศ"
+    },
+    "English|week": {
+      "meaning": "seven days · สัปดาห์"
+    },
+    "English|weekend": {
+      "meaning": "Saturday and Sunday · วันหยุดสุดสัปดาห์"
+    },
+    "English|welcome": {
+      "meaning": "said when someone comes to a place · ยินดีต้อนรับ"
+    },
+    "English|well": {
+      "meaning": "healthy and not ill · สบายดี"
+    },
+    "English|were": {
+      "meaning": "past form of “are” · เป็น"
+    },
+    "English|what": {
+      "meaning": "used to ask about a thing · อะไร"
+    },
+    "English|wheel": {
+      "meaning": "a round part that helps things move · ล้อ"
+    },
+    "English|when": {
+      "meaning": "used to ask about time · เมื่อไร"
+    },
+    "English|where": {
+      "meaning": "used to ask about a place · ที่ไหน"
+    },
+    "English|which": {
+      "meaning": "used to ask about a choice · อันไหน"
+    },
+    "English|white": {
+      "meaning": "having the color of snow · สีขาว"
+    },
+    "English|who": {
+      "meaning": "used to ask about a person · ใคร"
+    },
+    "English|whose": {
+      "meaning": "used to ask who something belongs to · ของใคร"
+    },
+    "English|why": {
+      "meaning": "used to ask for a reason · ทำไม"
+    },
+    "English|wife": {
+      "meaning": "a married woman · ภรรยา"
+    },
+    "English|will": {
+      "meaning": "used to talk about the future · จะ"
+    },
+    "English|win": {
+      "meaning": "be first in a game or contest · ชนะ"
+    },
+    "English|wind": {
+      "meaning": "air that moves outside · ลม"
+    },
+    "English|window": {
+      "meaning": "an opening in a wall with glass · หน้าต่าง"
+    },
+    "English|winter": {
+      "meaning": "the coldest season of the year · ฤดูหนาว"
+    },
+    "English|wish": {
+      "meaning": "a thing you hope will happen · ความปรารถนา"
+    },
+    "English|act": {
+      "meaning": "something someone does · การกระทำ"
+    },
+    "English|actually": {
+      "meaning": "in fact · จริงๆ"
+    },
+    "English|addition": {
+      "meaning": "something added · การเพิ่ม"
+    },
+    "English|additional": {
+      "meaning": "more; extra · เพิ่มเติม"
+    },
+    "English|adjective": {
+      "meaning": "a word that describes a noun · คำคุณศัพท์"
+    },
+    "English|adjust": {
+      "meaning": "change a little to make better · ปรับ"
+    },
+    "English|admire": {
+      "meaning": "respect or like very much · ชื่นชม"
+    },
+    "English|admit": {
+      "meaning": "say that something is true · ยอมรับ"
+    },
+    "English|adult": {
+      "meaning": "fully grown · โตเต็มที่"
+    },
+    "English|advanced": {
+      "meaning": "at a high level · ระดับสูง"
+    },
+    "English|advantage": {
+      "meaning": "something that helps you · ข้อได้เปรียบ"
+    },
+    "English|adventure": {
+      "meaning": "an exciting and unusual experience · การผจญภัย"
+    },
+    "English|advertisement": {
+      "meaning": "a notice that tries to sell something · โฆษณา"
+    },
+    "English|advertising": {
+      "meaning": "the business of showing products to sell · การโฆษณา"
+    },
+    "English|advice": {
+      "meaning": "an idea to help someone decide · คำแนะนำ"
+    },
+    "English|advise": {
+      "meaning": "give someone ideas to help them · แนะนำ"
+    },
+    "English|affair": {
+      "meaning": "an event or situation · เรื่อง"
+    },
+    "English|against": {
+      "meaning": "touching or next to · ติดกับ"
+    },
+    "English|aged": {
+      "meaning": "having a stated number of years · อายุ"
+    },
+    "English|agency": {
+      "meaning": "a business that provides a service · บริษัทตัวแทน"
+    },
+    "English|agent": {
+      "meaning": "a person who works for someone · ตัวแทน"
+    },
+    "English|ahead": {
+      "meaning": "in front · ข้างหน้า"
+    },
+    "English|air": {
+      "meaning": "the gas we breathe · อากาศ"
+    },
+    "English|aisle": {
+      "meaning": "a path between seats or shelves · ทางเดิน"
+    },
+    "English|alarm": {
+      "meaning": "a loud warning sound · สัญญาณเตือน"
+    },
+    "English|alarm clock": {
+      "meaning": "a clock that wakes you up · นาฬิกาปลุก"
+    },
+    "English|alive": {
+      "meaning": "living; not dead · มีชีวิตอยู่"
+    },
+    "English|allow": {
+      "meaning": "let someone do something · อนุญาต"
+    },
+    "English|alright": {
+      "meaning": "good or okay · ไม่เป็นไร"
+    },
+    "English|although": {
+      "meaning": "despite the fact that · แม้ว่า"
+    },
+    "English|ambition": {
+      "meaning": "a strong wish to achieve something · ความทะเยอทะยาน"
+    },
+    "English|among": {
+      "meaning": "in the middle of people or things · ท่ามกลาง"
+    },
+    "English|amused": {
+      "meaning": "finding something funny · ขบขัน"
+    },
+    "English|amusement": {
+      "meaning": "fun and enjoyment · ความสนุก"
+    },
+    "English|ancestor": {
+      "meaning": "a family member from long ago · บรรพบุรุษ"
+    },
+    "English|ancient": {
+      "meaning": "very old, from long ago · โบราณ"
+    },
+    "English|angel": {
+      "meaning": "a good spirit with wings · นางฟ้า"
+    },
+    "English|angrily": {
+      "meaning": "in an angry way · อย่างโกรธ"
+    },
+    "English|ankle": {
+      "meaning": "the joint between foot and leg · ข้อเท้า"
+    },
+    "English|anniversary": {
+      "meaning": "the date an important event happened · วันครบรอบ"
+    },
+    "English|avoid": {
+      "meaning": "to stay away from someone or something · หลีกเลี่ยง"
+    },
+    "English|award": {
+      "meaning": "a prize for doing something well · รางวัล"
+    },
+    "English|awful": {
+      "meaning": "very bad or unpleasant · แย่มาก"
+    },
+    "English|background": {
+      "meaning": "the part behind the main thing in a picture · พื้นหลัง"
+    },
+    "English|badly": {
+      "meaning": "in a poor way · อย่างแย่"
+    },
+    "English|badminton": {
+      "meaning": "a game using rackets and a shuttlecock · แบดมินตัน"
+    },
+    "English|bake": {
+      "meaning": "to cook food in an oven · อบ"
+    },
+    "English|balcony": {
+      "meaning": "a small outdoor area above the ground · ระเบียง"
+    },
+    "English|balloon": {
+      "meaning": "a colorful bag filled with air · ลูกโป่ง"
+    },
+    "English|banking": {
+      "meaning": "work done by a bank · การธนาคาร"
+    },
+    "English|barbecue": {
+      "meaning": "a meal cooked over a fire · บาร์บีคิว"
+    },
+    "English|barber": {
+      "meaning": "a person who cuts men's hair · ช่างตัดผม"
+    },
+    "English|bargain": {
+      "meaning": "something sold at a very low price · ของราคาถูก"
+    },
+    "English|base": {
+      "meaning": "the bottom part that holds something up · ฐาน"
+    },
+    "English|basic": {
+      "meaning": "simple and most important · พื้นฐาน"
+    },
+    "English|basically": {
+      "meaning": "used to give the main idea simply · โดยพื้นฐาน"
+    },
+    "English|basket": {
+      "meaning": "a container for carrying things · ตะกร้า"
+    },
+    "English|batch": {
+      "meaning": "a group made or done together · ชุด"
+    },
+    "English|battery": {
+      "meaning": "something that gives power to a device · แบตเตอรี่"
+    },
+    "English|bay": {
+      "meaning": "part of the sea with land around it · อ่าว"
+    },
+    "English|beauty": {
+      "meaning": "the quality of being very pretty · ความสวยงาม"
+    },
+    "English|been": {
+      "meaning": "past form used with have · เคย"
+    },
+    "English|beer": {
+      "meaning": "an alcoholic drink made from grain · เบียร์"
+    },
+    "English|beg": {
+      "meaning": "to ask for something very strongly · ขอร้อง"
+    },
+    "English|beginner": {
+      "meaning": "a person who is learning something new · ผู้เริ่มต้น"
+    },
+    "English|beginning": {
+      "meaning": "the first part of something · จุดเริ่มต้น"
+    },
+    "English|behavior": {
+      "meaning": "the way someone acts · พฤติกรรม"
+    },
+    "English|being": {
+      "meaning": "the state of existing · การมีอยู่"
+    },
+    "English|belly": {
+      "meaning": "the front lower part of your body · ท้อง"
+    },
+    "English|belong": {
+      "meaning": "to be owned by someone · เป็นของ"
+    },
+    "English|belt": {
+      "meaning": "a strip worn around the waist · เข็มขัด"
+    },
+    "English|bench": {
+      "meaning": "a long seat for two or more people · ม้านั่ง"
+    },
+    "English|bend": {
+      "meaning": "to make something not straight · งอ"
+    },
+    "English|besides": {
+      "meaning": "also; in addition · นอกจากนี้"
+    },
+    "English|beyond": {
+      "meaning": "farther than or on the other side of · เลย"
+    },
+    "English|bill": {
+      "meaning": "a paper showing how much to pay · ใบเรียกเก็บเงิน"
+    },
+    "English|bit": {
+      "meaning": "a small piece or amount · เล็กน้อย"
+    },
+    "English|bite": {
+      "meaning": "a small amount taken with your teeth · คำกัด"
+    },
+    "English|blackboard": {
+      "meaning": "a dark board for writing in class · กระดานดำ"
+    },
+    "English|blame": {
+      "meaning": "to say someone did something wrong · โทษ"
+    },
+    "English|captain": {
+      "meaning": "the person in charge of a ship · กัปตัน"
+    },
+    "English|car park": {
+      "meaning": "a place where cars can be left · ที่จอดรถ"
+    },
+    "English|carrot": {
+      "meaning": "a long orange vegetable · แครอท"
+    },
+    "English|cash": {
+      "meaning": "money in coins and notes · เงินสด"
+    },
+    "English|cassette": {
+      "meaning": "a small box with tape for music · เทปคาสเซ็ต"
+    },
+    "English|castle": {
+      "meaning": "a large strong old building for a king · ปราสาท"
+    },
+    "English|cause": {
+      "meaning": "to make something happen · ทำให้เกิด"
+    },
+    "English|cent": {
+      "meaning": "a small unit of money · เซ็นต์"
+    },
+    "English|center": {
+      "meaning": "the middle point of something · ตรงกลาง"
+    },
+    "English|centimeter": {
+      "meaning": "a small unit for measuring length · เซนติเมตร"
+    },
+    "English|century": {
+      "meaning": "a period of one hundred years · ศตวรรษ"
+    },
+    "English|cereal": {
+      "meaning": "food made from grains, often for breakfast · ซีเรียล"
+    },
+    "English|certain": {
+      "meaning": "known for sure · แน่นอน"
+    },
+    "English|certainly": {
+      "meaning": "used to say yes strongly · แน่นอน"
+    },
+    "English|chain": {
+      "meaning": "a line of connected metal rings · โซ่"
+    },
+    "English|chairman": {
+      "meaning": "the person who leads a meeting · ประธาน"
+    },
+    "English|challenge": {
+      "meaning": "a difficult task that tests you · ความท้าทาย"
+    },
+    "English|champagne": {
+      "meaning": "a sparkling white wine · แชมเปญ"
+    },
+    "English|championship": {
+      "meaning": "an important competition to find the best · การแข่งขันชิงแชมป์"
+    },
+    "English|chance": {
+      "meaning": "a possibility that something may happen · โอกาส"
+    },
+    "English|chapter": {
+      "meaning": "one part of a book · บท"
+    },
+    "English|chart": {
+      "meaning": "a picture that shows information · แผนภูมิ"
+    },
+    "English|chat": {
+      "meaning": "to talk in a friendly way · คุย"
+    },
+    "English|cheap": {
+      "meaning": "costing little money · ถูก"
+    },
+    "English|cheek": {
+      "meaning": "the soft part of your face below an eye · แก้ม"
+    },
+    "English|cheer": {
+      "meaning": "to shout to show support or happiness · เชียร์"
+    },
+    "English|chef": {
+      "meaning": "a person who cooks in a restaurant · พ่อครัว"
+    },
+    "English|chemical": {
+      "meaning": "relating to substances used in science · เกี่ยวกับสารเคมี"
+    },
+    "English|cheque": {
+      "meaning": "a paper used to pay money from a bank · เช็ค"
+    },
+    "English|chess": {
+      "meaning": "a game played with pieces on a board · หมากรุก"
+    },
+    "English|chest": {
+      "meaning": "the front part of your body below the neck · หน้าอก"
+    },
+    "English|childhood": {
+      "meaning": "the time when you were a child · วัยเด็ก"
+    },
+    "English|chili": {
+      "meaning": "a small hot red or green vegetable · พริก"
+    },
+    "English|chimpanzee": {
+      "meaning": "a clever animal like a large monkey · ชิมแปนซี"
+    },
+    "English|chin": {
+      "meaning": "the part of your face below your mouth · คาง"
+    },
+    "English|chirp": {
+      "meaning": "a short high sound made by a bird · เสียงจิ๊บๆ"
+    },
+    "English|choice": {
+      "meaning": "something you can choose · ทางเลือก"
+    },
+    "English|cigarette": {
+      "meaning": "a small roll of tobacco for smoking · บุหรี่"
+    },
+    "English|citizen": {
+      "meaning": "a person who belongs to a country · พลเมือง"
+    },
+    "English|claim": {
+      "meaning": "to say something is true · อ้าง"
+    },
+    "English|classic": {
+      "meaning": "well known and liked for a long time · คลาสสิก"
+    },
+    "English|classical music": {
+      "meaning": "music by famous old writers, often played by an orchestra · ดนตรีคลาสสิก"
+    },
+    "English|cleaner": {
+      "meaning": "a person whose job is to clean places · คนทำความสะอาด"
+    },
+    "English|clear": {
+      "meaning": "easy to see, read, or understand · ชัดเจน"
+    },
+    "English|clearly": {
+      "meaning": "in a way that is easy to understand · อย่างชัดเจน"
+    },
+    "English|clerk": {
+      "meaning": "a worker in an office or shop · พนักงาน"
+    },
+    "English|click": {
+      "meaning": "to press a button on a computer mouse · คลิก"
+    },
+    "English|climbing": {
+      "meaning": "the activity of going up rocks or mountains · การปีนเขา"
+    },
+    "English|clone": {
+      "meaning": "to make an exact copy of a living thing · โคลน"
+    },
+    "English|clown": {
+      "meaning": "a funny person who performs in a circus · ตัวตลก"
+    },
+    "English|clue": {
+      "meaning": "something that helps you find an answer · เบาะแส"
+    },
+    "English|coast": {
+      "meaning": "land beside the sea · ชายฝั่ง"
+    },
+    "English|coin": {
+      "meaning": "a small round piece of money · เหรียญ"
+    },
+    "English|cola": {
+      "meaning": "a sweet dark fizzy drink · โคล่า"
+    },
+    "English|colorful": {
+      "meaning": "having many bright colours · มีสีสัน"
+    },
+    "English|column": {
+      "meaning": "a vertical line of words or numbers · คอลัมน์"
+    },
+    "English|comb": {
+      "meaning": "a tool with teeth for making hair neat · หวี"
+    },
+    "English|comfortable": {
+      "meaning": "feeling relaxed and without pain · สบาย"
+    },
+    "English|comic": {
+      "meaning": "funny and making people laugh · ตลก"
+    },
+    "English|commitment": {
+      "meaning": "a promise to do something · คำมั่นสัญญา"
+    },
+    "English|committee": {
+      "meaning": "a group that makes decisions about something · คณะกรรมการ"
+    },
+    "English|common": {
+      "meaning": "happening or found often · ทั่วไป"
+    },
+    "English|communicate": {
+      "meaning": "to share information with someone · สื่อสาร"
+    },
+    "English|communication": {
+      "meaning": "sharing information with other people · การสื่อสาร"
+    },
+    "English|company": {
+      "meaning": "a business that sells things or services · บริษัท"
+    },
+    "English|comparative": {
+      "meaning": "a grammar form showing that one thing has more · ขั้นกว่า"
+    },
+    "English|compare": {
+      "meaning": "to look at two things to find differences · เปรียบเทียบ"
+    },
+    "English|competition": {
+      "meaning": "an event where people try to win · การแข่งขัน"
+    },
+    "English|complain": {
+      "meaning": "to say that something is wrong or bad · บ่น"
+    },
+    "English|complaint": {
+      "meaning": "a statement saying something is wrong · คำร้องเรียน"
+    },
+    "English|complete": {
+      "meaning": "having all parts; with nothing missing · สมบูรณ์"
+    },
+    "English|composer": {
+      "meaning": "a person who writes music · นักแต่งเพลง"
+    },
+    "English|concentrate": {
+      "meaning": "to give all your attention to something · มีสมาธิ"
+    },
+    "English|concern": {
+      "meaning": "a feeling of worry about something · ความกังวล"
+    },
+    "English|condition": {
+      "meaning": "the state that something is in · สภาพ"
+    },
+    "English|confident": {
+      "meaning": "sure that you can do something well · มั่นใจ"
+    },
+    "English|confuse": {
+      "meaning": "to make someone unable to understand · ทำให้งง"
+    },
+    "English|confused": {
+      "meaning": "unable to understand something · สับสน"
+    },
+    "English|consequence": {
+      "meaning": "something that happens because of an action · ผลที่ตามมา"
+    },
+    "English|consider": {
+      "meaning": "to think carefully about something · พิจารณา"
+    },
+    "English|cycling": {
+      "meaning": "the sport of riding a bicycle · การปั่นจักรยาน"
+    },
+    "English|daily": {
+      "meaning": "happening every day · ทุกวัน"
+    },
+    "English|dam": {
+      "meaning": "a wall that holds back water · เขื่อน"
+    },
+    "English|dancer": {
+      "meaning": "a person who dances · นักเต้น"
+    },
+    "English|danger": {
+      "meaning": "the chance that something bad may happen · อันตราย"
+    },
+    "English|dangerous": {
+      "meaning": "likely to hurt or harm someone · อันตราย"
+    },
+    "English|daylight": {
+      "meaning": "natural light during the day · แสงแดด"
+    },
+    "English|dead": {
+      "meaning": "not alive · ตาย"
+    },
+    "English|deal": {
+      "meaning": "an agreement between people or groups · ข้อตกลง"
+    },
+    "English|death": {
+      "meaning": "the end of life · ความตาย"
+    },
+    "English|debate": {
+      "meaning": "a formal discussion with different opinions · การโต้วาที"
+    },
+    "English|decide": {
+      "meaning": "to choose after thinking · ตัดสินใจ"
+    },
+    "English|deep": {
+      "meaning": "a long way down from the top · ลึก"
+    },
+    "English|deeply": {
+      "meaning": "very much or strongly · อย่างลึกซึ้ง"
+    },
+    "English|degree": {
+      "meaning": "a unit for measuring temperature · องศา"
+    },
+    "English|delay": {
+      "meaning": "a wait that makes something late · ความล่าช้า"
+    },
+    "English|dentist": {
+      "meaning": "a doctor who cares for teeth · หมอฟัน"
+    },
+    "English|department store": {
+      "meaning": "a large shop with many kinds of goods · ห้างสรรพสินค้า"
+    },
+    "English|depend": {
+      "meaning": "to need someone or something for help · ขึ้นอยู่กับ"
+    },
+    "English|description": {
+      "meaning": "words that tell what someone or something is like · คำอธิบาย"
+    },
+    "English|desert": {
+      "meaning": "a very dry area with little rain · ทะเลทราย"
+    },
+    "English|dessert": {
+      "meaning": "sweet food eaten after a meal · ของหวาน"
+    },
+    "English|destroy": {
+      "meaning": "to damage something so it cannot be used · ทำลาย"
+    },
+    "English|detail": {
+      "meaning": "a small part of something · รายละเอียด"
+    },
+    "English|develop": {
+      "meaning": "to grow or become better · พัฒนา"
+    },
+    "English|developed": {
+      "meaning": "having grown or become better · พัฒนาแล้ว"
+    },
+    "English|diamond": {
+      "meaning": "a very hard, valuable clear stone · เพชร"
+    },
+    "English|diary": {
+      "meaning": "a book for writing about each day · ไดอารี่"
+    },
+    "English|die": {
+      "meaning": "to stop living · ตาย"
+    },
+    "English|diet": {
+      "meaning": "the food a person usually eats · อาหาร"
+    },
+    "English|differently": {
+      "meaning": "in another way · แตกต่างกัน"
+    },
+    "English|difficulty": {
+      "meaning": "something that is hard to do · ความยาก"
+    },
+    "English|digital camera": {
+      "meaning": "a camera that saves photos electronically · กล้องดิจิทัล"
+    },
+    "English|dinosaur": {
+      "meaning": "a very large animal from long ago · ไดโนเสาร์"
+    },
+    "English|direct": {
+      "meaning": "going straight to a place · ตรง"
+    },
+    "English|direction": {
+      "meaning": "the way to go somewhere · ทิศทาง"
+    },
+    "English|director": {
+      "meaning": "a person who leads a company or film · ผู้กำกับ"
+    },
+    "English|disadvantage": {
+      "meaning": "a bad point about something · ข้อเสีย"
+    },
+    "English|disagree": {
+      "meaning": "to have a different opinion · ไม่เห็นด้วย"
+    },
+    "English|disappear": {
+      "meaning": "to go out of sight · หายไป"
+    },
+    "English|disappointed": {
+      "meaning": "sad because something was not as good as hoped · ผิดหวัง"
+    },
+    "English|disappointing": {
+      "meaning": "not as good as hoped · น่าผิดหวัง"
+    },
+    "English|disco": {
+      "meaning": "a place where people dance to music · ดิสโก้"
+    },
+    "English|discover": {
+      "meaning": "to find something for the first time · ค้นพบ"
+    },
+    "English|discussion": {
+      "meaning": "talking about something with other people · การอภิปราย"
+    },
+    "English|dishonest": {
+      "meaning": "not telling the truth · ไม่ซื่อสัตย์"
+    },
+    "English|dislike": {
+      "meaning": "a feeling of not liking something · ความไม่ชอบ"
+    },
+    "English|display": {
+      "meaning": "a group of things shown for people to see · การจัดแสดง"
+    },
+    "English|disturb": {
+      "meaning": "to stop someone from resting or working · รบกวน"
+    },
+    "English|divide": {
+      "meaning": "to separate something into parts · แบ่ง"
+    },
+    "English|dizzy": {
+      "meaning": "feeling that everything is moving around you · เวียนหัว"
+    },
+    "English|done": {
+      "meaning": "finished; not needing more work · เสร็จแล้ว"
+    },
+    "English|double": {
+      "meaning": "twice as much or as many · สองเท่า"
+    },
+    "English|doubt": {
+      "meaning": "a feeling of not being sure · ความสงสัย"
+    },
+    "English|download": {
+      "meaning": "to copy a file from the internet · ดาวน์โหลด"
+    },
+    "English|downstairs": {
+      "meaning": "on or to a lower floor · ข้างล่าง"
+    },
+    "English|downtown": {
+      "meaning": "in the main business area of a city · ใจกลางเมือง"
+    },
+    "English|drawer": {
+      "meaning": "a box that slides in and out of furniture · ลิ้นชัก"
+    },
+    "English|drawing": {
+      "meaning": "a picture made with a pencil or pen · รูปวาด"
+    },
+    "English|dressed": {
+      "meaning": "wearing clothes · แต่งตัวแล้ว"
+    },
+    "English|drill": {
+      "meaning": "a tool for making holes · สว่าน"
+    },
+    "English|driver's license": {
+      "meaning": "an official card allowing someone to drive · ใบขับขี่"
+    },
+    "English|drug": {
+      "meaning": "a medicine or illegal substance that changes the body · ยาเสพติด"
+    },
+    "English|drugstore": {
+      "meaning": "a shop that sells medicine and other things · ร้านขายยา"
+    },
+    "English|duck": {
+      "meaning": "a bird that swims and has a flat beak · เป็ด"
+    },
+    "English|during": {
+      "meaning": "at some time in a period · ระหว่าง"
+    },
+    "English|dust": {
+      "meaning": "very small pieces of dirt in the air · ฝุ่น"
+    },
+    "English|earn": {
+      "meaning": "to get money for work · หาเงิน"
+    },
+    "English|earring": {
+      "meaning": "jewelry worn on an ear · ต่างหู"
+    },
+    "English|earth": {
+      "meaning": "the planet where we live · โลก"
+    },
+    "English|earthquake": {
+      "meaning": "a sudden shaking of the ground · แผ่นดินไหว"
+    },
+    "English|easily": {
+      "meaning": "without difficulty · อย่างง่ายดาย"
+    },
+    "English|east": {
+      "meaning": "on the side where the sun rises · ตะวันออก"
+    },
+    "English|editor": {
+      "meaning": "a person who prepares writing for printing · บรรณาธิการ"
+    },
+    "English|education": {
+      "meaning": "learning at school or college · การศึกษา"
+    },
+    "English|educational": {
+      "meaning": "helping people learn · เกี่ยวกับการศึกษา"
+    },
+    "English|effect": {
+      "meaning": "a change caused by something · ผลกระทบ"
+    },
+    "English|effort": {
+      "meaning": "hard work to do something · ความพยายาม"
+    },
+    "English|elderly": {
+      "meaning": "old, usually describing people · สูงอายุ"
+    },
+    "English|electric": {
+      "meaning": "using electricity for power · ใช้ไฟฟ้า"
+    },
+    "English|elephant": {
+      "meaning": "a very large animal with a long nose · ช้าง"
+    },
+    "English|elevator": {
+      "meaning": "a box that takes people up and down · ลิฟต์"
+    },
+    "English|elsewhere": {
+      "meaning": "in or to another place · ที่อื่น"
+    },
+    "English|embarrassing": {
+      "meaning": "making you feel shy or foolish · น่าอาย"
+    },
+    "English|emergency": {
+      "meaning": "a dangerous situation needing quick help · เหตุฉุกเฉิน"
+    },
+    "English|empty": {
+      "meaning": "with nothing inside · ว่างเปล่า"
+    },
+    "English|encourage": {
+      "meaning": "to give someone support or confidence · ให้กำลังใจ"
+    },
+    "English|endangered": {
+      "meaning": "at risk of disappearing forever · ใกล้สูญพันธุ์"
+    },
+    "English|ending": {
+      "meaning": "the last part of something · ตอนจบ"
+    },
+    "English|energetic": {
+      "meaning": "full of energy and moving a lot · กระฉับกระเฉง"
+    },
+    "English|enormous": {
+      "meaning": "extremely big · ใหญ่มาก"
+    },
+    "English|enough": {
+      "meaning": "as much as needed · เพียงพอ"
+    },
+    "English|enter": {
+      "meaning": "to go into a place · เข้า"
+    },
+    "English|entertainment": {
+      "meaning": "things that make people have fun · ความบันเทิง"
+    },
+    "English|entrance": {
+      "meaning": "a door or place for going in · ทางเข้า"
+    },
+    "English|envelope": {
+      "meaning": "a paper cover for a letter · ซองจดหมาย"
+    },
+    "English|envy": {
+      "meaning": "the feeling of wanting what another person has · ความอิจฉา"
+    },
+    "English|episode": {
+      "meaning": "one part of a television series · ตอน"
+    },
+    "English|error": {
+      "meaning": "a mistake · ข้อผิดพลาด"
+    },
+    "English|escalator": {
+      "meaning": "moving stairs in a building · บันไดเลื่อน"
+    },
+    "English|escape": {
+      "meaning": "to get away from a dangerous place · หนี"
+    },
+    "English|especially": {
+      "meaning": "more than usual or more than others · โดยเฉพาะ"
+    },
+    "English|essay": {
+      "meaning": "a short piece of writing about a subject · เรียงความ"
+    },
+    "English|establish": {
+      "meaning": "to start something that will continue · ก่อตั้ง"
+    },
+    "English|euro": {
+      "meaning": "the money used in many European countries · ยูโร"
+    },
+    "English|even": {
+      "meaning": "used to show something surprising · แม้แต่"
+    },
+    "English|ever": {
+      "meaning": "at any time · เคย"
+    },
+    "English|evidence": {
+      "meaning": "facts or signs showing something is true · หลักฐาน"
+    },
+    "English|exactly": {
+      "meaning": "in a completely correct way · อย่างแน่นอน"
+    },
+    "English|exam": {
+      "meaning": "a test of what you know · การสอบ"
+    },
+    "English|except": {
+      "meaning": "not including · ยกเว้น"
+    },
+    "English|exchange": {
+      "meaning": "giving one thing and getting another · การแลกเปลี่ยน"
+    },
+    "English|exhibition": {
+      "meaning": "a public show of art or other things · นิทรรศการ"
+    },
+    "English|exist": {
+      "meaning": "to be real or be present · มีอยู่"
+    },
+    "English|expect": {
+      "meaning": "to think something will happen · คาดหวัง"
+    },
+    "English|experience": {
+      "meaning": "knowledge from doing or seeing something · ประสบการณ์"
+    },
+    "English|expert": {
+      "meaning": "a person who knows a lot about something · ผู้เชี่ยวชาญ"
+    },
+    "English|explain": {
+      "meaning": "to make something easy to understand · อธิบาย"
+    },
+    "English|explanation": {
+      "meaning": "words that make something clear · คำอธิบาย"
+    },
+    "English|explore": {
+      "meaning": "to travel around a place to learn about it · สำรวจ"
+    },
+    "English|fog": {
+      "meaning": "thick cloud close to the ground · หมอก"
+    },
+    "English|folder": {
+      "meaning": "cover for keeping papers together · แฟ้ม"
+    },
+    "English|follow": {
+      "meaning": "go behind someone or something · ตาม"
+    },
+    "English|fool": {
+      "meaning": "a silly person · คนโง่"
+    },
+    "English|footballer": {
+      "meaning": "a person who plays football · นักฟุตบอล"
+    },
+    "English|forbid": {
+      "meaning": "say that someone must not do something · ห้าม"
+    },
+    "English|force": {
+      "meaning": "strong power used to move something · แรง"
+    },
+    "English|forest": {
+      "meaning": "a large area full of trees · ป่า"
+    },
+    "English|forever": {
+      "meaning": "for all time · ตลอดไป"
+    },
+    "English|fork": {
+      "meaning": "a tool with points for eating · ส้อม"
+    },
+    "English|fortunately": {
+      "meaning": "by good luck · โชคดี"
+    },
+    "English|fortune": {
+      "meaning": "a lot of money · โชคลาภ"
+    },
+    "English|forward": {
+      "meaning": "towards the front · ไปข้างหน้า"
+    },
+    "English|frame": {
+      "meaning": "a border around a picture · กรอบ"
+    },
+    "English|frank": {
+      "meaning": "honest and open · ตรงไปตรงมา"
+    },
+    "English|freedom": {
+      "meaning": "the right to do what you want · อิสรภาพ"
+    },
+    "English|freeze": {
+      "meaning": "become very cold and hard · แข็งตัว"
+    },
+    "English|fresh": {
+      "meaning": "new and not old · สดใหม่"
+    },
+    "English|fridge": {
+      "meaning": "a cold cupboard for food · ตู้เย็น"
+    },
+    "English|fried": {
+      "meaning": "cooked in hot oil · ทอด"
+    },
+    "English|friendship": {
+      "meaning": "a close relationship between friends · มิตรภาพ"
+    },
+    "English|frighten": {
+      "meaning": "make someone feel afraid · ทำให้กลัว"
+    },
+    "English|frightened": {
+      "meaning": "feeling afraid · กลัว"
+    },
+    "English|frightening": {
+      "meaning": "making people feel afraid · น่ากลัว"
+    },
+    "English|fry": {
+      "meaning": "food cooked in hot oil · ของทอด"
+    },
+    "English|fully": {
+      "meaning": "completely · อย่างเต็มที่"
+    },
+    "English|function": {
+      "meaning": "work or operate · ทำงาน"
+    },
+    "English|furniture": {
+      "meaning": "tables, chairs, and other things in a home · เฟอร์นิเจอร์"
+    },
+    "English|further": {
+      "meaning": "more far away · ไกลกว่า"
+    },
+    "English|gallery": {
+      "meaning": "a room where people see art · หอศิลป์"
+    },
+    "English|garage": {
+      "meaning": "a building for keeping a car · โรงรถ"
+    },
+    "English|garlic": {
+      "meaning": "a strong-smelling white food plant · กระเทียม"
+    },
+    "English|gas": {
+      "meaning": "fuel used for cooking or cars · แก๊ส"
+    },
+    "English|gate": {
+      "meaning": "a door in a wall or fence · ประตูรั้ว"
+    },
+    "English|gather": {
+      "meaning": "come together in one place · รวมตัว"
+    },
+    "English|gender": {
+      "meaning": "whether someone is male or female · เพศ"
+    },
+    "English|generation": {
+      "meaning": "people born around the same time · รุ่น"
+    },
+    "English|gentle": {
+      "meaning": "kind and not rough · อ่อนโยน"
+    },
+    "English|given": {
+      "meaning": "already decided or known · ที่กำหนด"
+    },
+    "English|globe": {
+      "meaning": "a round map of the world · ลูกโลก"
+    },
+    "English|glove": {
+      "meaning": "a cover for your hand · ถุงมือ"
+    },
+    "English|golden": {
+      "meaning": "made of gold · ทำด้วยทอง"
+    },
+    "English|golf": {
+      "meaning": "a game of hitting a ball into holes · กอล์ฟ"
+    },
+    "English|good-looking": {
+      "meaning": "nice to look at · หน้าตาดี"
+    },
+    "English|government": {
+      "meaning": "the people who run a country · รัฐบาล"
+    },
+    "English|grace": {
+      "meaning": "a beautiful, smooth way of moving · ความสง่างาม"
+    },
+    "English|gradually": {
+      "meaning": "slowly over time · ทีละน้อย"
+    },
+    "English|graduate": {
+      "meaning": "finish school or university · จบการศึกษา"
+    },
+    "English|gram": {
+      "meaning": "a small unit for weighing things · กรัม"
+    },
+    "English|grandchild": {
+      "meaning": "the child of your son or daughter · หลาน"
+    },
+    "English|granddad": {
+      "meaning": "the father of your parent · คุณปู่"
+    },
+    "English|granddaughter": {
+      "meaning": "a female child of your child · หลานสาว"
+    },
+    "English|grandson": {
+      "meaning": "a male child of your child · หลานชาย"
+    },
+    "English|granny": {
+      "meaning": "the mother of your parent · คุณย่า"
+    },
+    "English|grateful": {
+      "meaning": "feeling thankful for something · รู้สึกขอบคุณ"
+    },
+    "English|greatly": {
+      "meaning": "very much · อย่างมาก"
+    },
+    "English|greedy": {
+      "meaning": "wanting more than you need · โลภ"
+    },
+    "English|grilled": {
+      "meaning": "cooked over a fire · ย่าง"
+    },
+    "English|grocery store": {
+      "meaning": "a shop that sells food and home items · ร้านขายของชำ"
+    },
+    "English|guard": {
+      "meaning": "a person who protects a place · ยาม"
+    },
+    "English|guidebook": {
+      "meaning": "a book with information for visitors · หนังสือแนะนำ"
+    },
+    "English|gun": {
+      "meaning": "a weapon that shoots bullets · ปืน"
+    },
+    "English|half-price": {
+      "meaning": "costing only half the usual amount · ลดครึ่งราคา"
+    },
+    "English|ham": {
+      "meaning": "meat from a pig's leg · แฮม"
+    },
+    "English|handbag": {
+      "meaning": "a bag a woman carries for personal things · กระเป๋าถือ"
+    },
+    "English|handicapped": {
+      "meaning": "having a body or mind problem · พิการ"
+    },
+    "English|handle": {
+      "meaning": "the part you hold to use something · ด้ามจับ"
+    },
+    "English|happily": {
+      "meaning": "in a happy way · อย่างมีความสุข"
+    },
+    "English|happiness": {
+      "meaning": "the feeling of being happy · ความสุข"
+    },
+    "English|hardly": {
+      "meaning": "almost not · แทบไม่"
+    },
+    "English|harm": {
+      "meaning": "hurt or damage someone or something · ทำอันตราย"
+    },
+    "English|harmful": {
+      "meaning": "able to hurt or damage · เป็นอันตราย"
+    },
+    "English|harmony": {
+      "meaning": "peaceful agreement between people · ความสามัคคี"
+    },
+    "English|harvest": {
+      "meaning": "the time when farmers collect crops · การเก็บเกี่ยว"
+    },
+    "English|hate": {
+      "meaning": "dislike very much · เกลียด"
+    },
+    "English|headphone": {
+      "meaning": "a device worn over ears for listening · หูฟัง"
+    },
+    "English|headteacher": {
+      "meaning": "the person in charge of a school · ครูใหญ่"
+    },
+    "English|heat": {
+      "meaning": "the quality of being hot · ความร้อน"
+    },
+    "English|heating": {
+      "meaning": "a system that makes a building warm · เครื่องทำความร้อน"
+    },
+    "English|heavily": {
+      "meaning": "a lot or very strongly · อย่างหนัก"
+    },
+    "English|helpful": {
+      "meaning": "giving help · มีประโยชน์"
+    },
+    "English|hero": {
+      "meaning": "a very brave person · ฮีโร่"
+    },
+    "English|herself": {
+      "meaning": "the woman or girl again · ตัวเธอเอง"
+    },
+    "English|hey": {
+      "meaning": "used to get attention · เฮ้"
+    },
+    "English|high school": {
+      "meaning": "school for teenagers · โรงเรียนมัธยม"
+    },
+    "English|highway": {
+      "meaning": "a big road for cars · ทางหลวง"
+    },
+    "English|hike": {
+      "meaning": "a long walk in nature · การเดินป่า"
+    },
+    "English|hiking": {
+      "meaning": "walking in nature for fun · การเดินป่า"
+    },
+    "English|himself": {
+      "meaning": "the man or boy again · ตัวเขาเอง"
+    },
+    "English|hip hop": {
+      "meaning": "a music style with rap · ฮิปฮอป"
+    },
+    "English|hit": {
+      "meaning": "to touch hard with your hand · ตี"
+    },
+    "English|hockey": {
+      "meaning": "a game played with sticks · ฮอกกี้"
+    },
+    "English|honey": {
+      "meaning": "a sweet food made by bees · น้ำผึ้ง"
+    },
+    "English|honor": {
+      "meaning": "great respect for someone · เกียรติ"
+    },
+    "English|horror": {
+      "meaning": "a feeling of great fear · ความกลัว"
+    },
+    "English|host": {
+      "meaning": "a person who invites guests · เจ้าภาพ"
+    },
+    "English|however": {
+      "meaning": "but; in a different way · อย่างไรก็ตาม"
+    },
+    "English|hug": {
+      "meaning": "to hold someone closely · กอด"
+    },
+    "English|human": {
+      "meaning": "relating to people · ของมนุษย์"
+    },
+    "English|hundred": {
+      "meaning": "the number 100 · ร้อย"
+    },
+    "English|hunter": {
+      "meaning": "a person who catches animals · นักล่า"
+    },
+    "English|ill": {
+      "meaning": "not feeling well · ป่วย"
+    },
+    "English|illegal": {
+      "meaning": "not allowed by law · ผิดกฎหมาย"
+    },
+    "English|image": {
+      "meaning": "a picture of someone or something · ภาพ"
+    },
+    "English|imagination": {
+      "meaning": "the ability to make pictures in your mind · จินตนาการ"
+    },
+    "English|impact": {
+      "meaning": "a strong effect on something · ผลกระทบ"
+    },
+    "English|impatient": {
+      "meaning": "not able to wait calmly · ใจร้อน"
+    },
+    "English|importance": {
+      "meaning": "the quality of being very important · ความสำคัญ"
+    },
+    "English|importantly": {
+      "meaning": "in a way that matters a lot · อย่างสำคัญ"
+    },
+    "English|impossible": {
+      "meaning": "not able to happen or be done · เป็นไปไม่ได้"
+    },
+    "English|impress": {
+      "meaning": "to make someone admire you · ทำให้ประทับใจ"
+    },
+    "English|improve": {
+      "meaning": "to make something better · ปรับปรุง"
+    },
+    "English|inch": {
+      "meaning": "a small unit of length · นิ้ว"
+    },
+    "English|include": {
+      "meaning": "to have something as part · รวมถึง"
+    },
+    "English|increase": {
+      "meaning": "to become more or bigger · เพิ่มขึ้น"
+    },
+    "English|indeed": {
+      "meaning": "used to say something is really true · จริงๆ"
+    },
+    "English|independence": {
+      "meaning": "freedom to decide for yourself · อิสรภาพ"
+    },
+    "English|indicate": {
+      "meaning": "to show or point to something · แสดง"
+    },
+    "English|indoor": {
+      "meaning": "inside a building · ในร่ม"
+    },
+    "English|inexpensive": {
+      "meaning": "not costing much money · ราคาถูก"
+    },
+    "English|influence": {
+      "meaning": "power to change what someone thinks or does · อิทธิพล"
+    },
+    "English|injure": {
+      "meaning": "to hurt a person or animal · ทำให้บาดเจ็บ"
+    },
+    "English|inner": {
+      "meaning": "on the inside · ด้านใน"
+    },
+    "English|insect": {
+      "meaning": "a small animal with six legs · แมลง"
+    },
+    "English|inspiration": {
+      "meaning": "an idea that makes you want to create · แรงบันดาลใจ"
+    },
+    "English|instant": {
+      "meaning": "happening or ready right away · ทันที"
+    },
+    "English|instead": {
+      "meaning": "in place of something else · แทน"
+    },
+    "English|instrument": {
+      "meaning": "a tool used for a special job · เครื่องมือ"
+    },
+    "English|intelligence": {
+      "meaning": "the ability to learn and understand · ความฉลาด"
+    },
+    "English|intelligent": {
+      "meaning": "able to learn and understand well · ฉลาด"
+    },
+    "English|interest": {
+      "meaning": "a feeling of wanting to know more · ความสนใจ"
+    },
+    "English|international": {
+      "meaning": "involving more than one country · นานาชาติ"
+    },
+    "English|invade": {
+      "meaning": "to enter a country by force · รุกราน"
+    },
+    "English|invent": {
+      "meaning": "to make something new for the first time · ประดิษฐ์"
+    },
+    "English|invention": {
+      "meaning": "something new that someone has made · สิ่งประดิษฐ์"
+    },
+    "English|invite": {
+      "meaning": "to ask someone to come somewhere · เชิญ"
+    },
+    "English|issue": {
+      "meaning": "an important subject people talk about · ประเด็น"
+    },
+    "English|itself": {
+      "meaning": "used for a thing, not another thing · ตัวมันเอง"
+    },
+    "English|jam": {
+      "meaning": "a sweet food made from fruit · แยม"
+    },
+    "English|jelly": {
+      "meaning": "a soft sweet food that shakes · เยลลี่"
+    },
+    "English|joke": {
+      "meaning": "something said or done to make people laugh · เรื่องตลก"
+    },
+    "English|journey": {
+      "meaning": "travel from one place to another · การเดินทาง"
+    },
+    "English|joy": {
+      "meaning": "a feeling of great happiness · ความสุข"
+    },
+    "English|junior": {
+      "meaning": "younger or lower in rank · อ่อนกว่า"
+    },
+    "English|junk": {
+      "meaning": "old or useless things · ของเก่า"
+    },
+    "English|killer": {
+      "meaning": "a person or animal that kills · ผู้ฆ่า"
+    },
+    "English|kilo": {
+      "meaning": "a unit of weight, one thousand grams · กิโล"
+    },
+    "English|kilogram": {
+      "meaning": "a unit of weight, one thousand grams · กิโลกรัม"
+    },
+    "English|kilometer": {
+      "meaning": "a unit for measuring distance · กิโลเมตร"
+    },
+    "English|kindly": {
+      "meaning": "kind and helpful to others · ใจดี"
+    },
+    "English|kingdom": {
+      "meaning": "a country ruled by a king or queen · อาณาจักร"
+    },
+    "English|kit": {
+      "meaning": "a set of things for one purpose · ชุดอุปกรณ์"
+    },
+    "English|knock": {
+      "meaning": "a sound made by hitting a door · เสียงเคาะ"
+    },
+    "English|knowledge": {
+      "meaning": "things you know from learning · ความรู้"
+    },
+    "English|labor": {
+      "meaning": "work, especially hard physical work · แรงงาน"
+    },
+    "English|lack": {
+      "meaning": "not having enough of something · การขาด"
+    },
+    "English|lake": {
+      "meaning": "a large area of water surrounded by land · ทะเลสาบ"
+    },
+    "English|lamp": {
+      "meaning": "a light you can put on a table · โคมไฟ"
+    },
+    "English|land": {
+      "meaning": "to come down onto the ground · ลงจอด"
+    },
+    "English|landscape": {
+      "meaning": "the natural view of an area · ภูมิทัศน์"
+    },
+    "English|lane": {
+      "meaning": "a narrow road for cars · ช่องทาง"
+    },
+    "English|last": {
+      "meaning": "final one in a group · สุดท้าย"
+    },
+    "English|latest": {
+      "meaning": "most recent · ล่าสุด"
+    },
+    "English|latter": {
+      "meaning": "the second of two things · อย่างหลัง"
+    },
+    "English|law": {
+      "meaning": "an official rule for people · กฎหมาย"
+    },
+    "English|lawyer": {
+      "meaning": "a person who knows and works with laws · ทนายความ"
+    },
+    "English|laziness": {
+      "meaning": "not wanting to work · ความขี้เกียจ"
+    },
+    "English|lead": {
+      "meaning": "the first position in a race · ตำแหน่งนำ"
+    },
+    "English|learner": {
+      "meaning": "a person who is studying something · ผู้เรียน"
+    },
+    "English|least": {
+      "meaning": "the smallest amount or number · น้อยที่สุด"
+    },
+    "English|leather": {
+      "meaning": "animal skin used for making things · หนังสัตว์"
+    },
+    "English|left-hand": {
+      "meaning": "on the side of your left hand · ด้านซ้าย"
+    },
+    "English|leisure": {
+      "meaning": "free time when you do not work · เวลาว่าง"
+    },
+    "English|lemon": {
+      "meaning": "a sour yellow fruit · มะนาว"
+    },
+    "English|lemonade": {
+      "meaning": "a sweet drink made with lemon · น้ำมะนาว"
+    },
+    "English|lend": {
+      "meaning": "give something for a short time · ให้ยืม"
+    },
+    "English|less": {
+      "meaning": "not as much · น้อยกว่า"
+    },
+    "English|level": {
+      "meaning": "a position or amount on a scale · ระดับ"
+    },
+    "English|liberty": {
+      "meaning": "freedom to do what you want · อิสรภาพ"
+    },
+    "English|license": {
+      "meaning": "give official permission · อนุญาต"
+    },
+    "English|lie": {
+      "meaning": "be in a flat position · นอน"
+    },
+    "English|lifestyle": {
+      "meaning": "the way a person lives · วิถีชีวิต"
+    },
+    "English|likely": {
+      "meaning": "probably going to happen · น่าจะ"
+    },
+    "English|lip": {
+      "meaning": "one of the soft edges of your mouth · ริมฝีปาก"
+    },
+    "English|liter": {
+      "meaning": "a unit for measuring liquid · ลิตร"
+    },
+    "English|lively": {
+      "meaning": "full of energy and activity · มีชีวิตชีวา"
+    },
+    "English|load": {
+      "meaning": "things carried by a person or vehicle · ของบรรทุก"
+    },
+    "English|local": {
+      "meaning": "from or near this area · ท้องถิ่น"
+    },
+    "English|lock": {
+      "meaning": "a thing that keeps a door closed · กุญแจ"
+    },
+    "English|logical": {
+      "meaning": "clear and sensible · มีเหตุผล"
+    },
+    "English|loose": {
+      "meaning": "not tight · หลวม"
+    },
+    "English|lose": {
+      "meaning": "not have something anymore · ทำหาย"
+    },
+    "English|lost": {
+      "meaning": "unable to be found · หาย"
+    },
+    "English|loudly": {
+      "meaning": "with a lot of sound · อย่างดัง"
+    },
+    "English|lover": {
+      "meaning": "a person you love · คนรัก"
+    },
+    "English|low": {
+      "meaning": "not high · ต่ำ"
+    },
+    "English|luckily": {
+      "meaning": "because of good luck · โชคดี"
+    },
+    "English|lunchtime": {
+      "meaning": "the time when people eat lunch · เวลาอาหารกลางวัน"
+    },
+    "English|lyric": {
+      "meaning": "about a song's words · เกี่ยวกับเนื้อเพลง"
+    },
+    "English|mad": {
+      "meaning": "very angry · โกรธมาก"
+    },
+    "English|mood": {
+      "meaning": "the way you feel at a time · อารมณ์"
+    },
+    "English|mosque": {
+      "meaning": "a building where Muslims pray · มัสยิด"
+    },
+    "English|mostly": {
+      "meaning": "mainly; more than other things · ส่วนใหญ่"
+    },
+    "English|motorway": {
+      "meaning": "a wide fast road for cars · ทางด่วน"
+    },
+    "English|mug": {
+      "meaning": "a large cup with a handle · แก้วมัค"
+    },
+    "English|murder": {
+      "meaning": "the illegal killing of a person · การฆาตกรรม"
+    },
+    "English|museum": {
+      "meaning": "a building showing old or interesting things · พิพิธภัณฑ์"
+    },
+    "English|mushroom": {
+      "meaning": "a small plant-like thing, often eaten · เห็ด"
+    },
+    "English|musical": {
+      "meaning": "related to music · เกี่ยวกับดนตรี"
+    },
+    "English|myself": {
+      "meaning": "the person speaking or writing · ตัวฉันเอง"
+    },
+    "English|mysterious": {
+      "meaning": "strange and hard to understand · ลึกลับ"
+    },
+    "English|mystery": {
+      "meaning": "something strange that is hard to explain · เรื่องลึกลับ"
+    },
+    "English|napkin": {
+      "meaning": "paper or cloth for wiping your mouth · ผ้าเช็ดปาก"
+    },
+    "English|nation": {
+      "meaning": "a country and its people · ประเทศ"
+    },
+    "English|national": {
+      "meaning": "related to a whole country · ระดับชาติ"
+    },
+    "English|native": {
+      "meaning": "born in a particular place · พื้นเมือง"
+    },
+    "English|natural": {
+      "meaning": "not made by people · ตามธรรมชาติ"
+    },
+    "English|nature": {
+      "meaning": "plants, animals, and land outside · ธรรมชาติ"
+    },
+    "English|nearly": {
+      "meaning": "almost, but not completely · เกือบ"
+    },
+    "English|necessary": {
+      "meaning": "needed; cannot be without it · จำเป็น"
+    },
+    "English|negative": {
+      "meaning": "showing or meaning no · เชิงลบ"
+    },
+    "English|nervous": {
+      "meaning": "worried or afraid about something · ประหม่า"
+    },
+    "English|net": {
+      "meaning": "final, after money is taken away · สุทธิ"
+    },
+    "English|next": {
+      "meaning": "after this one · ต่อไป"
+    },
+    "English|next to": {
+      "meaning": "beside something or someone · ข้างๆ"
+    },
+    "English|no one": {
+      "meaning": "not any person · ไม่มีใคร"
+    },
+    "English|nobody": {
+      "meaning": "not any person · ไม่มีใคร"
+    },
+    "English|noisy": {
+      "meaning": "making a lot of sound · เสียงดัง"
+    },
+    "English|noon": {
+      "meaning": "twelve o'clock in the day · เที่ยง"
+    },
+    "English|normal": {
+      "meaning": "usual; not strange · ปกติ"
+    },
+    "English|north": {
+      "meaning": "in or from the top of a map · ทางเหนือ"
+    },
+    "English|notice": {
+      "meaning": "a written sign giving information · ประกาศ"
+    },
+    "English|noun": {
+      "meaning": "a word for a person, place, or thing · คำนาม"
+    },
+    "English|novel": {
+      "meaning": "a long book with a story · นวนิยาย"
+    },
+    "English|nowadays": {
+      "meaning": "at the present time · ทุกวันนี้"
+    },
+    "English|oak": {
+      "meaning": "a large tree with strong wood · ต้นโอ๊ก"
+    },
+    "English|occupation": {
+      "meaning": "the job that someone does · อาชีพ"
+    },
+    "English|offer": {
+      "meaning": "an idea to give or do something · ข้อเสนอ"
+    },
+    "English|official": {
+      "meaning": "from a government or authority · เป็นทางการ"
+    },
+    "English|oil": {
+      "meaning": "a thick liquid used in cooking · น้ำมัน"
+    },
+    "English|olive oil": {
+      "meaning": "oil from olives, used in cooking · น้ำมันมะกอก"
+    },
+    "English|omelet": {
+      "meaning": "a dish of cooked eggs · ไข่เจียว"
+    },
+    "English|onion": {
+      "meaning": "a round vegetable with a strong smell · หัวหอม"
+    },
+    "English|online": {
+      "meaning": "connected to the internet · ออนไลน์"
+    },
+    "English|operate": {
+      "meaning": "to control a machine or system · ใช้งาน"
+    },
+    "English|opinion": {
+      "meaning": "what you think about something · ความคิดเห็น"
+    },
+    "English|opportunity": {
+      "meaning": "a chance to do something · โอกาส"
+    },
+    "English|oppose": {
+      "meaning": "to disagree with something · คัดค้าน"
+    },
+    "English|opposite": {
+      "meaning": "completely different or on the other side · ตรงข้าม"
+    },
+    "English|organize": {
+      "meaning": "to plan and arrange things · จัดระเบียบ"
+    },
+    "English|organized": {
+      "meaning": "planned and arranged well · เป็นระเบียบ"
+    },
+    "English|original": {
+      "meaning": "first, not copied from another · ดั้งเดิม"
+    },
+    "English|orphan": {
+      "meaning": "a child whose parents have died · เด็กกำพร้า"
+    },
+    "English|ourselves": {
+      "meaning": "the people speaking or writing · ตัวเราเอง"
+    },
+    "English|out of": {
+      "meaning": "not in a place or container · ออกจาก"
+    },
+    "English|oven": {
+      "meaning": "a hot box for cooking food · เตาอบ"
+    },
+    "English|overseas": {
+      "meaning": "in or to another country · ต่างประเทศ"
+    },
+    "English|overweight": {
+      "meaning": "too heavy for good health · น้ำหนักเกิน"
+    },
+    "English|pacific": {
+      "meaning": "calm and peaceful · สงบ"
+    },
+    "English|pack": {
+      "meaning": "a group of things together · ห่อ"
+    },
+    "English|painter": {
+      "meaning": "a person who makes pictures with paint · จิตรกร"
+    },
+    "English|pal": {
+      "meaning": "a friend · เพื่อน"
+    },
+    "English|pan": {
+      "meaning": "a metal container for cooking · กระทะ"
+    },
+    "English|panic": {
+      "meaning": "a sudden strong feeling of fear · ความตื่นตระหนก"
+    },
+    "English|part": {
+      "meaning": "one piece of something larger · ส่วน"
+    },
+    "English|partly": {
+      "meaning": "not completely · บางส่วน"
+    },
+    "English|pass": {
+      "meaning": "a card or paper that allows entry · บัตรผ่าน"
+    },
+    "English|passage": {
+      "meaning": "a long narrow way between places · ทางเดิน"
+    },
+    "English|passenger": {
+      "meaning": "a person traveling in a vehicle · ผู้โดยสาร"
+    },
+    "English|pasta": {
+      "meaning": "food made from flour, like noodles · พาสต้า"
+    },
+    "English|path": {
+      "meaning": "a small way for walking · ทางเดิน"
+    },
+    "English|patient": {
+      "meaning": "a sick person getting medical care · ผู้ป่วย"
+    },
+    "English|pea": {
+      "meaning": "a small round green vegetable · ถั่วลันเตา"
+    },
+    "English|peaceful": {
+      "meaning": "quiet and calm · สงบ"
+    },
+    "English|pear": {
+      "meaning": "a sweet fruit, green or yellow · ลูกแพร์"
+    },
+    "English|pence": {
+      "meaning": "small units of British money · เพนซ์"
+    },
+    "English|penfriend": {
+      "meaning": "a friend you write letters to · เพื่อนทางจดหมาย"
+    },
+    "English|pepper": {
+      "meaning": "a spice that makes food hot · พริกไทย"
+    },
+    "English|perfect": {
+      "meaning": "as good as possible · สมบูรณ์แบบ"
+    },
+    "English|perfectly": {
+      "meaning": "very well, with no mistakes · อย่างสมบูรณ์แบบ"
+    },
+    "English|portrait": {
+      "meaning": "a picture of a person’s face · ภาพเหมือน"
+    },
+    "English|position": {
+      "meaning": "the place where something is · ตำแหน่ง"
+    },
+    "English|possible": {
+      "meaning": "able to happen or be done · เป็นไปได้"
+    },
+    "English|possibly": {
+      "meaning": "maybe; it may happen · อาจจะ"
+    },
+    "English|post office": {
+      "meaning": "a place for sending letters and parcels · ที่ทำการไปรษณีย์"
+    },
+    "English|pour": {
+      "meaning": "make liquid flow from a container · เท"
+    },
+    "English|power": {
+      "meaning": "the ability to control or affect things · อำนาจ"
+    },
+    "English|powerful": {
+      "meaning": "having a lot of strength or control · มีอำนาจ"
+    },
+    "English|precise": {
+      "meaning": "very exact and correct · แม่นยำ"
+    },
+    "English|predict": {
+      "meaning": "say what you think will happen · ทำนาย"
+    },
+    "English|prediction": {
+      "meaning": "an idea about what will happen · การทำนาย"
+    },
+    "English|prefer": {
+      "meaning": "like one thing more than another · ชอบมากกว่า"
+    },
+    "English|prepare": {
+      "meaning": "get ready for something · เตรียม"
+    },
+    "English|pressure": {
+      "meaning": "force pushing on something · แรงกด"
+    },
+    "English|pretend": {
+      "meaning": "act as if something is true · แกล้งทำ"
+    },
+    "English|prevent": {
+      "meaning": "stop something from happening · ป้องกัน"
+    },
+    "English|pride": {
+      "meaning": "a happy feeling about something good · ความภูมิใจ"
+    },
+    "English|principal": {
+      "meaning": "most important · หลัก"
+    },
+    "English|print": {
+      "meaning": "put words or pictures on paper · พิมพ์"
+    },
+    "English|printer": {
+      "meaning": "a machine that puts words on paper · เครื่องพิมพ์"
+    },
+    "English|private": {
+      "meaning": "only for one person or group · ส่วนตัว"
+    },
+    "English|pro": {
+      "meaning": "a person who does something very well · มืออาชีพ"
+    },
+    "English|probably": {
+      "meaning": "likely to happen · น่าจะ"
+    },
+    "English|produce": {
+      "meaning": "make or grow something · ผลิต"
+    },
+    "English|product": {
+      "meaning": "something made to sell · ผลิตภัณฑ์"
+    },
+    "English|production": {
+      "meaning": "the process of making things · การผลิต"
+    },
+    "English|professional": {
+      "meaning": "doing a job with skill and training · เป็นมืออาชีพ"
+    },
+    "English|progressive": {
+      "meaning": "getting better little by little · ก้าวหน้า"
+    },
+    "English|promise": {
+      "meaning": "a statement that you will do something · คำสัญญา"
+    },
+    "English|pronounce": {
+      "meaning": "say a word in the right way · ออกเสียง"
+    },
+    "English|pronunciation": {
+      "meaning": "the way a word is said · การออกเสียง"
+    },
+    "English|proper": {
+      "meaning": "right or suitable for the situation · เหมาะสม"
+    },
+    "English|provide": {
+      "meaning": "give someone what they need · จัดหา"
+    },
+    "English|psychologist": {
+      "meaning": "a person who studies how people think · นักจิตวิทยา"
+    },
+    "English|public": {
+      "meaning": "ordinary people in a country or place · ประชาชน"
+    },
+    "English|publish": {
+      "meaning": "make a book or article available · ตีพิมพ์"
+    },
+    "English|pull": {
+      "meaning": "move something towards you · ดึง"
+    },
+    "English|punctuation": {
+      "meaning": "marks used in writing, like commas · เครื่องหมายวรรคตอน"
+    },
+    "English|purpose": {
+      "meaning": "the reason for doing something · จุดประสงค์"
+    },
+    "English|pursue": {
+      "meaning": "try to achieve something · มุ่งทำ"
+    },
+    "English|quality": {
+      "meaning": "how good or bad something is · คุณภาพ"
+    },
+    "English|queen": {
+      "meaning": "a woman who rules a country · ราชินี"
+    },
+    "English|quick": {
+      "meaning": "doing something in a short time · เร็ว"
+    },
+    "English|quietly": {
+      "meaning": "with little or no sound · อย่างเงียบๆ"
+    },
+    "English|quit": {
+      "meaning": "to stop doing a job or activity · เลิก"
+    },
+    "English|quite": {
+      "meaning": "more than a little, but not very · ค่อนข้าง"
+    },
+    "English|quiz": {
+      "meaning": "a short test with questions · แบบทดสอบ"
+    },
+    "English|racket": {
+      "meaning": "a bat used for tennis or badminton · ไม้แร็กเก็ต"
+    },
+    "English|raincoat": {
+      "meaning": "a coat worn to stay dry in rain · เสื้อกันฝน"
+    },
+    "English|raise": {
+      "meaning": "to move something to a higher position · ยกขึ้น"
+    },
+    "English|range": {
+      "meaning": "different types or choices of something · หลากหลาย"
+    },
+    "English|rap": {
+      "meaning": "music with fast spoken words and a beat · เพลงแร็ป"
+    },
+    "English|rate": {
+      "meaning": "the cost of something or a service · ราคา"
+    },
+    "English|rather": {
+      "meaning": "more willingly; instead of something else · ค่อนข้าง"
+    },
+    "English|rating": {
+      "meaning": "a number or score showing how good something is · คะแนน"
+    },
+    "English|raw": {
+      "meaning": "not cooked · ดิบ"
+    },
+    "English|ray": {
+      "meaning": "a line of light from the sun · ลำแสง"
+    },
+    "English|reach": {
+      "meaning": "to get to a place or person · ไปถึง"
+    },
+    "English|realize": {
+      "meaning": "to begin to understand something · ตระหนัก"
+    },
+    "English|receipt": {
+      "meaning": "a paper showing you paid for something · ใบเสร็จ"
+    },
+    "English|receive": {
+      "meaning": "to get something someone gives or sends · ได้รับ"
+    },
+    "English|recent": {
+      "meaning": "happening not long ago · ล่าสุด"
+    },
+    "English|recently": {
+      "meaning": "not long ago · เมื่อเร็วๆ นี้"
+    },
+    "English|receptionist": {
+      "meaning": "a person who welcomes visitors at an office · พนักงานต้อนรับ"
+    },
+    "English|record": {
+      "meaning": "to write information so it can be kept · บันทึก"
+    },
+    "English|recycle": {
+      "meaning": "to use old materials again · รีไซเคิล"
+    },
+    "English|refer": {
+      "meaning": "to talk or write about something · อ้างถึง"
+    },
+    "English|reflect": {
+      "meaning": "to show an image, like a mirror · สะท้อน"
+    },
+    "English|refrigerator": {
+      "meaning": "a machine that keeps food cold · ตู้เย็น"
+    },
+    "English|regret": {
+      "meaning": "to feel sorry about something you did · เสียใจ"
+    },
+    "English|regular": {
+      "meaning": "happening often in the same way · ปกติ"
+    },
+    "English|regularly": {
+      "meaning": "often and at the same times · เป็นประจำ"
+    },
+    "English|relax": {
+      "meaning": "to rest and become less worried · ผ่อนคลาย"
+    },
+    "English|relaxed": {
+      "meaning": "feeling calm and not worried · ผ่อนคลาย"
+    },
+    "English|release": {
+      "meaning": "the act of letting someone or something go · การปล่อย"
+    },
+    "English|remain": {
+      "meaning": "to stay in the same place or condition · ยังคงอยู่"
+    },
+    "English|remind": {
+      "meaning": "to help someone remember something · เตือน"
+    },
+    "English|remote": {
+      "meaning": "far away from towns or other people · ห่างไกล"
+    },
+    "English|rent": {
+      "meaning": "money paid to use a house or room · ค่าเช่า"
+    },
+    "English|repair": {
+      "meaning": "work done to fix something broken · การซ่อม"
+    },
+    "English|salt": {
+      "meaning": "a white substance used to make food taste better · เกลือ"
+    },
+    "English|sample": {
+      "meaning": "a small amount that shows what something is like · ตัวอย่าง"
+    },
+    "English|sandy": {
+      "meaning": "covered with, or full of, sand · มีทราย"
+    },
+    "English|satisfy": {
+      "meaning": "to give someone what they need or want · ทำให้พอใจ"
+    },
+    "English|sauce": {
+      "meaning": "a liquid added to food for more taste · ซอส"
+    },
+    "English|sausage": {
+      "meaning": "food made from meat in a long tube shape · ไส้กรอก"
+    },
+    "English|scale": {
+      "meaning": "a set of marks used for measuring · มาตราส่วน"
+    },
+    "English|scarf": {
+      "meaning": "a long piece of cloth worn around the neck · ผ้าพันคอ"
+    },
+    "English|scene": {
+      "meaning": "a place where something happens in a story · ฉาก"
+    },
+    "English|scenery": {
+      "meaning": "the natural things you see in a place · ทิวทัศน์"
+    },
+    "English|schedule": {
+      "meaning": "a plan showing times for activities · ตารางเวลา"
+    },
+    "English|schoolchild": {
+      "meaning": "a child who goes to school · เด็กนักเรียน"
+    },
+    "English|schoolwork": {
+      "meaning": "work that students do for school · งานโรงเรียน"
+    },
+    "English|scientific": {
+      "meaning": "about the study of the natural world · เกี่ยวกับวิทยาศาสตร์"
+    },
+    "English|scissors": {
+      "meaning": "a tool with two blades for cutting · กรรไกร"
+    },
+    "English|scream": {
+      "meaning": "a loud, high cry from fear or pain · เสียงกรีดร้อง"
+    },
+    "English|screen": {
+      "meaning": "the flat part of a TV or computer · หน้าจอ"
+    },
+    "English|screw": {
+      "meaning": "a small metal thing that holds things together · สกรู"
+    },
+    "English|script": {
+      "meaning": "the written words for a play or film · บทภาพยนตร์"
+    },
+    "English|seafood": {
+      "meaning": "fish and other food from the sea · อาหารทะเล"
+    },
+    "English|search": {
+      "meaning": "an attempt to find someone or something · การค้นหา"
+    },
+    "English|seaside": {
+      "meaning": "the area next to the sea · ชายทะเล"
+    },
+    "English|secret": {
+      "meaning": "something that is not known by other people · ความลับ"
+    },
+    "English|secretary": {
+      "meaning": "a person who helps with office work · เลขานุการ"
+    },
+    "English|seed": {
+      "meaning": "a small part of a plant that can grow · เมล็ด"
+    },
+    "English|seek": {
+      "meaning": "to try to find something · ค้นหา"
+    },
+    "English|seem": {
+      "meaning": "to appear to be something · ดูเหมือน"
+    },
+    "English|semester": {
+      "meaning": "one of two main parts of a school year · ภาคเรียน"
+    },
+    "English|send": {
+      "meaning": "to make something go to another person or place · ส่ง"
+    },
+    "English|senior": {
+      "meaning": "older or higher in rank · อาวุโส"
+    },
+    "English|sense": {
+      "meaning": "one of the ways the body knows things · ประสาทสัมผัส"
+    },
+    "English|separate": {
+      "meaning": "not together or not joined · แยกกัน"
+    },
+    "English|seriously": {
+      "meaning": "in a careful and important way · อย่างจริงจัง"
+    },
+    "English|serve": {
+      "meaning": "to give food or drinks to someone · เสิร์ฟ"
+    },
+    "English|several": {
+      "meaning": "more than two but not many · หลาย"
+    },
+    "English|sew": {
+      "meaning": "to join cloth using a needle and thread · เย็บ"
+    },
+    "English|shade": {
+      "meaning": "an area out of the sun · ร่มเงา"
+    },
+    "English|shadow": {
+      "meaning": "a dark shape made when light is blocked · เงา"
+    },
+    "English|shall": {
+      "meaning": "used to talk about a future action · จะ"
+    },
+    "English|shampoo": {
+      "meaning": "liquid soap for washing hair · แชมพู"
+    },
+    "English|shape": {
+      "meaning": "the form of something · รูปร่าง"
+    },
+    "English|shell": {
+      "meaning": "the hard outside of an egg or animal · เปลือก"
+    },
+    "English|shine": {
+      "meaning": "to give out bright light · ส่องแสง"
+    },
+    "English|shock": {
+      "meaning": "a strong surprise that upsets you · ความตกใจ"
+    },
+    "English|shoot": {
+      "meaning": "to make a ball move quickly · ยิง"
+    },
+    "English|shop assistant": {
+      "meaning": "a person who helps customers in a store · พนักงานขาย"
+    },
+    "English|shore": {
+      "meaning": "land next to the sea or lake · ชายฝั่ง"
+    },
+    "English|shot": {
+      "meaning": "a picture taken with a camera · รูปถ่าย"
+    },
+    "English|shout": {
+      "meaning": "a loud cry or call · เสียงตะโกน"
+    },
+    "English|shut": {
+      "meaning": "to close something · ปิด"
+    },
+    "English|sightseeing": {
+      "meaning": "visiting interesting places as a tourist · การเที่ยวชม"
+    },
+    "English|significant": {
+      "meaning": "important enough to matter · สำคัญ"
+    },
+    "English|silence": {
+      "meaning": "a time with no sound · ความเงียบ"
+    },
+    "English|silently": {
+      "meaning": "without making any sound · อย่างเงียบๆ"
+    },
+    "English|silly": {
+      "meaning": "funny in a foolish way · โง่ๆ"
+    },
+    "English|silver": {
+      "meaning": "having a light grey colour · สีเงิน"
+    },
+    "English|similar": {
+      "meaning": "almost the same · คล้ายกัน"
+    },
+    "English|simple": {
+      "meaning": "easy to understand or do · ง่าย"
+    },
+    "English|simply": {
+      "meaning": "in an easy way · อย่างง่ายๆ"
+    },
+    "English|since": {
+      "meaning": "from a past time until now · ตั้งแต่"
+    },
+    "English|singing": {
+      "meaning": "making music with your voice · การร้องเพลง"
+    },
+    "English|single": {
+      "meaning": "only one · เดี่ยว"
+    },
+    "English|singular": {
+      "meaning": "showing one person or thing · เอกพจน์"
+    },
+    "English|sink": {
+      "meaning": "a bowl for washing in · อ่างล้างหน้า"
+    },
+    "English|sitting room": {
+      "meaning": "a room for relaxing at home · ห้องนั่งเล่น"
+    },
+    "English|situation": {
+      "meaning": "what is happening at a time · สถานการณ์"
+    },
+    "English|skate": {
+      "meaning": "a boot with wheels or a blade · รองเท้าสเก็ต"
+    },
+    "English|skateboarding": {
+      "meaning": "the sport of riding a board with wheels · สเกตบอร์ด"
+    },
+    "English|skating": {
+      "meaning": "moving on ice with special boots · การเล่นสเก็ต"
+    },
+    "English|ski": {
+      "meaning": "a long narrow thing for moving on snow · สกี"
+    },
+    "English|skiing": {
+      "meaning": "the sport of moving on snow with long boards · การเล่นสกี"
+    },
+    "English|slave": {
+      "meaning": "a person owned by another person · ทาส"
+    },
+    "English|sleepless": {
+      "meaning": "unable to sleep · นอนไม่หลับ"
+    },
+    "English|sleepy": {
+      "meaning": "needing or wanting to sleep · ง่วงนอน"
+    },
+    "English|slice": {
+      "meaning": "a thin flat piece cut from food · ชิ้นบาง"
+    },
+    "English|slide": {
+      "meaning": "a smooth slope for children to play on · กระดานลื่น"
+    },
+    "English|slim": {
+      "meaning": "thin in an attractive way · ผอมเพรียว"
+    },
+    "English|slowly": {
+      "meaning": "not quickly · อย่างช้าๆ"
+    },
+    "English|smooth": {
+      "meaning": "having no rough parts · เรียบ"
+    },
+    "English|smoothly": {
+      "meaning": "without problems or stops · อย่างราบรื่น"
+    },
+    "English|snack": {
+      "meaning": "a small amount of food between meals · ของว่าง"
+    },
+    "English|snowboarding": {
+      "meaning": "the sport of riding on snow with a board · สโนว์บอร์ด"
+    },
+    "English|soap": {
+      "meaning": "something used for washing your body or hands · สบู่"
+    },
+    "English|society": {
+      "meaning": "people living together in a country or area · สังคม"
+    },
+    "English|sock": {
+      "meaning": "a piece of clothing worn on your foot · ถุงเท้า"
+    },
+    "English|soda": {
+      "meaning": "a sweet drink with bubbles · น้ำอัดลม"
+    },
+    "English|soft": {
+      "meaning": "not hard or rough · นุ่ม"
+    },
+    "English|soft drink": {
+      "meaning": "a cold drink without alcohol · น้ำอัดลม"
+    },
+    "English|softly": {
+      "meaning": "in a quiet and gentle way · เบา ๆ"
+    },
+    "English|software": {
+      "meaning": "computer programs and information · ซอฟต์แวร์"
+    },
+    "English|soldier": {
+      "meaning": "a person in an army · ทหาร"
+    },
+    "English|solution": {
+      "meaning": "an answer to a problem · วิธีแก้ปัญหา"
+    },
+    "English|somebody": {
+      "meaning": "a person, but you do not say who · ใครบางคน"
+    },
+    "English|someday": {
+      "meaning": "at a time in the future · สักวันหนึ่ง"
+    },
+    "English|somewhere": {
+      "meaning": "in or at an unknown place · ที่ไหนสักแห่ง"
+    },
+    "English|sound": {
+      "meaning": "something that you hear · เสียง"
+    },
+    "English|source": {
+      "meaning": "the place something comes from · แหล่งที่มา"
+    },
+    "English|south": {
+      "meaning": "in or toward the bottom of a map · ทางใต้"
+    },
+    "English|space": {
+      "meaning": "the large area above Earth where stars are · อวกาศ"
+    },
+    "English|spaceship": {
+      "meaning": "a vehicle that travels in space · ยานอวกาศ"
+    },
+    "English|spaghetti": {
+      "meaning": "long, thin pasta · สปาเกตตี"
+    },
+    "English|speaker": {
+      "meaning": "a person who talks to a group · ผู้พูด"
+    },
+    "English|specific": {
+      "meaning": "exact and clear, not general · เฉพาะเจาะจง"
+    },
+    "English|speed": {
+      "meaning": "how fast something moves · ความเร็ว"
+    },
+    "English|spill": {
+      "meaning": "to accidentally pour liquid out of a container · ทำหก"
+    },
+    "English|splash": {
+      "meaning": "to make water move in many directions · กระเซ็น"
+    },
+    "English|split": {
+      "meaning": "divided into two or more parts · แยก"
+    },
+    "English|spoon": {
+      "meaning": "a tool for eating soup or rice · ช้อน"
+    },
+    "English|sports center": {
+      "meaning": "a place for playing sports · ศูนย์กีฬา"
+    },
+    "English|spread": {
+      "meaning": "soft food put on bread · อาหารทาขนมปัง"
+    },
+    "English|square": {
+      "meaning": "having four equal sides and four corners · สี่เหลี่ยมจัตุรัส"
+    },
+    "English|stadium": {
+      "meaning": "a large place for sports games · สนามกีฬา"
+    },
+    "English|staff": {
+      "meaning": "people who work for a company or place · พนักงาน"
+    },
+    "English|stair": {
+      "meaning": "one step in a set of steps · ขั้นบันได"
+    },
+    "English|stamp": {
+      "meaning": "a small paper label put on a letter · แสตมป์"
+    },
+    "English|state": {
+      "meaning": "one area of a country with its own government · รัฐ"
+    },
+    "English|statement": {
+      "meaning": "something that a person says or writes · คำแถลง"
+    },
+    "English|statue": {
+      "meaning": "a model of a person or animal in stone · รูปปั้น"
+    },
+    "English|steak": {
+      "meaning": "a thick piece of cooked meat · สเต๊ก"
+    },
+    "English|steal": {
+      "meaning": "to take something that is not yours · ขโมย"
+    },
+    "English|stomach": {
+      "meaning": "the part inside you that holds food · กระเพาะอาหาร"
+    },
+    "English|stomachache": {
+      "meaning": "pain in the part inside you that holds food · ปวดท้อง"
+    },
+    "English|storm": {
+      "meaning": "very bad weather with strong wind and rain · พายุ"
+    },
+    "English|stove": {
+      "meaning": "a kitchen machine used for cooking · เตา"
+    },
+    "English|stranger": {
+      "meaning": "a person you do not know · คนแปลกหน้า"
+    },
+    "English|strategy": {
+      "meaning": "a plan for reaching a goal · กลยุทธ์"
+    },
+    "English|strength": {
+      "meaning": "the power to do difficult things · กำลัง"
+    },
+    "English|strike": {
+      "meaning": "a time when workers stop working for better conditions · การนัดหยุดงาน"
+    },
+    "English|string": {
+      "meaning": "a thin piece of rope or thread · เชือก"
+    },
+    "English|strongly": {
+      "meaning": "with a lot of power or feeling · อย่างแรง"
+    },
+    "English|structure": {
+      "meaning": "the way parts are put together · โครงสร้าง"
+    },
+    "English|stuff": {
+      "meaning": "things or objects · ของ"
+    },
+    "English|style": {
+      "meaning": "a particular way of doing or making something · แบบ"
+    },
+    "English|succeed": {
+      "meaning": "to get what you wanted after trying · ประสบความสำเร็จ"
+    },
+    "English|success": {
+      "meaning": "getting what you wanted after trying · ความสำเร็จ"
+    },
+    "English|successfully": {
+      "meaning": "in a way that gets the wanted result · อย่างสำเร็จ"
+    },
+    "English|such": {
+      "meaning": "of this kind or amount · เช่นนี้"
+    },
+    "English|sudden": {
+      "meaning": "happening quickly and unexpectedly · กะทันหัน"
+    },
+    "English|suggest": {
+      "meaning": "to give an idea for someone to consider · แนะนำ"
+    },
+    "English|suit": {
+      "meaning": "matching jacket and trousers worn together · สูท"
+    },
+    "English|suitable": {
+      "meaning": "right or good for a person or purpose · เหมาะสม"
+    },
+    "English|suitcase": {
+      "meaning": "a large bag for carrying clothes when travelling · กระเป๋าเดินทาง"
+    },
+    "English|summary": {
+      "meaning": "a short statement of the main points · สรุป"
+    },
+    "English|sunflower": {
+      "meaning": "a tall plant with a large yellow flower · ดอกทานตะวัน"
+    },
+    "English|sunglasses": {
+      "meaning": "dark glasses that protect your eyes from sun · แว่นกันแดด"
+    },
+    "English|sunlight": {
+      "meaning": "light that comes from the sun · แสงแดด"
+    },
+    "English|superlative": {
+      "meaning": "a grammar form showing the most of something · ขั้นสุด"
+    },
+    "English|superstar": {
+      "meaning": "a very famous and successful person · ซูเปอร์สตาร์"
+    },
+    "English|supper": {
+      "meaning": "an evening meal · อาหารเย็น"
+    },
+    "English|support": {
+      "meaning": "help or encouragement for someone · การสนับสนุน"
+    },
+    "English|surfing": {
+      "meaning": "the sport of riding waves on a board · เล่นกระดานโต้คลื่น"
+    },
+    "English|surname": {
+      "meaning": "the family name you share with relatives · นามสกุล"
+    },
+    "English|surprised": {
+      "meaning": "feeling shocked because something was unexpected · ประหลาดใจ"
+    },
+    "English|surprising": {
+      "meaning": "making you feel shocked because it is unexpected · น่าประหลาดใจ"
+    },
+    "English|survive": {
+      "meaning": "to continue living after danger or difficulty · รอดชีวิต"
+    },
+    "English|swallow": {
+      "meaning": "to make food or drink go down your throat · กลืน"
+    },
+    "English|sweat": {
+      "meaning": "to produce water from your skin when hot · เหงื่อออก"
+    },
+    "English|sweater": {
+      "meaning": "a warm piece of clothing for your upper body · เสื้อกันหนาว"
+    },
+    "English|sweetheart": {
+      "meaning": "a person you love · คนรัก"
+    },
+    "English|swimming costume": {
+      "meaning": "clothes worn for swimming · ชุดว่ายน้ำ"
+    },
+    "English|swimsuit": {
+      "meaning": "clothes worn for swimming · ชุดว่ายน้ำ"
+    },
+    "English|symbol": {
+      "meaning": "a sign that means something · สัญลักษณ์"
+    },
+    "English|symphony": {
+      "meaning": "a long piece of music for an orchestra · ซิมโฟนี"
+    },
+    "English|system": {
+      "meaning": "a set of parts working together · ระบบ"
+    },
+    "English|table tennis": {
+      "meaning": "a game hitting a small ball over a table · ปิงปอง"
+    },
+    "English|tablespoon": {
+      "meaning": "a large spoon used for cooking or eating · ช้อนโต๊ะ"
+    },
+    "English|talent": {
+      "meaning": "a natural ability to do something well · พรสวรรค์"
+    },
+    "English|tap": {
+      "meaning": "a device that gives water · ก๊อกน้ำ"
+    },
+    "English|tape": {
+      "meaning": "a sticky strip used to join things · เทป"
+    },
+    "English|target": {
+      "meaning": "something you try to hit · เป้าหมาย"
+    },
+    "English|task": {
+      "meaning": "a piece of work to do · งาน"
+    },
+    "English|tear": {
+      "meaning": "water that comes from your eye when crying · น้ำตา"
+    },
+    "English|teenage": {
+      "meaning": "between 13 and 19 years old · วัยรุ่น"
+    },
+    "English|teenager": {
+      "meaning": "a person aged 13 to 19 · วัยรุ่น"
+    },
+    "English|temperature": {
+      "meaning": "how hot or cold something is · อุณหภูมิ"
+    },
+    "English|terrify": {
+      "meaning": "to make someone very afraid · ทำให้กลัวมาก"
+    },
+    "English|terrorist": {
+      "meaning": "using violence to frighten people for political reasons · เกี่ยวกับการก่อการร้าย"
+    },
+    "English|text": {
+      "meaning": "written words in a book or message · ข้อความ"
+    },
+    "English|text message": {
+      "meaning": "a short written message sent by phone · ข้อความ"
+    },
+    "English|textbook": {
+      "meaning": "a book used for studying a subject · หนังสือเรียน"
+    },
+    "English|theirs": {
+      "meaning": "belonging to them · ของพวกเขา"
+    },
+    "English|themselves": {
+      "meaning": "used when people do something to their own bodies · ตัวเอง"
+    },
+    "English|therefore": {
+      "meaning": "for that reason · ดังนั้น"
+    },
+    "English|thief": {
+      "meaning": "a person who takes things illegally · โจร"
+    },
+    "English|third": {
+      "meaning": "number three in order · ที่สาม"
+    },
+    "English|thirsty": {
+      "meaning": "needing or wanting a drink · กระหายน้ำ"
+    },
+    "English|though": {
+      "meaning": "but; used to show a different idea · แม้ว่า"
+    },
+    "English|thought": {
+      "meaning": "an idea in your mind · ความคิด"
+    },
+    "English|thousand": {
+      "meaning": "the number 1,000 · พัน"
+    },
+    "English|thunderstorm": {
+      "meaning": "a storm with thunder, lightning, and rain · พายุฝนฟ้าคะนอง"
+    },
+    "English|tidy": {
+      "meaning": "clean and neatly arranged · เรียบร้อย"
+    },
+    "English|tie": {
+      "meaning": "a long narrow cloth worn around the neck · เนกไท"
+    },
+    "English|tights": {
+      "meaning": "tight clothes covering the legs · ถุงน่อง"
+    },
+    "English|till": {
+      "meaning": "up to a particular time · จนถึง"
+    },
+    "English|timetable": {
+      "meaning": "a list of times for events or travel · ตารางเวลา"
+    },
+    "English|tip": {
+      "meaning": "a small extra payment for service · ทิป"
+    },
+    "English|title": {
+      "meaning": "the name of a book, film, or song · ชื่อเรื่อง"
+    },
+    "English|toast": {
+      "meaning": "bread made brown by heat · ขนมปังปิ้ง"
+    },
+    "English|toe": {
+      "meaning": "one of the small parts at the end of your foot · นิ้วเท้า"
+    },
+    "English|tone": {
+      "meaning": "the sound quality of a voice · น้ำเสียง"
+    },
+    "English|toothache": {
+      "meaning": "pain in a tooth · ปวดฟัน"
+    },
+    "English|toothbrush": {
+      "meaning": "a brush for cleaning teeth · แปรงสีฟัน"
+    },
+    "English|tour": {
+      "meaning": "a visit to many places · ทัวร์"
+    },
+    "English|tour guide": {
+      "meaning": "a person who shows visitors around · ไกด์นำเที่ยว"
+    },
+    "English|tourist": {
+      "meaning": "a person visiting a place for fun · นักท่องเที่ยว"
+    },
+    "English|toward": {
+      "meaning": "in the direction of something · ไปทาง"
+    },
+    "English|track": {
+      "meaning": "a path for trains · รางรถไฟ"
+    },
+    "English|trade": {
+      "meaning": "buying and selling things · การค้า"
+    },
+    "English|tradition": {
+      "meaning": "an old custom of a group · ประเพณี"
+    },
+    "English|traditional": {
+      "meaning": "following old customs · ดั้งเดิม"
+    },
+    "English|traffic": {
+      "meaning": "cars and other vehicles on roads · การจราจร"
+    },
+    "English|traffic light": {
+      "meaning": "road lights that control cars · ไฟจราจร"
+    },
+    "English|training": {
+      "meaning": "learning how to do something · การฝึก"
+    },
+    "English|tram": {
+      "meaning": "a city train that runs on roads · รถราง"
+    },
+    "English|trap": {
+      "meaning": "a thing used to catch animals · กับดัก"
+    },
+    "English|traveler": {
+      "meaning": "a person going from place to place · นักเดินทาง"
+    },
+    "English|treasure": {
+      "meaning": "valuable things like gold or jewels · สมบัติ"
+    },
+    "English|trick": {
+      "meaning": "a clever way to fool someone · กลอุบาย"
+    },
+    "English|trouble": {
+      "meaning": "a problem or difficulty · ปัญหา"
+    },
+    "English|truly": {
+      "meaning": "really; in a true way · อย่างแท้จริง"
+    },
+    "English|trust": {
+      "meaning": "to believe someone is honest · เชื่อใจ"
+    },
+    "English|truth": {
+      "meaning": "what is real or correct · ความจริง"
+    },
+    "English|tune": {
+      "meaning": "the music of a song · ทำนอง"
+    },
+    "English|twice": {
+      "meaning": "two times · สองครั้ง"
+    },
+    "English|uncertain": {
+      "meaning": "not sure about something · ไม่แน่ใจ"
+    },
+    "English|uncomfortable": {
+      "meaning": "not feeling good or relaxed · ไม่สบาย"
+    },
+    "English|understand": {
+      "meaning": "to know what something means · เข้าใจ"
+    },
+    "English|underwater": {
+      "meaning": "below the surface of water · ใต้น้ำ"
+    },
+    "English|uneasy": {
+      "meaning": "worried and not relaxed · กังวล"
+    },
+    "English|unfair": {
+      "meaning": "not right or equal · ไม่ยุติธรรม"
+    },
+    "English|unforgettable": {
+      "meaning": "very special and easy to remember · น่าจดจำ"
+    },
+    "English|unfortunately": {
+      "meaning": "used when something bad happens · น่าเสียดาย"
+    },
+    "English|unhappy": {
+      "meaning": "not happy; feeling sad · ไม่มีความสุข"
+    },
+    "English|unhealthy": {
+      "meaning": "not good for your body · ไม่ดีต่อสุขภาพ"
+    },
+    "English|uniform": {
+      "meaning": "all the same in style or type · เหมือนกัน"
+    },
+    "English|unimportant": {
+      "meaning": "not needed or not special · ไม่สำคัญ"
+    },
+    "English|unit": {
+      "meaning": "one part of a larger group · หน่วย"
+    },
+    "English|university": {
+      "meaning": "a school for older students · มหาวิทยาลัย"
+    },
+    "English|unknown": {
+      "meaning": "not known · ไม่รู้จัก"
+    },
+    "English|unlike": {
+      "meaning": "not similar to something else · ไม่เหมือน"
+    },
+    "English|unnecessary": {
+      "meaning": "not needed · ไม่จำเป็น"
+    },
+    "English|unpleasant": {
+      "meaning": "not nice or enjoyable · ไม่น่าพอใจ"
+    },
+    "English|unusual": {
+      "meaning": "different from what is normal · ผิดปกติ"
+    },
+    "English|upon": {
+      "meaning": "on; used in formal writing · บน"
+    },
+    "English|upset": {
+      "meaning": "unhappy because something bad happened · เสียใจ"
+    },
+    "English|upstairs": {
+      "meaning": "on or to a higher floor · ข้างบน"
+    },
+    "English|used": {
+      "meaning": "not new; owned before · มือสอง"
+    },
+    "English|useful": {
+      "meaning": "helping you do something · มีประโยชน์"
+    },
+    "English|usual": {
+      "meaning": "happening often or normally · ปกติ"
+    },
+    "English|valley": {
+      "meaning": "low land between hills or mountains · หุบเขา"
+    },
+    "English|value": {
+      "meaning": "how much something is worth · มูลค่า"
+    },
+    "English|verb": {
+      "meaning": "a word that shows an action · คำกริยา"
+    },
+    "English|video game": {
+      "meaning": "a game played on a screen · วิดีโอเกม"
+    },
+    "English|view": {
+      "meaning": "what you can see from a place · วิว"
+    },
+    "English|village": {
+      "meaning": "a small place where people live · หมู่บ้าน"
+    },
+    "English|violent": {
+      "meaning": "using physical force to hurt others · รุนแรง"
+    },
+    "English|violin": {
+      "meaning": "a small instrument played with a bow · ไวโอลิน"
+    },
+    "English|visitor": {
+      "meaning": "a person who comes to see a place · ผู้มาเยือน"
+    },
+    "English|vocabulary": {
+      "meaning": "all the words in a language · คำศัพท์"
+    },
+    "English|voice": {
+      "meaning": "the sound made when someone speaks · เสียง"
+    },
+    "English|walking": {
+      "meaning": "moving from place to place on foot · การเดิน"
+    },
+    "English|wallet": {
+      "meaning": "a small case for money and cards · กระเป๋าสตางค์"
+    },
+    "English|wander": {
+      "meaning": "walk slowly without a plan · เดินเรื่อยเปื่อย"
+    },
+    "English|washing machine": {
+      "meaning": "a machine for cleaning clothes · เครื่องซักผ้า"
+    },
+    "English|washing-up": {
+      "meaning": "the job of cleaning dishes · การล้างจาน"
+    },
+    "English|wave": {
+      "meaning": "a moving line of water · คลื่น"
+    },
+    "English|weak": {
+      "meaning": "not strong · อ่อนแอ"
+    },
+    "English|wealth": {
+      "meaning": "a lot of money and property · ความมั่งคั่ง"
+    },
+    "English|web": {
+      "meaning": "the system of pages on the internet · เว็บ"
+    },
+    "English|web page": {
+      "meaning": "one page of information on the internet · หน้าเว็บ"
+    },
+    "English|website": {
+      "meaning": "a group of pages on the internet · เว็บไซต์"
+    },
+    "English|wedding": {
+      "meaning": "a ceremony when two people marry · งานแต่งงาน"
+    },
+    "English|weekday": {
+      "meaning": "a day from Monday to Friday · วันธรรมดา"
+    },
+    "English|weekly": {
+      "meaning": "happening once every week · รายสัปดาห์"
+    },
+    "English|weep": {
+      "meaning": "a time when someone cries · การร้องไห้"
+    },
+    "English|weigh": {
+      "meaning": "have a particular heaviness · มีน้ำหนัก"
+    },
+    "English|weight": {
+      "meaning": "how heavy someone or something is · น้ำหนัก"
+    },
+    "English|well-known": {
+      "meaning": "known by many people · มีชื่อเสียง"
+    },
+    "English|west": {
+      "meaning": "on the left side of a map · ตะวันตก"
+    },
+    "English|wet": {
+      "meaning": "covered with water · เปียก"
+    },
+    "English|whatever": {
+      "meaning": "any thing · อะไรก็ได้"
+    },
+    "English|wheelchair": {
+      "meaning": "a chair with wheels for someone who cannot walk · รถเข็น"
+    },
+    "English|while": {
+      "meaning": "during the time that · ขณะที่"
+    },
+    "English|whole": {
+      "meaning": "complete; with no parts missing · ทั้งหมด"
+    },
+    "English|whom": {
+      "meaning": "the person that someone does something to · ใคร"
+    },
+    "English|wide": {
+      "meaning": "having a large distance from side to side · กว้าง"
+    },
+    "English|widely": {
+      "meaning": "by many people or in many places · อย่างกว้างขวาง"
+    },
+    "English|wild": {
+      "meaning": "living or growing in nature, not controlled · ป่า"
+    },
+    "English|windy": {
+      "meaning": "with a lot of wind · ลมแรง"
+    },
+    "English|wine": {
+      "meaning": "an alcoholic drink made from grapes · ไวน์"
+    },
+    "English|winner": {
+      "meaning": "a person who comes first in a game · ผู้ชนะ"
+    },
+    "English|wisdom": {
+      "meaning": "the ability to make good choices · ปัญญา"
+    },
+    "English|wise": {
+      "meaning": "able to make good choices · ฉลาด"
+    },
+    "English|within": {
+      "meaning": "inside a place or time · ภายใน"
+    },
+    "English|without": {
+      "meaning": "not having something · ไม่มี"
+    },
+    "English|wonder": {
+      "meaning": "to want to know something · สงสัย"
+    },
+    "English|wood": {
+      "meaning": "the hard material from trees · ไม้"
+    },
+    "English|wooden": {
+      "meaning": "made of wood · ทำด้วยไม้"
+    },
+    "English|wool": {
+      "meaning": "the soft hair from sheep · ขนแกะ"
+    },
+    "English|worldwide": {
+      "meaning": "in or to all parts of the world · ทั่วโลก"
+    },
+    "English|worried": {
+      "meaning": "feeling afraid that something bad may happen · กังวล"
+    },
+    "English|worse": {
+      "meaning": "more bad than before or than something else · แย่กว่า"
+    },
+    "English|worst": {
+      "meaning": "more bad than all others · แย่ที่สุด"
+    },
+    "English|writing": {
+      "meaning": "words written on paper or a screen · งานเขียน"
+    },
+    "English|yeah": {
+      "meaning": "yes · ใช่"
+    },
+    "English|youth": {
+      "meaning": "the time when someone is young · วัยเยาว์"
+    },
+    "English|zone": {
+      "meaning": "an area with a special purpose · เขต"
+    },
+    "English|actor": {
+      "meaning": "a person who performs in films or plays · นักแสดง"
+    },
+    "English|add": {
+      "meaning": "to put numbers or things together · บวก"
+    },
+    "English|address": {
+      "meaning": "details of where someone lives · ที่อยู่"
+    },
+    "English|afraid": {
+      "meaning": "feeling scared about something · กลัว"
+    },
+    "English|after": {
+      "meaning": "later than something else · หลังจาก"
+    },
+    "English|afternoon": {
+      "meaning": "time from noon to evening · ตอนบ่าย"
+    },
+    "English|again": {
+      "meaning": "one more time · อีกครั้ง"
+    },
+    "English|age": {
+      "meaning": "the number of years someone has lived · อายุ"
+    },
+    "English|ago": {
+      "meaning": "before now · ที่แล้ว"
+    },
+    "English|agree": {
+      "meaning": "to have the same opinion · เห็นด้วย"
+    },
+    "English|airplane": {
+      "meaning": "a vehicle that flies in the sky · เครื่องบิน"
+    },
+    "English|airport": {
+      "meaning": "a place where planes arrive and leave · สนามบิน"
+    },
+    "English|album": {
+      "meaning": "a book or collection of photos or songs · อัลบั้ม"
+    },
+    "English|all": {
+      "meaning": "the whole number or amount · ทั้งหมด"
+    },
+    "English|all right": {
+      "meaning": "well or okay · ดี"
+    },
+    "English|almost": {
+      "meaning": "very nearly · เกือบ"
+    },
+    "English|alone": {
+      "meaning": "with no other people · คนเดียว"
+    },
+    "English|along": {
+      "meaning": "with someone or something · ด้วยกัน"
+    },
+    "English|already": {
+      "meaning": "before this time · แล้ว"
+    },
+    "English|also": {
+      "meaning": "too; in addition · ด้วย"
+    },
+    "English|always": {
+      "meaning": "at every time · เสมอ"
+    },
+    "English|am": {
+      "meaning": "a form of be used with I · เป็น"
+    },
+    "English|an": {
+      "meaning": "used before one thing with a vowel sound · หนึ่ง"
+    },
+    "English|and": {
+      "meaning": "used to join words or ideas · และ"
+    },
+    "English|angry": {
+      "meaning": "feeling mad about something · โกรธ"
+    },
+    "English|animal": {
+      "meaning": "a living thing that is not a plant · สัตว์"
+    },
+    "English|another": {
+      "meaning": "one more or a different one · อีก"
+    },
+    "English|answer": {
+      "meaning": "words said or written to reply · คำตอบ"
+    },
+    "English|any": {
+      "meaning": "one or some, no matter which · ใดๆ"
+    },
+    "English|anybody": {
+      "meaning": "any person · ใครก็ได้"
+    },
+    "English|anyone": {
+      "meaning": "any person · ใครก็ได้"
+    },
+    "English|anything": {
+      "meaning": "any thing · อะไรก็ได้"
+    },
+    "English|apple": {
+      "meaning": "a round fruit with red or green skin · แอปเปิล"
+    },
+    "English|apron": {
+      "meaning": "clothing worn over clothes when cooking · ผ้ากันเปื้อน"
+    },
+    "English|are": {
+      "meaning": "a form of be used with you or they · เป็น"
+    },
+    "English|arm": {
+      "meaning": "a body part from shoulder to hand · แขน"
+    },
+    "English|around": {
+      "meaning": "on every side of something · รอบ"
+    },
+    "English|arrive": {
+      "meaning": "to get to a place · มาถึง"
+    },
+    "English|art": {
+      "meaning": "pictures or objects made to show beauty · ศิลปะ"
+    },
+    "English|article": {
+      "meaning": "a piece of writing in a newspaper or magazine · บทความ"
+    },
+    "English|brush": {
+      "meaning": "a tool with hairs for cleaning or painting · แปรง"
+    },
+    "English|bucket": {
+      "meaning": "a container with a handle for carrying water · ถัง"
+    },
+    "English|build": {
+      "meaning": "to make something by putting parts together · สร้าง"
+    },
+    "English|building": {
+      "meaning": "a place with walls and a roof · อาคาร"
+    },
+    "English|burger": {
+      "meaning": "a sandwich with meat inside a round bread · เบอร์เกอร์"
+    },
+    "English|bus": {
+      "meaning": "a large road vehicle that carries many people · รถเมล์"
+    },
+    "English|business": {
+      "meaning": "work of buying and selling things or services · ธุรกิจ"
+    },
+    "English|busy": {
+      "meaning": "having a lot of things to do · ยุ่ง"
+    },
+    "English|but": {
+      "meaning": "used to show a different idea · แต่"
+    },
+    "English|butter": {
+      "meaning": "a soft yellow food made from milk · เนย"
+    },
+    "English|butterfly": {
+      "meaning": "an insect with large colorful wings · ผีเสื้อ"
+    },
+    "English|button": {
+      "meaning": "a small round thing for closing clothes · กระดุม"
+    },
+    "English|buy": {
+      "meaning": "to get something by paying money · ซื้อ"
+    },
+    "English|by": {
+      "meaning": "near or beside someone or something · โดย"
+    },
+    "English|bye": {
+      "meaning": "words you say when leaving someone · ลาก่อน"
+    },
+    "English|cafe": {
+      "meaning": "a small place where people buy drinks and food · คาเฟ่"
+    },
+    "English|cake": {
+      "meaning": "a sweet baked food for dessert or parties · เค้ก"
+    },
+    "English|call": {
+      "meaning": "a telephone talk with someone · การโทร"
+    },
+    "English|camera": {
+      "meaning": "a device for taking pictures · กล้องถ่ายรูป"
+    },
+    "English|camp": {
+      "meaning": "a place where people stay in tents · ค่าย"
+    },
+    "English|can": {
+      "meaning": "used to say someone is able to do something · สามารถ"
+    },
+    "English|candy": {
+      "meaning": "a small sweet food made with sugar · ลูกอม"
+    },
+    "English|cap": {
+      "meaning": "a soft hat with a front part · หมวกแก๊ป"
+    },
+    "English|car": {
+      "meaning": "a road vehicle for a small number of people · รถยนต์"
+    },
+    "English|card": {
+      "meaning": "a small piece of thick paper · บัตร"
+    },
+    "English|care": {
+      "meaning": "help and attention given to someone or something · การดูแล"
+    },
+    "English|careful": {
+      "meaning": "taking time to avoid mistakes or danger · ระมัดระวัง"
+    },
+    "English|carefully": {
+      "meaning": "in a way that avoids mistakes or danger · อย่างระมัดระวัง"
+    },
+    "English|carry": {
+      "meaning": "to hold and take something somewhere · ถือ"
+    },
+    "English|cartoon": {
+      "meaning": "a funny drawing or television show for children · การ์ตูน"
+    },
+    "English|case": {
+      "meaning": "a box or bag for holding something · กล่อง"
+    },
+    "English|cat": {
+      "meaning": "a small pet animal that catches mice · แมว"
+    },
+    "English|catch": {
+      "meaning": "an act of getting a thrown ball · การรับ"
+    },
+    "English|celebrate": {
+      "meaning": "to do something special for a happy event · ฉลอง"
+    },
+    "English|celebration": {
+      "meaning": "a special event for something happy · งานฉลอง"
+    },
+    "English|chair": {
+      "meaning": "a seat for one person with a back · เก้าอี้"
+    },
+    "English|change": {
+      "meaning": "money returned after you pay too much · เงินทอน"
+    },
+    "English|character": {
+      "meaning": "a person in a story, film, or game · ตัวละคร"
+    },
+    "English|check": {
+      "meaning": "a look to make sure something is right · การตรวจสอบ"
+    },
+    "English|cheese": {
+      "meaning": "a food made from milk, often yellow or white · ชีส"
+    },
+    "English|chicken": {
+      "meaning": "a bird kept for eggs or meat · ไก่"
+    },
+    "English|child": {
+      "meaning": "a young person · เด็ก"
+    },
+    "English|chocolate": {
+      "meaning": "a sweet brown food · ช็อกโกแลต"
+    },
+    "English|choose": {
+      "meaning": "to pick one thing · เลือก"
+    },
+    "English|church": {
+      "meaning": "a Christian place for praying · โบสถ์"
+    },
+    "English|cinema": {
+      "meaning": "a place to watch films · โรงภาพยนตร์"
+    },
+    "English|circle": {
+      "meaning": "a round shape · วงกลม"
+    },
+    "English|city": {
+      "meaning": "a large town · เมือง"
+    },
+    "English|class": {
+      "meaning": "a group of students learning together · ชั้นเรียน"
+    },
+    "English|classmate": {
+      "meaning": "a student in your class · เพื่อนร่วมชั้น"
+    },
+    "English|classroom": {
+      "meaning": "a room where students learn · ห้องเรียน"
+    },
+    "English|clean": {
+      "meaning": "not dirty · สะอาด"
+    },
+    "English|clever": {
+      "meaning": "good at learning and thinking · ฉลาด"
+    },
+    "English|climb": {
+      "meaning": "an act of going up something · การปีน"
+    },
+    "English|clock": {
+      "meaning": "a thing that shows the time · นาฬิกา"
+    },
+    "English|close": {
+      "meaning": "not far away · ใกล้"
+    },
+    "English|closed": {
+      "meaning": "not open · ปิด"
+    },
+    "English|cloth": {
+      "meaning": "material used to make clothes · ผ้า"
+    },
+    "English|clothes": {
+      "meaning": "things people wear · เสื้อผ้า"
+    },
+    "English|cloud": {
+      "meaning": "a white or grey shape in the sky · เมฆ"
+    },
+    "English|cloudy": {
+      "meaning": "with many clouds in the sky · มีเมฆมาก"
+    },
+    "English|club": {
+      "meaning": "a group of people with the same interest · ชมรม"
+    },
+    "English|coach": {
+      "meaning": "a person who trains a sports team · โค้ช"
+    },
+    "English|coat": {
+      "meaning": "a warm outer piece of clothing · เสื้อโค้ท"
+    },
+    "English|code": {
+      "meaning": "a set of letters or numbers for a secret · รหัส"
+    },
+    "English|coffee": {
+      "meaning": "a dark drink that helps you wake up · กาแฟ"
+    },
+    "English|coke": {
+      "meaning": "a sweet fizzy cola drink · โค้ก"
+    },
+    "English|cold": {
+      "meaning": "having a low temperature · หนาว"
+    },
+    "English|collect": {
+      "meaning": "to bring things together · เก็บรวบรวม"
+    },
+    "English|collection": {
+      "meaning": "a group of things kept together · ของสะสม"
+    },
+    "English|college": {
+      "meaning": "a school for older students · วิทยาลัย"
+    },
+    "English|color": {
+      "meaning": "red, blue, or green · สี"
+    },
+    "English|come": {
+      "meaning": "to move to this place · มา"
+    },
+    "English|computer": {
+      "meaning": "an electronic machine for work or games · คอมพิวเตอร์"
+    },
+    "English|concert": {
+      "meaning": "an event with live music · คอนเสิร์ต"
+    },
+    "English|contest": {
+      "meaning": "a competition to find the best person · การแข่งขัน"
+    },
+    "English|conversation": {
+      "meaning": "talking with another person · การสนทนา"
+    },
+    "English|cook": {
+      "meaning": "a person who prepares food · คนทำอาหาร"
+    },
+    "English|cookie": {
+      "meaning": "a small sweet baked food · คุกกี้"
+    },
+    "English|cool": {
+      "meaning": "a little cold · เย็น"
+    },
+    "English|minute": {
+      "meaning": "a period of sixty seconds · นาที"
+    },
+    "English|miss": {
+      "meaning": "to not hit or catch something · พลาด"
+    },
+    "English|mobile": {
+      "meaning": "a phone you can carry with you · โทรศัพท์มือถือ"
+    },
+    "English|mobile phone": {
+      "meaning": "a phone you can carry with you · โทรศัพท์มือถือ"
+    },
+    "English|mom": {
+      "meaning": "a female parent · แม่"
+    },
+    "English|moment": {
+      "meaning": "a very short time · ชั่วครู่"
+    },
+    "English|mommy": {
+      "meaning": "a child's word for their mother · แม่"
+    },
+    "English|money": {
+      "meaning": "coins and notes used to buy things · เงิน"
+    },
+    "English|monkey": {
+      "meaning": "an animal that climbs trees · ลิง"
+    },
+    "English|month": {
+      "meaning": "one of the twelve parts of a year · เดือน"
+    },
+    "English|moon": {
+      "meaning": "the round object seen in the night sky · ดวงจันทร์"
+    },
+    "English|more": {
+      "meaning": "a larger number or amount · มากกว่า"
+    },
+    "English|morning": {
+      "meaning": "the early part of the day · ตอนเช้า"
+    },
+    "English|most": {
+      "meaning": "the largest number or amount · มากที่สุด"
+    },
+    "English|mother": {
+      "meaning": "a female parent · แม่"
+    },
+    "English|mountain": {
+      "meaning": "a very high hill · ภูเขา"
+    },
+    "English|mouse": {
+      "meaning": "a small animal with a long tail · หนู"
+    },
+    "English|mouth": {
+      "meaning": "the part of your face used for eating · ปาก"
+    },
+    "English|move": {
+      "meaning": "an action of changing place · การเคลื่อนไหว"
+    },
+    "English|movie": {
+      "meaning": "a story shown on a screen · ภาพยนตร์"
+    },
+    "English|much": {
+      "meaning": "a lot · มาก"
+    },
+    "English|mum": {
+      "meaning": "a female parent · แม่"
+    },
+    "English|music": {
+      "meaning": "sounds made for listening or singing · เพลง"
+    },
+    "English|musician": {
+      "meaning": "a person who plays or makes music · นักดนตรี"
+    },
+    "English|must": {
+      "meaning": "used to say something is necessary · ต้อง"
+    },
+    "English|my": {
+      "meaning": "belonging to me · ของฉัน"
+    },
+    "English|name": {
+      "meaning": "the word people use for a person or thing · ชื่อ"
+    },
+    "English|nationality": {
+      "meaning": "the country a person belongs to · สัญชาติ"
+    },
+    "English|near": {
+      "meaning": "close to something · ใกล้"
+    },
+    "English|neck": {
+      "meaning": "the body part between the head and shoulders · คอ"
+    },
+    "English|need": {
+      "meaning": "used to say something is necessary · ต้อง"
+    },
+    "English|neighbor": {
+      "meaning": "a person who lives near you · เพื่อนบ้าน"
+    },
+    "English|never": {
+      "meaning": "not at any time · ไม่เคย"
+    },
+    "English|new": {
+      "meaning": "made or bought recently · ใหม่"
+    },
+    "English|news": {
+      "meaning": "information about recent events · ข่าว"
+    },
+    "English|newspaper": {
+      "meaning": "paper with news and stories · หนังสือพิมพ์"
+    },
+    "English|nice": {
+      "meaning": "pleasant, kind, or good · ดี"
+    },
+    "English|night": {
+      "meaning": "the dark time after evening · กลางคืน"
+    },
+    "English|nine": {
+      "meaning": "the number after eight · เก้า"
+    },
+    "English|nineteen": {
+      "meaning": "the number after eighteen · สิบเก้า"
+    },
+    "English|smoke": {
+      "meaning": "gray gas from something burning · ควัน"
+    },
+    "English|smoking": {
+      "meaning": "the act of using cigarettes · การสูบบุหรี่"
+    },
+    "English|snake": {
+      "meaning": "a long animal with no legs · งู"
+    },
+    "English|snow": {
+      "meaning": "white ice that falls from the sky · หิมะ"
+    },
+    "English|snowy": {
+      "meaning": "with a lot of white ice outside · มีหิมะ"
+    },
+    "English|so": {
+      "meaning": "because of that · ดังนั้น"
+    },
+    "English|soccer": {
+      "meaning": "a game played by kicking a ball · ฟุตบอล"
+    },
+    "English|social": {
+      "meaning": "enjoying being with other people · เข้าสังคม"
+    },
+    "English|sofa": {
+      "meaning": "a soft long seat for several people · โซฟา"
+    },
+    "English|solve": {
+      "meaning": "find the answer to a problem · แก้ปัญหา"
+    },
+    "English|some": {
+      "meaning": "an amount or number, not all · บาง"
+    },
+    "English|someone": {
+      "meaning": "a person, but not named · ใครบางคน"
+    },
+    "English|something": {
+      "meaning": "a thing, but not named · บางสิ่ง"
+    },
+    "English|son": {
+      "meaning": "a male child · ลูกชาย"
+    },
+    "English|song": {
+      "meaning": "music with words to sing · เพลง"
+    },
+    "English|soon": {
+      "meaning": "in a short time · เร็วๆ นี้"
+    },
+    "English|sorry": {
+      "meaning": "feeling bad about doing something wrong · เสียใจ"
+    },
+    "English|soup": {
+      "meaning": "a hot liquid food · ซุป"
+    },
+    "English|speak": {
+      "meaning": "say words to someone · พูด"
+    },
+    "English|special": {
+      "meaning": "better or different from usual · พิเศษ"
+    },
+    "English|speech": {
+      "meaning": "a talk given to many people · คำพูด"
+    },
+    "English|spell": {
+      "meaning": "magic words that do something · คาถา"
+    },
+    "English|spend": {
+      "meaning": "use money to buy things · ใช้จ่าย"
+    },
+    "English|sport": {
+      "meaning": "a game people play for fun · กีฬา"
+    },
+    "English|spot": {
+      "meaning": "a small round mark · จุด"
+    },
+    "English|spring": {
+      "meaning": "the season after winter · ฤดูใบไม้ผลิ"
+    },
+    "English|spy": {
+      "meaning": "a person who secretly gets information · สายลับ"
+    },
+    "English|stage": {
+      "meaning": "a raised place for performing · เวที"
+    },
+    "English|stand": {
+      "meaning": "a thing that holds something up · ที่วาง"
+    },
+    "English|star": {
+      "meaning": "a bright light in the night sky · ดาว"
+    },
+    "English|start": {
+      "meaning": "the beginning of something · จุดเริ่มต้น"
+    },
+    "English|station": {
+      "meaning": "a place where trains stop · สถานี"
+    },
+    "English|stay": {
+      "meaning": "continue to be in a place · อยู่"
+    },
+    "English|step": {
+      "meaning": "move one foot forward or up · ก้าว"
+    },
+    "English|still": {
+      "meaning": "not moving · นิ่ง"
+    },
+    "English|stone": {
+      "meaning": "a small hard piece of rock · หิน"
+    },
+    "English|stop": {
+      "meaning": "a place where buses pick up people · ป้ายรถเมล์"
+    },
+    "English|store": {
+      "meaning": "a place where people buy things · ร้านค้า"
+    },
+    "English|story": {
+      "meaning": "an account of things that happened · เรื่องราว"
+    },
+    "English|straight": {
+      "meaning": "directly, without turning · ตรงไป"
+    },
+    "English|with": {
+      "meaning": "together with someone or something · กับ"
+    },
+    "English|woman": {
+      "meaning": "an adult female person · ผู้หญิง"
+    },
+    "English|wonderful": {
+      "meaning": "very good and making you happy · ยอดเยี่ยม"
+    },
+    "English|word": {
+      "meaning": "a group of letters with meaning · คำ"
+    },
+    "English|work": {
+      "meaning": "a job you do for money · งาน"
+    },
+    "English|worker": {
+      "meaning": "a person who does a job · คนงาน"
+    },
+    "English|world": {
+      "meaning": "the Earth and all its people · โลก"
+    },
+    "English|worry": {
+      "meaning": "a feeling that something bad may happen · ความกังวล"
+    },
+    "English|would": {
+      "meaning": "used to talk politely about wants · อยากจะ"
+    },
+    "English|write": {
+      "meaning": "to put words on paper · เขียน"
+    },
+    "English|writer": {
+      "meaning": "a person who writes books or stories · นักเขียน"
+    },
+    "English|wrong": {
+      "meaning": "not correct or right · ผิด"
+    },
+    "English|yard": {
+      "meaning": "land outside a house · สนาม"
+    },
+    "English|year": {
+      "meaning": "twelve months · ปี"
+    },
+    "English|yellow": {
+      "meaning": "having the color of a lemon · สีเหลือง"
+    },
+    "English|yes": {
+      "meaning": "a word used to agree · ใช่"
+    },
+    "English|yesterday": {
+      "meaning": "the day before today · เมื่อวาน"
+    },
+    "English|yet": {
+      "meaning": "until now · ยัง"
+    },
+    "English|yogurt": {
+      "meaning": "a cold food made from milk · โยเกิร์ต"
+    },
+    "English|you": {
+      "meaning": "the person or people spoken to · คุณ"
+    },
+    "English|young": {
+      "meaning": "not old · อายุน้อย"
+    },
+    "English|your": {
+      "meaning": "belonging to the person spoken to · ของคุณ"
+    },
+    "English|yours": {
+      "meaning": "the thing that belongs to you · ของคุณ"
+    },
+    "English|yourself": {
+      "meaning": "the person spoken to · ตัวคุณเอง"
+    },
+    "English|zoo": {
+      "meaning": "a place where people see animals · สวนสัตว์"
+    },
+    "English|ID": {
+      "meaning": "something showing who you are · บัตรประจำตัว"
+    },
+    "English|ID card": {
+      "meaning": "a card showing who you are · บัตรประจำตัว"
+    },
+    "English|IT": {
+      "meaning": "computers and related technology · เทคโนโลยีสารสนเทศ"
+    },
+    "English|MP3 player": {
+      "meaning": "a small machine for playing music · เครื่องเล่นเอ็มพี3"
+    },
+    "English|Ms.": {
+      "meaning": "a title before a woman's name · นางสาว"
+    },
+    "English|Olympic": {
+      "meaning": "relating to the world sports games · โอลิมปิก"
+    },
+    "English|PC": {
+      "meaning": "a computer for one person · คอมพิวเตอร์"
+    },
+    "English|ability": {
+      "meaning": "skill to do something · ความสามารถ"
+    },
+    "English|abroad": {
+      "meaning": "in or to another country · ต่างประเทศ"
+    },
+    "English|accept": {
+      "meaning": "to say yes to something · ยอมรับ"
+    },
+    "English|acceptable": {
+      "meaning": "good enough to use or do · ยอมรับได้"
+    },
+    "English|accident": {
+      "meaning": "something bad that happens by chance · อุบัติเหตุ"
+    },
+    "English|account": {
+      "meaning": "a place where a bank keeps your money · บัญชีธนาคาร"
+    },
+    "English|achieve": {
+      "meaning": "to succeed in doing something · บรรลุ"
+    },
+    "English|across": {
+      "meaning": "to the other side · ข้ามไป"
+    },
+    "English|blanket": {
+      "meaning": "a thick cover to keep you warm in bed · ผ้าห่ม"
+    },
+    "English|blonde": {
+      "meaning": "having light yellow hair · ผมบลอนด์"
+    },
+    "English|blood": {
+      "meaning": "the red liquid inside your body · เลือด"
+    },
+    "English|bloom": {
+      "meaning": "a flower on a plant · ดอกไม้"
+    },
+    "English|board game": {
+      "meaning": "a game played on a table with pieces · เกมกระดาน"
+    },
+    "English|boil": {
+      "meaning": "to cook in very hot water · ต้ม"
+    },
+    "English|boiled": {
+      "meaning": "cooked in very hot water · ต้มแล้ว"
+    },
+    "English|bonus": {
+      "meaning": "extra money or something extra you get · โบนัส"
+    },
+    "English|bookcase": {
+      "meaning": "a piece of furniture for keeping books · ตู้หนังสือ"
+    },
+    "English|bookshelf": {
+      "meaning": "a shelf for keeping books · ชั้นหนังสือ"
+    },
+    "English|bookshop": {
+      "meaning": "a shop that sells books · ร้านหนังสือ"
+    },
+    "English|bored": {
+      "meaning": "not interested because nothing is fun · เบื่อ"
+    },
+    "English|boss": {
+      "meaning": "the person who tells workers what to do · เจ้านาย"
+    },
+    "English|bother": {
+      "meaning": "to make someone worried or annoyed · รบกวน"
+    },
+    "English|bra": {
+      "meaning": "women's clothing that supports the breasts · เสื้อชั้นใน"
+    },
+    "English|brainstorm": {
+      "meaning": "a meeting to think of new ideas · ระดมความคิด"
+    },
+    "English|brake": {
+      "meaning": "a part of a vehicle that makes it stop · เบรก"
+    },
+    "English|branch": {
+      "meaning": "a part of a tree that grows from the trunk · กิ่งไม้"
+    },
+    "English|brand": {
+      "meaning": "the name of a company's product · ยี่ห้อ"
+    },
+    "English|brave": {
+      "meaning": "not afraid in a dangerous situation · กล้าหาญ"
+    },
+    "English|breeze": {
+      "meaning": "a light wind · ลมอ่อน"
+    },
+    "English|bride": {
+      "meaning": "a woman on her wedding day · เจ้าสาว"
+    },
+    "English|brilliant": {
+      "meaning": "very clever or very good · ยอดเยี่ยม"
+    },
+    "English|budget": {
+      "meaning": "a plan for how to spend money · งบประมาณ"
+    },
+    "English|bug": {
+      "meaning": "a small insect · แมลง"
+    },
+    "English|bulb": {
+      "meaning": "the glass part of a lamp that gives light · หลอดไฟ"
+    },
+    "English|burn": {
+      "meaning": "a painful skin injury from heat or fire · แผลไหม้"
+    },
+    "English|bury": {
+      "meaning": "to put something under the ground · ฝัง"
+    },
+    "English|bus station": {
+      "meaning": "a place where buses start or end trips · สถานีรถประจำทาง"
+    },
+    "English|bus stop": {
+      "meaning": "a place where buses pick up people · ป้ายรถเมล์"
+    },
+    "English|bush": {
+      "meaning": "a small plant with many branches · พุ่มไม้"
+    },
+    "English|businessman": {
+      "meaning": "a man who works in business · นักธุรกิจชาย"
+    },
+    "English|businesswoman": {
+      "meaning": "a woman who works in business · นักธุรกิจหญิง"
+    },
+    "English|cab": {
+      "meaning": "a car you pay to take you somewhere · แท็กซี่"
+    },
+    "English|cafeteria": {
+      "meaning": "a place where people buy and eat food · โรงอาหาร"
+    },
+    "English|calendar": {
+      "meaning": "a chart showing days, weeks, and months · ปฏิทิน"
+    },
+    "English|camping": {
+      "meaning": "staying outside in a tent for fun · การตั้งแคมป์"
+    },
+    "English|campus": {
+      "meaning": "the land and buildings of a university · วิทยาเขต"
+    },
+    "English|capital": {
+      "meaning": "the main city of a country · เมืองหลวง"
+    },
+    "English|capital letter": {
+      "meaning": "a large letter, like A or B · ตัวพิมพ์ใหญ่"
+    },
+    "English|consist": {
+      "meaning": "Be made of particular things · ประกอบด้วย"
+    },
+    "English|contact": {
+      "meaning": "Communication with a person · การติดต่อ"
+    },
+    "English|container": {
+      "meaning": "An object used to hold things · ภาชนะ"
+    },
+    "English|context": {
+      "meaning": "The situation around something · บริบท"
+    },
+    "English|continent": {
+      "meaning": "One of Earth's large land areas · ทวีป"
+    },
+    "English|continue": {
+      "meaning": "Keep doing something · ทำต่อ"
+    },
+    "English|contrast": {
+      "meaning": "A clear difference between things · ความแตกต่าง"
+    },
+    "English|control": {
+      "meaning": "The power to make something happen · การควบคุม"
+    },
+    "English|convenience": {
+      "meaning": "The state of being easy and useful · ความสะดวก"
+    },
+    "English|convenient": {
+      "meaning": "Easy to use or suitable · สะดวก"
+    },
+    "English|cooker": {
+      "meaning": "A machine used for making food · เตา"
+    },
+    "English|cooking": {
+      "meaning": "The activity of making food · การทำอาหาร"
+    },
+    "English|cooler": {
+      "meaning": "A box that keeps food and drinks cold · กระติกเก็บความเย็น"
+    },
+    "English|correctly": {
+      "meaning": "In the right way · อย่างถูกต้อง"
+    },
+    "English|cost": {
+      "meaning": "The money needed to buy something · ราคา"
+    },
+    "English|count": {
+      "meaning": "Say numbers to find how many · นับ"
+    },
+    "English|country": {
+      "meaning": "A nation with its own government · ประเทศ"
+    },
+    "English|countryside": {
+      "meaning": "Land outside towns and cities · ชนบท"
+    },
+    "English|couple": {
+      "meaning": "Two people in a romantic relationship · คู่รัก"
+    },
+    "English|court": {
+      "meaning": "A place where people play tennis · สนามเทนนิส"
+    },
+    "English|crazy": {
+      "meaning": "Very strange or not sensible · บ้า"
+    },
+    "English|create": {
+      "meaning": "Make something new · สร้าง"
+    },
+    "English|creative": {
+      "meaning": "Good at making new things or ideas · มีความคิดสร้างสรรค์"
+    },
+    "English|creativity": {
+      "meaning": "The ability to make new ideas · ความคิดสร้างสรรค์"
+    },
+    "English|creature": {
+      "meaning": "A living animal or person · สิ่งมีชีวิต"
+    },
+    "English|credit": {
+      "meaning": "Money borrowed to pay for things · เครดิต"
+    },
+    "English|cricket": {
+      "meaning": "A game played with a bat and ball · คริกเก็ต"
+    },
+    "English|crime": {
+      "meaning": "An illegal act · อาชญากรรม"
+    },
+    "English|crisp": {
+      "meaning": "A thin, salty potato snack · มันฝรั่งทอดกรอบ"
+    },
+    "English|criticize": {
+      "meaning": "Say what is wrong with something · วิจารณ์"
+    },
+    "English|cross": {
+      "meaning": "A shape made by two lines crossing · กางเขน"
+    },
+    "English|crowd": {
+      "meaning": "A large group of people · ฝูงชน"
+    },
+    "English|crowded": {
+      "meaning": "Full of many people · แออัด"
+    },
+    "English|crown": {
+      "meaning": "A special hat worn by a king or queen · มงกุฎ"
+    },
+    "English|cruise": {
+      "meaning": "A holiday journey on a ship · การล่องเรือ"
+    },
+    "English|cupboard": {
+      "meaning": "A cabinet for storing food or dishes · ตู้เก็บของ"
+    },
+    "English|curry": {
+      "meaning": "A spicy dish with sauce · แกงกะหรี่"
+    },
+    "English|curse": {
+      "meaning": "A rude or angry word · คำด่า"
+    },
+    "English|custom": {
+      "meaning": "A traditional way of doing something · ประเพณี"
+    },
+    "English|customer": {
+      "meaning": "A person who buys something · ลูกค้า"
+    },
+    "English|magic": {
+      "meaning": "having special power · วิเศษ"
+    },
+    "English|main course": {
+      "meaning": "the biggest part of a meal · อาหารจานหลัก"
+    },
+    "English|mainly": {
+      "meaning": "more than anything else · ส่วนใหญ่"
+    },
+    "English|major": {
+      "meaning": "very important or large · สำคัญ"
+    },
+    "English|make-up": {
+      "meaning": "color put on the face · เครื่องสำอาง"
+    },
+    "English|maker": {
+      "meaning": "a person or company that makes things · ผู้ผลิต"
+    },
+    "English|male": {
+      "meaning": "a man or boy · ผู้ชาย"
+    },
+    "English|mall": {
+      "meaning": "a large building with many shops · ห้างสรรพสินค้า"
+    },
+    "English|manage": {
+      "meaning": "to control or organize something · จัดการ"
+    },
+    "English|manager": {
+      "meaning": "a person who controls work · ผู้จัดการ"
+    },
+    "English|manner": {
+      "meaning": "a way of doing something · วิธี"
+    },
+    "English|mark": {
+      "meaning": "a sign or line on something · รอย"
+    },
+    "English|market": {
+      "meaning": "a place where people buy and sell · ตลาด"
+    },
+    "English|married": {
+      "meaning": "having a husband or wife · แต่งงานแล้ว"
+    },
+    "English|marry": {
+      "meaning": "to become someone's husband or wife · แต่งงาน"
+    },
+    "English|marvelous": {
+      "meaning": "extremely good · ยอดเยี่ยม"
+    },
+    "English|material": {
+      "meaning": "what something is made from · วัสดุ"
+    },
+    "English|max": {
+      "meaning": "the highest possible amount · สูงสุด"
+    },
+    "English|meaning": {
+      "meaning": "the idea a word shows · ความหมาย"
+    },
+    "English|medal": {
+      "meaning": "a small prize for winning · เหรียญรางวัล"
+    },
+    "English|medical": {
+      "meaning": "about doctors or medicine · ทางการแพทย์"
+    },
+    "English|melon": {
+      "meaning": "a large sweet fruit · แตงโม"
+    },
+    "English|member": {
+      "meaning": "a person in a group · สมาชิก"
+    },
+    "English|mention": {
+      "meaning": "a short talk about something · การพูดถึง"
+    },
+    "English|menu": {
+      "meaning": "a list of food and drinks · เมนู"
+    },
+    "English|metal": {
+      "meaning": "a hard material like iron · โลหะ"
+    },
+    "English|meter": {
+      "meaning": "a unit for measuring length · เมตร"
+    },
+    "English|method": {
+      "meaning": "a way of doing something · วิธี"
+    },
+    "English|midday": {
+      "meaning": "twelve o'clock in the day · เที่ยงวัน"
+    },
+    "English|midnight": {
+      "meaning": "twelve o'clock at night · เที่ยงคืน"
+    },
+    "English|might": {
+      "meaning": "possibly will or can · อาจจะ"
+    },
+    "English|military": {
+      "meaning": "about a country's army · ทางทหาร"
+    },
+    "English|million": {
+      "meaning": "one thousand thousand · หนึ่งล้าน"
+    },
+    "English|mineral water": {
+      "meaning": "water from the ground with minerals · น้ำแร่"
+    },
+    "English|mirror": {
+      "meaning": "glass that shows your face · กระจกเงา"
+    },
+    "English|missing": {
+      "meaning": "not in the expected place · หายไป"
+    },
+    "English|mistake": {
+      "meaning": "something done wrongly · ความผิดพลาด"
+    },
+    "English|mix": {
+      "meaning": "to put things together · ผสม"
+    },
+    "English|model": {
+      "meaning": "a small copy of something · แบบจำลอง"
+    },
+    "English|modern": {
+      "meaning": "new and from recent times · ทันสมัย"
+    }
+  }
+}

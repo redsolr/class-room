@@ -197,6 +197,13 @@
       "when": 1789192186461,
       "tag": "0027_teacher_opt_in",
       "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1789195951735,
+      "tag": "0028_content_levels",
+      "breakpoints": true
     }
   ]
 }

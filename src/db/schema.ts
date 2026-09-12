@@ -1049,6 +1049,18 @@ export const studyPacks = pgTable(
      * should not need a migration to make one. */
     theme: text("theme"),
     description: text("description"),
+    /**
+     * Where the book came from (2026-09-12): null = the editorial catalog
+     * in `src/content/study-packs.ts`; `content` = built by
+     * `scripts/content/ingest.ts` from the `content_*` tables. Generated
+     * books are re-derived on every ingest and never edited by hand.
+     */
+    source: text("source"),
+    /** The rung a generated book belongs to (N5…, A1…) and its unit
+     * number within it — the level page groups by these. Null on
+     * editorial books. */
+    level: text("level"),
+    unit: integer("unit"),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -1056,7 +1068,10 @@ export const studyPacks = pgTable(
       .notNull()
       .defaultNow(),
   },
-  (t) => [uniqueIndex("study_packs_slug_idx").on(t.slug)],
+  (t) => [
+    uniqueIndex("study_packs_slug_idx").on(t.slug),
+    index("study_packs_language_level_idx").on(t.language, t.level),
+  ],
 );
 
 export const studyPackItems = pgTable(
@@ -1158,6 +1173,11 @@ export const studyPaths = pgTable(
     description: text("description"),
     /** Curated order in the catalog. */
     position: integer("position").notNull().default(0),
+    /** null = `src/content/study-paths.ts`; `content` = built by the
+     * content ingest from a level's units (2026-09-12). */
+    source: text("source"),
+    /** The rung a generated path climbs (N5…, A1…). */
+    level: text("level"),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),
@@ -1981,3 +2001,92 @@ export type MessageThread = typeof messageThreads.$inferSelect;
 export type Message = typeof messages.$inferSelect;
 export type MessageTerm = typeof messageTerms.$inferSelect;
 export type PushSubscriptionRow = typeof pushSubscriptions.$inferSelect;
+
+// ---------------------------------------------------------------------------
+// CONTENT — the level ladders (2026-09-12).
+//
+// Until now every book was hand-written in `src/content/study-packs.ts`
+// and seeded on deploy. That is right for a curated book of 25 words and
+// wrong for a JLPT level of 700: the ladders come from OPEN DATASETS
+// (`content/sources/ATTRIBUTION.md`) that `scripts/content/ingest.ts`
+// loads into these tables, and the level BOOKS and PATHS a learner sees
+// are built FROM these tables by the same script. The rule: content that
+// is data lives in the database; content that is editorial lives in the
+// catalog file. The learner-side tables (`study_vocab`, `study_packs`,
+// `study_paths`) do not change shape — a level book is a `study_packs`
+// row with `source = 'content'`, so import, decks, the SRS, the path
+// evidence and the fast-forward all work on it unchanged.
+// ---------------------------------------------------------------------------
+
+export const contentVocab = pgTable(
+  "content_vocab",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    language: text("language").notNull(),
+    term: text("term").notNull(),
+    reading: text("reading"),
+    meaning: text("meaning"),
+    /** Part of speech as the source gives it (noun, verb, …). */
+    pos: text("pos"),
+    /** The rung: N5…N1 / A1…C2 (`lib/levels.ts`). */
+    level: text("level").notNull(),
+    /** Corpus frequency rank in the language, lower = more common; null
+     * when the word is not in the frequency list. Orders the units. */
+    frequencyRank: integer("frequency_rank"),
+    /** Which vendored file the row came from, e.g. `jlpt-n5-vocab.csv`. */
+    source: text("source").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    // One row per (language, term, reading) — 会う/あう and 合う/あう are
+    // different words; 青/あお listed twice in a source is one.
+    uniqueIndex("content_vocab_lang_term_reading_idx").on(
+      t.language,
+      t.term,
+      sql`coalesce(${t.reading}, '')`,
+    ),
+    index("content_vocab_language_level_idx").on(t.language, t.level),
+  ],
+);
+
+export const contentGrammarPoints = pgTable(
+  "content_grammar_points",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    language: text("language").notNull(),
+    level: text("level").notNull(),
+    /** Order within the level, as authored. */
+    position: integer("position").notNull(),
+    /** The pattern itself: 〜てください / "I am" / "There is / are". */
+    pattern: text("pattern").notNull(),
+    /** One line: what it does. */
+    meaning: text("meaning"),
+    /** A short explanation in the learner's terms, markdown. Authored
+     * (or model-drafted and marked so); null until someone writes it. */
+    explanation: text("explanation"),
+    /** `[{ text, translation }]` — the examples the cloze cards for this
+     * point are cut from. */
+    examples: jsonb("examples").$type<{ text: string; translation: string }[]>(),
+    /** true while the explanation/examples are a draft nobody reviewed. */
+    draft: boolean("draft").notNull().default(true),
+    source: text("source").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("content_grammar_lang_pattern_idx").on(t.language, t.pattern),
+    index("content_grammar_language_level_idx").on(t.language, t.level),
+  ],
+);
+
+export type ContentVocab = typeof contentVocab.$inferSelect;
+export type ContentGrammarPoint = typeof contentGrammarPoints.$inferSelect;

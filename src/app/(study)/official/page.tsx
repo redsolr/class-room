@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { asc, eq, sql } from "drizzle-orm";
+import { asc, eq, isNull, sql } from "drizzle-orm";
 import { BookMarked } from "lucide-react";
 import { db, studyPackItems, studyPacks } from "@/db";
 import { requireLearner } from "@/lib/auth";
@@ -23,6 +23,9 @@ export default async function StudyPacksPage() {
     })
     .from(studyPacks)
     .leftJoin(studyPackItems, eq(studyPackItems.packId, studyPacks.id))
+    // Editorial books only — the generated level units live on the level
+    // paths, not on the browse shelves (2026-09-12).
+    .where(isNull(studyPacks.source))
     .groupBy(studyPacks.id)
     .orderBy(asc(studyPacks.name));
 

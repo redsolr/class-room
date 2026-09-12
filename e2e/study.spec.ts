@@ -1352,6 +1352,21 @@ test("sentence cards: generate from words, drill the blank, land on the shelf", 
   await expect(dialog).not.toBeVisible();
   await expect(page.getByText("I would like a coffee.")).toBeVisible();
 
+  // WORDS INSIDE A SENTENCE ARE TAPPABLE (2026-09-12). "je voudrais" is
+  // a term in the official Café survival French book, so it lights up
+  // in the hand-written card (case-insensitive, on a word boundary) and
+  // a tap writes its meaning as a caption under the line. The blank
+  // itself is never a tap target — it is the answer.
+  const frenchRow = page.locator(".sentence-row", { hasText: "Je voudrais" });
+  const glossWord = frenchRow.locator(".gloss-word", { hasText: "Je voudrais" });
+  await expect(glossWord).toBeVisible();
+  await expect(frenchRow.locator(".sentence-blank .gloss-word")).toHaveCount(0);
+  await glossWord.click();
+  await expect(frenchRow.locator(".sentence-gloss")).toContainText("I would like");
+  // Tapping the same word again folds the caption away.
+  await glossWord.click();
+  await expect(frenchRow.locator(".sentence-gloss")).toHaveCount(0);
+
   // Sentence decks are their OWN shelf on Decks — not rows mixed into
   // the word books.
   await page.goto("/decks");

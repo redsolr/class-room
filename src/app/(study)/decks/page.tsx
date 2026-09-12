@@ -14,6 +14,7 @@ import {
 } from "@/db";
 import { requireLearner } from "@/lib/auth";
 import { loadErrorDeck } from "@/lib/error-deck";
+import { loadGlossary } from "@/lib/gloss-queries";
 import { isCardDue } from "@/lib/srs";
 import { wordCardColumns } from "@/lib/study-decks";
 import { dueIds, membersByDeck } from "@/lib/study-shelves";
@@ -136,6 +137,12 @@ export default async function StudyReviewPage({
         .from(studySentences)
         .where(scope),
     ]);
+    // Known words per language in this session — tappable inside a
+    // sentence, never the blank.
+    const glossary = await loadGlossary(
+      learner.id,
+      cards.map((c) => c.language),
+    );
 
     return (
       <PageShell>
@@ -159,6 +166,7 @@ export default async function StudyReviewPage({
             totalWords={total}
             deckId={list?.id ?? null}
             deckKind="sentence"
+            glossary={glossary}
           />
         </div>
       </PageShell>

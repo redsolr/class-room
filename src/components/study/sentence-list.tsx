@@ -17,6 +17,9 @@ import {
   updateStudySentence,
 } from "@/lib/actions/sentences";
 import { parseCloze } from "@/lib/cloze";
+import type { GlossEntry } from "@/lib/gloss";
+import type { GlossaryByLanguage } from "@/lib/gloss-queries";
+import { GlossedText } from "@/components/study/glossed-text";
 import { STUDY_LANGUAGES } from "@/lib/study-languages";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -40,17 +43,28 @@ export type SentenceBook = { id: string; name: string };
  * blank, so scanning the list is itself a weak review.
  */
 
-/** The sentence with its blank drawn as one — the reading view. */
-function ClozeLine({ text }: { text: string }) {
+/** The sentence with its blank drawn as one — the reading view. Known
+ * words around the blank are tappable; the blank never is (it is the
+ * answer, and it already carries the highlight). */
+function ClozeLine({
+  text,
+  glossary,
+  onPick,
+}: {
+  text: string;
+  glossary: GlossEntry[];
+  onPick: (entry: GlossEntry) => void;
+}) {
   const parsed = parseCloze(text);
-  if (!parsed) return <span>{text}</span>;
+  const pick = (entry: GlossEntry) => onPick(entry);
+  if (!parsed) return <GlossedText text={text} glossary={glossary} onPick={pick} />;
   return (
     <span>
-      {parsed.before}
+      <GlossedText text={parsed.before} glossary={glossary} onPick={pick} />
       <span className="sentence-blank mx-0.5 rounded bg-accent-soft px-1.5 font-semibold text-accent-text">
         {parsed.answer}
       </span>
-      {parsed.after}
+      <GlossedText text={parsed.after} glossary={glossary} onPick={pick} />
     </span>
   );
 }
@@ -139,16 +153,40 @@ function SentenceForm({
   );
 }
 
-function SentenceRow({ sentence }: { sentence: StudySentence }) {
+function SentenceRow({
+  sentence,
+  glossary,
+}: {
+  sentence: StudySentence;
+  glossary: GlossEntry[];
+}) {
   const [editing, setEditing] = React.useState(false);
   const [pending, startTransition] = React.useTransition();
+  // The tapped word's gloss — a caption UNDER the line, not a tooltip:
+  // half the audience is on a phone, where hover does not exist.
+  const [gloss, setGloss] = React.useState<GlossEntry | null>(null);
 
   return (
     <li className="sentence-row group flex items-start gap-3 px-4 py-3 transition-colors hover:bg-surface-hover">
       <div className="min-w-0 flex-1">
         <p className="text-[0.9375rem] leading-relaxed">
-          <ClozeLine text={sentence.text} />
+          <ClozeLine
+            text={sentence.text}
+            glossary={glossary}
+            onPick={(entry) =>
+              setGloss((current) => (current?.term === entry.term ? null : entry))
+            }
+          />
         </p>
+        {gloss && (
+          <p className="sentence-gloss mt-1 rounded-md bg-accent-soft px-2.5 py-1.5 text-[0.875rem]">
+            <span className="font-semibold">{gloss.term}</span>
+            {gloss.reading && (
+              <span className="ml-1.5 text-fg-tertiary">{gloss.reading}</span>
+            )}
+            {gloss.meaning && <span className="block">{gloss.meaning}</span>}
+          </p>
+        )}
         {sentence.translation && (
           <p className="mt-0.5 text-[0.875rem] text-fg-secondary">
             {sentence.translation}
@@ -278,9 +316,12 @@ function GenerateButton({ books }: { books: SentenceBook[] }) {
 export function SentenceList({
   sentences,
   books,
+  glossary = {},
 }: {
   sentences: StudySentence[];
   books: SentenceBook[];
+  /** Known words per language, for tapping inside a sentence. */
+  glossary?: GlossaryByLanguage;
 }) {
   const [adding, setAdding] = React.useState(false);
 
@@ -313,7 +354,11 @@ export function SentenceList({
       ) : (
         <ul className="sentence-shelf divide-y divide-border overflow-hidden rounded-xl bg-surface shadow-card">
           {sentences.map((sentence) => (
-            <SentenceRow key={sentence.id} sentence={sentence} />
+            <SentenceRow
+              key={sentence.id}
+              sentence={sentence}
+              glossary={glossary[sentence.language] ?? []}
+            />
           ))}
         </ul>
       )}

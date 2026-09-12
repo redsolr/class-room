@@ -5,6 +5,7 @@ import { MessageSquareQuote, Play } from "lucide-react";
 import { db, studySentences, studyDecks } from "@/db";
 import { requireLearner } from "@/lib/auth";
 import { isCardDue } from "@/lib/srs";
+import { loadGlossary } from "@/lib/gloss-queries";
 import { SentenceList } from "@/components/study/sentence-list";
 import { PageHeader, PageShell } from "@/components/ui/page-header";
 
@@ -36,6 +37,12 @@ export default async function StudySentencesPage() {
   ]);
 
   const dueCount = sentences.filter((s) => isCardDue(s.srsDueAt, now)).length;
+  // Known words per language on the shelf, so a word inside a sentence
+  // can be tapped for its meaning.
+  const glossary = await loadGlossary(
+    learner.id,
+    sentences.map((s) => s.language),
+  );
 
   return (
     <PageShell>
@@ -61,7 +68,7 @@ export default async function StudySentencesPage() {
       />
 
       <div className="max-w-3xl">
-        <SentenceList sentences={sentences} books={books} />
+        <SentenceList sentences={sentences} books={books} glossary={glossary} />
       </div>
     </PageShell>
   );

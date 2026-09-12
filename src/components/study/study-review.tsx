@@ -15,6 +15,9 @@ import {
   reviewStudySentence,
 } from "@/lib/actions/sentences";
 import { coverHue } from "@/components/study/book-cover";
+import { GlossChip, GlossedText } from "@/components/study/glossed-text";
+import type { GlossEntry } from "@/lib/gloss";
+import type { GlossaryByLanguage } from "@/lib/gloss-queries";
 import { parseCloze } from "@/lib/cloze";
 import {
   toSentenceCards,
@@ -121,12 +124,37 @@ function CardFace({
   card,
   revealed,
   onReveal,
+  glossary = [],
 }: {
   card: ReviewCard;
   revealed: boolean;
   onReveal?: () => void;
+  /** Known words in this card's language — tappable inside a sentence.
+   * The blank itself is never glossed: it is the answer. */
+  glossary?: GlossEntry[];
 }) {
   const cloze = card.kind === "sentence" ? parseCloze(card.text) : null;
+  /**
+   * The tapped word's gloss, floated inside the card's front under the
+   * word. Local to the face, keyed by card id at the call site, so a new
+   * card never inherits the last one's chip. Positioned from the word's
+   * measured rect, not a layout constant — the sentence wraps
+   * differently on every card.
+   */
+  const frontRef = React.useRef<HTMLDivElement>(null);
+  const [gloss, setGloss] = React.useState<{
+    entry: GlossEntry;
+    top: number;
+    left: number;
+  } | null>(null);
+  const pick = (entry: GlossEntry, rect: DOMRect) => {
+    const front = frontRef.current?.getBoundingClientRect();
+    if (!front) return;
+    const width = front.width;
+    // Under the word, clamped so the chip stays inside the card.
+    const left = Math.min(Math.max(rect.left - front.left, 8), Math.max(width - 232, 8));
+    setGloss({ entry, top: rect.bottom - front.top + 6, left });
+  };
 
   return (
     // The card containers carry the full-bleed cover gradient; this
@@ -136,10 +164,21 @@ function CardFace({
     // hardcoded light-on-tint / dark-on-white because the cover (like
     // the library's) keeps its own colors in both themes.
     <>
-      <div className="review-card-front relative flex h-[45%] shrink-0 flex-col items-center justify-end gap-1 px-6 pb-6 text-white">
+      <div
+        ref={frontRef}
+        className="review-card-front relative flex h-[45%] shrink-0 flex-col items-center justify-end gap-1 px-6 pb-6 text-white"
+      >
         <span className="review-language-chip absolute top-4 left-4 rounded-full bg-white/15 px-2.5 py-0.5 text-[0.75rem] font-medium">
           {card.language}
         </span>
+        {gloss && (
+          <GlossChip
+            entry={gloss.entry}
+            onClose={() => setGloss(null)}
+            className="absolute z-10 w-56"
+            style={{ top: gloss.top, left: gloss.left }}
+          />
+        )}
         {card.kind === "word" ? (
           <>
             <p className="text-[2rem] font-semibold tracking-tight">
@@ -157,7 +196,7 @@ function CardFace({
           <p className="review-cloze text-[1.375rem] leading-snug font-medium text-balance">
             {cloze ? (
               <>
-                {cloze.before}
+                <GlossedText text={cloze.before} glossary={glossary} onPick={pick} />
                 <span
                   className={cn(
                     "review-cloze-blank mx-0.5 inline-block rounded px-1.5",
@@ -168,10 +207,10 @@ function CardFace({
                 >
                   {cloze.answer}
                 </span>
-                {cloze.after}
+                <GlossedText text={cloze.after} glossary={glossary} onPick={pick} />
               </>
             ) : (
-              card.text
+              <GlossedText text={card.text} glossary={glossary} onPick={pick} />
             )}
           </p>
         )}
@@ -238,8 +277,12 @@ export function StudyReview({
   packSlug = null,
   initialMode = "due",
   deckKind = "word",
+  glossary = {},
 }: {
   deck: ReviewCard[];
+  /** Known words per language, for tapping inside a sentence card
+   * (`lib/gloss-queries.ts`). Word sessions pass nothing. */
+  glossary?: GlossaryByLanguage;
   /** Size of the SCOPE — the book, or the whole vocabulary. A practice
    * round is offered whenever it's > 0. */
   totalWords: number;
@@ -614,6 +657,7 @@ export function StudyReview({
             card={card}
             revealed={revealed}
             onReveal={() => setRevealed(true)}
+            glossary={glossary[card.language] ?? []}
           />
         </div>
       </div>

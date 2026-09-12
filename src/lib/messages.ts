@@ -234,3 +234,30 @@ async function notifyThread(
     console.error(`[messages] notification failed for ${threadId}:`, error);
   }
 }
+
+/**
+ * Mark the caller's side of a thread read, DURING the page render.
+ *
+ * Opening the thread IS the read (see `MarkThreadRead` for why not
+ * "scrolled past"). Until 2026-09-12 that write happened only from a
+ * client effect after mount, and a navigation fired right after the
+ * messages appeared ABORTED the request — CI's slow runner hit it, and
+ * so would a person on a slow phone who opens a thread and backs out:
+ * the badge stayed up. The durable write now happens on the server
+ * before the page returns, with no revalidation (a render may not
+ * revalidate its own path); the client effect stays to refresh the
+ * rail's badge, and its second write is idempotent.
+ */
+export async function markSideRead(
+  threadId: string,
+  role: "teacher" | "student",
+  now = new Date(),
+): Promise<void> {
+  await db
+    .update(messageThreads)
+    .set({
+      ...(role === "teacher" ? { teacherReadAt: now } : { studentReadAt: now }),
+      updatedAt: now,
+    })
+    .where(eq(messageThreads.id, threadId));
+}

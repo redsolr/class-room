@@ -7,6 +7,7 @@ import {
   type ThreadParticipant,
 } from "@/lib/message-guards";
 import { threadMessages, type ThreadMessage } from "@/lib/message-queries";
+import { markSideRead } from "@/lib/messages";
 import { draftNudge } from "@/lib/message-drafts";
 import { Avatar } from "@/components/ui/avatar";
 import { BackLink, PageShell } from "@/components/ui/page-header";
@@ -47,6 +48,13 @@ export default async function ThreadPage({
 
   const messages = await threadMessages(threadId);
 
+  // Opening the thread IS the read — written here, on the server, before
+  // the page returns. The client `MarkThreadRead` below still runs to
+  // refresh the rail's badge; its write is idempotent. Computed BEFORE
+  // the write so the page can still say how many were new.
+  const unread = unreadFor(me, messages);
+  if (unread > 0) await markSideRead(threadId, me.role);
+
   /**
    * The nudge, drafted server-side.
    *
@@ -65,7 +73,7 @@ export default async function ThreadPage({
 
   return (
     <PageShell>
-      <MarkThreadRead threadId={threadId} unread={unreadFor(me, messages)} />
+      <MarkThreadRead threadId={threadId} unread={unread} />
       <BackLink href="/messages">All messages</BackLink>
 
       <header className="mb-5 flex items-center gap-3">

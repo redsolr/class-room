@@ -25,7 +25,10 @@ export async function GET(request: NextRequest) {
       clientId,
     });
     await saveSession(authResponse, request);
-    return NextResponse.redirect(new URL("/schedule", request.url));
+    // The landing page resolves the login's roles and sends it where it
+    // belongs — teaching desk, classroom or study. Hardcoding /schedule
+    // here assumed everyone was a teacher.
+    return NextResponse.redirect(new URL("/", request.url));
   } catch (error) {
     console.error("[auth/callback] authentication failed:", error);
     return NextResponse.redirect(new URL("/login", request.url));

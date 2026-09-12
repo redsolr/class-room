@@ -69,6 +69,7 @@ async function resolveTeacher(): Promise<Teacher> {
       workosUserId: "mock_teacher_dev",
       email: "teacher@class-room.dev",
       name: "Demo Teacher",
+      teachingSince: new Date(),
       nativeLanguage: "English",
       languagesTaught: ["English", "French"],
       timezone: "Asia/Bangkok",

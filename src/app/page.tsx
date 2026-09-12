@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ArrowRight, BookOpenText, GraduationCap, Sparkles, Users } from "lucide-react";
-import { getAccount } from "@/lib/auth";
+import { getRoles, homeFor } from "@/lib/auth";
 
 export default async function LandingPage() {
-  const account = await getAccount();
-  if (account) redirect(account.kind === "student" ? "/student" : "/schedule");
+  const roles = await getRoles();
+  if (roles) redirect(homeFor(roles));
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -27,17 +27,17 @@ export default async function LandingPage() {
       <main className="flex flex-1 flex-col items-center justify-center px-6 pb-24 text-center">
         <p className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-[0.8125rem] font-medium text-fg-secondary">
           <Sparkles className="size-3.5 text-accent" />
-          For independent language tutors
+          Early access
         </p>
         <h1 className="max-w-2xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-          Remember every student.
+          Learn the language.
           <br />
-          <span className="text-fg-secondary">Know what to teach next.</span>
+          <span className="text-fg-secondary">Keep everything you learn.</span>
         </h1>
         <p className="mt-5 max-w-xl text-balance text-[1rem] leading-relaxed text-fg-secondary">
-          Paste your rough notes after each lesson. Classroom turns them into
-          corrections, vocabulary, homework and a professional student recap —
-          and keeps a living memory of every learner.
+          Books, decks and sentences to drill, a tutor to talk to, a path
+          that says what to do next — and when you study with a teacher,
+          every lesson lands in the same place.
         </p>
         <Link
           href="/signup"
@@ -50,19 +50,19 @@ export default async function LandingPage() {
         <div className="mt-20 grid max-w-3xl grid-cols-1 gap-4 text-left sm:grid-cols-3">
           {[
             {
-              icon: Users,
-              title: "Student memory",
-              body: "Levels, goals, recurring mistakes and vocabulary — one living record per learner.",
+              icon: BookOpenText,
+              title: "Study on your own",
+              body: "Official books, spaced-repetition decks, cloze sentences and a guided path. Progress you can trace to something you did.",
             },
             {
               icon: Sparkles,
-              title: "AI lesson notes",
-              body: "Rough notes in, structured lesson records out. You approve everything before it's saved.",
+              title: "Lessons that stick",
+              body: "A recorded lesson becomes corrections, vocabulary and homework — reviewed by your teacher, kept by you.",
             },
             {
-              icon: BookOpenText,
-              title: "Student recaps",
-              body: "A clean, shareable summary after every lesson. Private notes stay private.",
+              icon: Users,
+              title: "Teach, if you teach",
+              body: "One record per student, one thread per relationship. Opt in from your account whenever you like.",
             },
           ].map((f) => (
             <div

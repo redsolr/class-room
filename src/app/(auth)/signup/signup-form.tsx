@@ -26,9 +26,10 @@ export function SignupForm() {
 
   return (
     <>
-      <h1 className="auth-card-title">Create your classroom</h1>
+      <h1 className="auth-card-title">Create your account</h1>
       <p className="auth-card-subtitle mb-6 mt-1.5">
-        Free while in early access — remember every student from day one.
+        Free while in early access. Study on your own, with a tutor, or
+        both — everything you learn stays in one place.
       </p>
 
       <form action={(fd) => submit(createAccount, fd)} className="space-y-4">

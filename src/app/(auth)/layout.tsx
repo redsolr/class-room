@@ -38,7 +38,7 @@ export default function AuthLayout({
 
       <div className="relative z-10 flex shrink-0 items-center justify-end gap-5 px-8 py-4">
         <span className="text-xs font-semibold text-[var(--auth-on-velvet-muted)]">
-          Classroom — the private memory of an independent teacher
+          Classroom — the language you&rsquo;re learning, and everyone who helps you learn it
         </span>
       </div>
     </div>

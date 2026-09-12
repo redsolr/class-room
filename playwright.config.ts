@@ -44,6 +44,27 @@ function loadEnvLocal(): void {
 // Both non-default tiers need secrets that only live in .env.local.
 if (REAL_AUTH || LIVE_CALL) loadEnvLocal();
 
+/**
+ * The MOCKED tier can run on another port (`E2E_PORT=3021 npm run
+ * test:e2e`) when :3020 is busy with a real dev server — mock auth has no
+ * provider redirect registered against a port, so nothing about it is
+ * pinned. The real-auth and live-call tiers stay on :3020: WorkOS and
+ * RealtimeKit callbacks are registered against it (see
+ * `scripts/ensure-dev-port.mjs`), and a moved port would only fail later
+ * and less clearly. The direct `next dev` command below skips that
+ * preflight on purpose — Playwright itself refuses a port already in
+ * use, which is the same guarantee.
+ */
+const PORT =
+  !REAL_AUTH && !LIVE_CALL && process.env.E2E_PORT
+    ? process.env.E2E_PORT
+    : "3020";
+const BASE_URL = `http://localhost:${PORT}`;
+const MOCK_SERVER_COMMAND =
+  PORT === "3020"
+    ? "npm run dev:mock"
+    : `cross-env MOCK_AUTH=true NODE_OPTIONS=--max-http-header-size=65536 next dev --turbopack -p ${PORT}`;
+
 export default defineConfig({
   testDir: "./e2e",
   workers: 1,
@@ -52,7 +73,7 @@ export default defineConfig({
   timeout: 60_000,
   reporter: [["list"]],
   use: {
-    baseURL: "http://localhost:3020",
+    baseURL: BASE_URL,
     trace: "retain-on-failure",
     ...devices["Desktop Chrome"],
     // Ask the app for no animation. Radix overlays and menus animate on
@@ -96,8 +117,8 @@ export default defineConfig({
           },
         ],
   webServer: {
-    command: REAL_AUTH ? "npm run dev" : "npm run dev:mock",
-    url: "http://localhost:3020",
+    command: REAL_AUTH ? "npm run dev" : MOCK_SERVER_COMMAND,
+    url: BASE_URL,
     reuseExistingServer: false,
     timeout: 120_000,
     // Deterministic free-tier gate for study.spec.ts (merged over

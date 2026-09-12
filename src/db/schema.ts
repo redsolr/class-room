@@ -177,6 +177,16 @@ export const teachers = pgTable(
     timezone: text("timezone"),
     nativeLanguage: text("native_language"),
     languagesTaught: text("languages_taught").array(),
+    /**
+     * When this person chose to teach (2026-09-12). NULL = a row that
+     * exists but carries NO teaching role — until then every unknown
+     * login was made a teacher by default, which handed the tutor's
+     * dashboard to a learner who only came to study. The role is now
+     * opt-in ("Start teaching"); `resolveRoles` reads THIS, not the
+     * row's existence. Migration 0027 backfilled it for every row that
+     * had actually taught (students, lessons or a tutor listing).
+     */
+    teachingSince: timestamp("teaching_since", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true })
       .notNull()
       .defaultNow(),

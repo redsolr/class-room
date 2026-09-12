@@ -75,6 +75,9 @@ const PROTECTED_ROUTES = [
   // is public content, but it writes decks and schedules into a
   // learner's own rows and must never resolve an anonymous caller.
   "/fast-forward",
+  // The 2026-09-12 opt-in. Reads nothing private, but it is the door to
+  // the teacher role and must know WHO is asking.
+  "/teach",
 ];
 
 function sql() {
@@ -87,9 +90,10 @@ async function login(page: Page): Promise<void> {
   await page.locator('input[name="email"]').fill(EMAIL!);
   await page.locator('input[name="password"]').fill(PASSWORD!);
   await page.locator('button[type="submit"]').click();
-  // The real flow lands on /dashboard (the mocked tier's landing redirect
-  // goes to /schedule) — accept either, the session is what matters.
-  await page.waitForURL(/\/(dashboard|schedule)(\?|$)/);
+  // Where a login lands depends on its ROLES (2026-09-12): a learner on
+  // /home, a teacher on /schedule (older builds: /dashboard). Accept any —
+  // the session is what matters here; the role is asserted where needed.
+  await page.waitForURL(/\/(dashboard|schedule|home)(\?|$)/);
 }
 
 test.afterAll(async () => {
@@ -176,12 +180,30 @@ test("anonymous GET of the vocab CSV export is a 401, never data", async () => {
   await anon.dispose();
 });
 
-test("real email+password login opens an authenticated session", async ({
+/**
+ * Teaching is OPT-IN (2026-09-12): a real login starts as a learner and
+ * gains the teacher role only by pressing "Start teaching". The synthetic
+ * user keeps the role across runs (the row persists), so this is
+ * idempotent — a teacher visiting /teach is sent straight to /schedule.
+ */
+async function ensureTeaching(page: Page): Promise<void> {
+  await page.goto("/teach");
+  await page.waitForURL(/\/(teach|schedule)(\?|$)/);
+  if (page.url().includes("/teach")) {
+    await page.getByRole("button", { name: "Start teaching" }).click();
+    await page.waitForURL("**/schedule");
+  }
+}
+
+test("real email+password login opens an authenticated session, and teaching is opt-in", async ({
   page,
 }) => {
   test.skip(!HAS_CREDS, "E2E_TEACHER_* / DATABASE_URL not set — run npm run e2e:user");
   await login(page);
-  // The session works across protected surfaces, not just the landing.
+  // The session works across protected surfaces, not just the landing —
+  // and a teacher surface never silently makes a login a teacher: without
+  // the role it is the opt-in page, with it the desk.
+  await ensureTeaching(page);
   await page.goto("/schedule");
   await expect(
     page.getByRole("heading", { name: "Schedule", exact: true }),
@@ -193,6 +215,7 @@ test("a captured mutation replayed without a session does not mutate", async ({
 }) => {
   test.skip(!HAS_CREDS, "E2E_TEACHER_* / DATABASE_URL not set — run npm run e2e:user");
   await login(page);
+  await ensureTeaching(page);
 
   // Drive a REAL create-student mutation and capture the exact wire
   // request Next sends for the server action.
@@ -258,6 +281,7 @@ test("logout revokes the session — protected pages bounce again", async ({
 }) => {
   test.skip(!HAS_CREDS, "E2E_TEACHER_* / DATABASE_URL not set — run npm run e2e:user");
   await login(page);
+  await ensureTeaching(page);
   await page.goto("/logout");
   await page.waitForURL((url) => !url.pathname.startsWith("/logout"));
   await page.goto("/schedule");

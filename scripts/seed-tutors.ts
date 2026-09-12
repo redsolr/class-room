@@ -98,6 +98,8 @@ async function main() {
           workosUserId: `seed_tutor_${seed.email.split("@")[0]}`,
           email: seed.email,
           name: seed.name,
+          // Listed tutors teach by definition.
+          teachingSince: new Date(),
           timezone: seed.timezone,
           languagesTaught: seed.languages,
         })

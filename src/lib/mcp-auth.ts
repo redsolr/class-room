@@ -80,7 +80,7 @@ export async function requireAllowedTeacher(email: string): Promise<Teacher> {
   });
   if (!teacher) {
     throw new McpAuthError(
-      `no teacher account for ${email} — sign in as them once first; a teacher row is created by signing in`,
+      `no teacher account for ${email} — sign in as them and press "Start teaching" first; teaching is opt-in, a login alone does not create a teacher`,
     );
   }
   return teacher;

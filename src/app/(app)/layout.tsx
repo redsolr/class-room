@@ -1,4 +1,4 @@
-import { requireTeacher } from "@/lib/auth";
+import { requireTeacher, resolveRoles } from "@/lib/auth";
 import { getSidebarStudy } from "@/lib/study-sidebar";
 import { unreadCountFor } from "@/lib/message-queries";
 import { Sidebar } from "@/components/shell/sidebar";
@@ -10,6 +10,9 @@ export default async function AppLayout({
   children: React.ReactNode;
 }) {
   const teacher = await requireTeacher();
+  // Request-cached behind requireTeacher — no second lookup. The sidebar
+  // renders every section this person has, not only the teaching one.
+  const roles = await resolveRoles();
   const [study, unreadMessages] = await Promise.all([
     getSidebarStudy(),
     // The teacher row carries the identity the inbox is keyed on, so no
@@ -23,8 +26,10 @@ export default async function AppLayout({
   return (
     <div className="min-h-dvh lg:flex">
       <Sidebar
-        teacherName={teacher.name ?? "Teacher"}
-        teacherEmail={teacher.email}
+        name={teacher.name ?? "Teacher"}
+        email={teacher.email}
+        teacher
+        student={!!roles?.student}
         study={study}
         unreadMessages={unreadMessages}
       />

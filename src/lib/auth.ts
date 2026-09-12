@@ -1,7 +1,7 @@
 import { cache } from "react";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { and, eq, isNull } from "drizzle-orm";
+import { and, eq, isNull, sql } from "drizzle-orm";
 import { withAuth } from "@workos-inc/authkit-nextjs";
 import {
   db,
@@ -52,44 +52,90 @@ const MOCK_TEACHER = {
   name: "Demo Teacher",
 };
 
-async function findOrCreateTeacher(input: {
-  workosUserId: string;
-  email: string;
-  name: string | null;
-}): Promise<Teacher> {
-  const existing = await db.query.teachers.findFirst({
-    where: eq(teachers.workosUserId, input.workosUserId),
-  });
-  if (existing) return existing;
-
-  const [created] = await db
+/**
+ * The MOCK teacher — the one place a teacher row is still created by
+ * resolution rather than by "Start teaching". `dev:mock` and the e2e
+ * suite sign in as a teacher, so the row is ensured AND stamped with the
+ * role; a row the harness inserted by hand (no `teaching_since`) is
+ * stamped too, otherwise every teacher page would bounce to /teach.
+ */
+async function ensureMockTeacher(): Promise<Teacher> {
+  const now = new Date();
+  const [row] = await db
     .insert(teachers)
-    .values({
-      workosUserId: input.workosUserId,
-      email: input.email,
-      name: input.name,
-    })
+    .values({ ...MOCK_TEACHER, teachingSince: now })
     .onConflictDoUpdate({
       target: teachers.workosUserId,
-      set: { email: input.email, updatedAt: new Date() },
+      set: {
+        email: MOCK_TEACHER.email,
+        // `now()` in SQL, not the JS Date: inside a raw `sql` fragment
+        // postgres-js cannot infer the parameter's type and the upsert
+        // fails with "could not determine data type".
+        teachingSince: sql`coalesce(${teachers.teachingSince}, now())`,
+        updatedAt: now,
+      },
     })
     .returning();
-  return created;
+  return row;
 }
 
 // ---------------------------------------------------------------------------
-// Account resolution — one login, two possible roles.
+// Roles — one login, ADDITIVE roles (2026-09-12).
 //
-// Teachers are the self-serve signup: any unrecognized login becomes a
-// teacher (unchanged). A login is a STUDENT when its WorkOS id is already
-// linked to a student row, or when its email matches a student the teacher
-// created — that first login claims the row (sets workosUserId + ensures a
-// portal token so the token-keyed practice/chat surfaces work).
+// Every login is a LEARNER (the self-study space; row created on first
+// touch, below). On top of that a login may also be:
+//
+//   TEACHER — opt-in only. `teachers.teaching_since` is the role; a row
+//             without it carries nothing. Set by `startTeaching()`.
+//             Until 2026-09-12 any unknown login became a teacher, which
+//             put the tutor's dashboard in front of a person who came to
+//             study — and "an existing teacher row always wins" meant the
+//             founder's own account could never be anyone's student.
+//   STUDENT — a roster row the login has CLAIMED: its WorkOS id is on the
+//             row, or its email matches a student a teacher created and
+//             the first sign-in claims it (sets workosUserId + ensures a
+//             portal token so the token-keyed surfaces work).
+//
+// The roles are independent: the UI renders the sections a person has,
+// and `homeFor` picks where a login lands.
 // ---------------------------------------------------------------------------
 
-export type Account =
-  | { kind: "teacher"; teacher: Teacher }
-  | { kind: "student"; student: Student };
+export type Roles = {
+  /** The signed-in identity — the same fields every role row carries. */
+  user: { workosUserId: string; email: string; name: string | null };
+  teacher: Teacher | null;
+  student: Student | null;
+};
+
+/**
+ * Where a login lands: the teaching desk if they teach, their classroom
+ * if they are somebody's student, otherwise their own study. Teacher
+ * first because a person with both is, in practice, the tutor checking
+ * the other side — and the classroom is one row away in the sidebar.
+ */
+export function homeFor(roles: Roles): string {
+  if (roles.teacher) return "/schedule";
+  if (roles.student) return "/student";
+  return "/home";
+}
+
+/**
+ * Mock-mode role override — `mock-roles` cookie, a comma list of
+ * `teacher` and/or `student` (default `teacher`, which is what the mock
+ * has always been). Lets the e2e suite exercise the learner-only and
+ * student shells against the SAME fixed mock login without a second
+ * identity provider. Inert on production builds like the flag itself.
+ */
+async function mockRoleNames(): Promise<Set<string>> {
+  const cookieStore = await cookies();
+  const raw = cookieStore.get("mock-roles")?.value ?? "teacher";
+  return new Set(
+    raw
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean),
+  );
+}
 
 async function resolveStudentAccount(user: {
   id: string;
@@ -129,63 +175,74 @@ async function resolveStudentAccount(user: {
   return updated;
 }
 
-export const resolveAccount = cache(async (): Promise<Account | null> => {
-  if (MOCK_AUTH) {
-    return { kind: "teacher", teacher: await findOrCreateTeacher({ ...MOCK_TEACHER }) };
-  }
-  const { user } = await withAuth();
-  if (!user) return null;
-
-  // An existing teacher row always wins — teachers can also appear in
-  // someone's student roster without losing their teacher account.
-  const teacher = await db.query.teachers.findFirst({
-    where: eq(teachers.workosUserId, user.id),
-  });
-  if (teacher) return { kind: "teacher", teacher };
-
-  const student = await resolveStudentAccount(user);
-  if (student) return { kind: "student", student };
-
-  // Unrecognized login → self-serve teacher signup (unchanged behavior).
-  const name =
-    [user.firstName, user.lastName].filter(Boolean).join(" ") || null;
-  return {
-    kind: "teacher",
-    teacher: await findOrCreateTeacher({
-      workosUserId: user.id,
-      email: user.email,
-      name,
-    }),
-  };
-});
-
 /**
- * Resolve the signed-in teacher. Student logins are routed to their own
- * area; unauthenticated requests to /login (or the refresh bounce).
+ * Every role the signed-in login holds. Null when nobody is signed in.
+ * Creates nothing except in mock mode (the mock teacher); the learner
+ * row is `getLearner`'s job and the teacher row is `startTeaching`'s.
  *
  * Wrapped in React `cache` so a page and its nested components share
  * one lookup per request.
  */
-export const requireTeacher = cache(async (): Promise<Teacher> => {
-  const account = await resolveAccount();
-  if (!account) return unauthenticatedRedirect();
-  if (account.kind === "student") redirect("/student");
-  return account.teacher;
+export const resolveRoles = cache(async (): Promise<Roles | null> => {
+  if (MOCK_AUTH) {
+    const names = await mockRoleNames();
+    const user = { ...MOCK_TEACHER, name: MOCK_TEACHER.name as string | null };
+    const [teacher, student] = await Promise.all([
+      names.has("teacher") ? ensureMockTeacher() : Promise.resolve(null),
+      names.has("student")
+        ? resolveStudentAccount({ id: MOCK_TEACHER.workosUserId, email: MOCK_TEACHER.email })
+        : Promise.resolve(null),
+    ]);
+    return { user, teacher, student };
+  }
+  const { user } = await withAuth();
+  if (!user) return null;
+
+  const name =
+    [user.firstName, user.lastName].filter(Boolean).join(" ") || null;
+  const [teacherRow, student] = await Promise.all([
+    db.query.teachers.findFirst({
+      where: eq(teachers.workosUserId, user.id),
+    }),
+    resolveStudentAccount(user),
+  ]);
+  // The ROW is not the role: a row without `teaching_since` is one the
+  // old default created for someone who never chose to teach.
+  const teacher = teacherRow?.teachingSince ? teacherRow : null;
+
+  return {
+    user: { workosUserId: user.id, email: user.email, name },
+    teacher,
+    student,
+  };
 });
 
-/** Resolve the signed-in student; teachers are sent to their schedule. */
+/**
+ * Resolve the signed-in teacher. A login without the teaching role is
+ * sent to /teach — the opt-in — never silently made a teacher;
+ * unauthenticated requests go to /login (or the refresh bounce).
+ */
+export const requireTeacher = cache(async (): Promise<Teacher> => {
+  const roles = await resolveRoles();
+  if (!roles) return unauthenticatedRedirect();
+  if (!roles.teacher) redirect("/teach");
+  return roles.teacher;
+});
+
+/** Resolve the signed-in student; a login that is nobody's student is
+ * sent to wherever it does belong. */
 export const requireStudent = cache(async (): Promise<Student> => {
-  const account = await resolveAccount();
-  if (!account) return unauthenticatedRedirect();
-  if (account.kind === "teacher") redirect("/schedule");
-  return account.student;
+  const roles = await resolveRoles();
+  if (!roles) return unauthenticatedRedirect();
+  if (!roles.student) redirect(homeFor(roles));
+  return roles.student;
 });
 
 /** Non-redirecting variant for public pages that adapt to auth state. */
-export const getAccount = cache(async (): Promise<Account | null> => {
+export const getRoles = cache(async (): Promise<Roles | null> => {
   const cookieStore = await cookies();
   if (!MOCK_AUTH && !cookieStore.has(SESSION_COOKIE)) return null;
-  return resolveAccount();
+  return resolveRoles();
 });
 
 // ---------------------------------------------------------------------------
